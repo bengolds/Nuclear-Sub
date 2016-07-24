@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class VRButton : MonoBehaviour {
-	public enum ButtonState {
-		Normal,
-		Highlighted,
-		Pressed
-	}
+public enum ButtonState {
+	Normal,
+	Highlighted,
+	Pressed
+}
 
+public class VRButton : Interactable {
+	[HideInInspector]
 	public ButtonState state;
 	public Material normalMaterial;
 	public Material highlightedMaterial;
@@ -15,13 +16,16 @@ public class VRButton : MonoBehaviour {
 	private MeshRenderer meshRenderer;
 
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
+		base.Start ();
 		meshRenderer = GetComponent<MeshRenderer> ();
 		state = ButtonState.Normal;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public override void Update () {
+		base.Update ();
+
 		switch (state) {
 		case ButtonState.Normal:
 			meshRenderer.material = normalMaterial;
@@ -37,27 +41,28 @@ public class VRButton : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.GetComponent<Hand> () != null) {
-			OnButtonEnter ();
-		}
-	}
 
-	void OnTriggerExit(Collider other) {
-		if (other.gameObject.GetComponent<Hand> () != null) {
-			OnButtonExit ();
-		}
-	}
 
-	public void OnButtonEnter() {
+	protected override void OnHandEnter(Hand hand) {
 		state = ButtonState.Highlighted;
 	}
 
-	public void OnButtonExit() {
+	protected override void OnHandExit(Hand hand) {
 		state = ButtonState.Normal;
 	}
 
-	public void OnButtonPress() {
-	
+	protected override void OnHandPressDown(Hand hand) {
+		state = ButtonState.Pressed;
+	}
+
+	protected override void OnHandPressUp(Hand hand) {
+		if (state == ButtonState.Pressed) {
+			ButtonPressed ();
+		}
+		state = ButtonState.Highlighted;
+	}
+
+	void ButtonPressed() {
+		Debug.Log ("Button pressed");
 	}
 }
