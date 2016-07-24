@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class Dial : Interactable {
 
@@ -9,10 +10,16 @@ public class Dial : Interactable {
 	public Material highlightedMaterial;
 	public Material pressedMaterial;
 	public float scrollSpeed = 60.0f;
+	public float snapDuration = 0.5f;
+	public int numFaces = 5;
+	public int value {
+		get { return m_value; }
+	}
 
 	private MeshRenderer meshRenderer;
 	private Vector2? lastTrackpadPos;
 	private float scrollAmount = 0;
+	private int m_value = 0;
 
 	// Use this for initialization
 	public override void Start () {
@@ -40,7 +47,7 @@ public class Dial : Interactable {
 			break;
 		}
 
-		transform.rotation = Quaternion.AngleAxis (scrollAmount, Vector3.left);
+		transform.rotation = transform.parent.rotation * Quaternion.AngleAxis (-scrollAmount, Vector3.right);
 	}
 
 	protected override void OnHandEnter(Hand hand) {
@@ -48,21 +55,22 @@ public class Dial : Interactable {
 	}
 
 	protected override void OnHandExit(Hand hand) {
+		if (state == ButtonState.Pressed) {
+			DialingExit (hand);
+		}
 		state = ButtonState.Normal;
-		hand.SetVisible (true);
 	}
 
 	protected override void OnHandPressDown(Hand hand) {
 		state = ButtonState.Pressed;
-		hand.SetVisible (false);
+		DialingEnter (hand);
 	}
 
 	protected override void OnHandPressUp(Hand hand) {
 		if (state == ButtonState.Pressed) {
-			ButtonPressed ();
+			DialingExit (hand);
 		}
 		state = ButtonState.Highlighted;
-		hand.SetVisible (true);
 	}
 
 	protected override void OnHandPress(Hand hand) {
@@ -79,13 +87,30 @@ public class Dial : Interactable {
 			}
 		}
 	}
-
-	void ScrollDial(float amount) {
-		Debug.Log ("Scroll amount:" + amount);
-		scrollAmount += amount * scrollSpeed;
+		
+	void DialingEnter(Hand hand) {
+		hand.SetVisible (false);
 	}
 
-	void ButtonPressed() {
-		Debug.Log ("pressed");
+	void DialingExit(Hand hand) {
+		hand.SetVisible (true);
+		SnapDial ();
+	}
+
+	int mod(int x, int m) {
+		return (x%m + m)%m;
+	}
+
+	void SnapDial() {
+		float snapIncrement = 360f / numFaces;
+		int selectedFace = Mathf.RoundToInt(scrollAmount / snapIncrement);
+		float snapTo = selectedFace * snapIncrement;
+		m_value = mod(selectedFace, numFaces) + 2;
+		
+		DOTween.To (x => scrollAmount = x, scrollAmount, snapTo, snapDuration);
+	}
+
+	void ScrollDial(float amount) {
+		scrollAmount += -1 * amount * scrollSpeed;
 	}
 }
