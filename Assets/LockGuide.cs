@@ -11,8 +11,9 @@ public class LockGuide : MonoBehaviour {
 	public float lockDepth = 0.02f;
 	public GameObject snapPoint;
 	public GameObject lockBody;
-	private ConfigurableJoint slideJoint;
+	private ConfigurableJoint sliderJoint;
 	private ConfigurableJoint turnJoint;
+	private FixedJoint fixedJoint;
 	private LockState state;
 
 	// Use this for initialization
@@ -29,8 +30,7 @@ public class LockGuide : MonoBehaviour {
 		if (isKey(other) && state == LockState.Empty) {
 			SnapKeyToPosition (other.gameObject);	
 
-			slideJoint = SetupSliderJoint (other.attachedRigidbody);
-//			currJoint = SwitchToTurnJoint(other.attachedRigidbody);
+			sliderJoint = SetupSliderJoint (other.attachedRigidbody);
 			state = LockState.Sliding;
 			MakeKeyTrigger (other.gameObject);
 		}
@@ -42,12 +42,14 @@ public class LockGuide : MonoBehaviour {
 			if (state == LockState.Sliding) {
 				float keyTravel = Vector3.Distance (other.transform.position, snapPoint.transform.position);
 				if (Mathf.Approximately (keyTravel, lockDepth)) {
-					Destroy (slideJoint);
-					turnJoint = SwitchToTurnJoint (other.attachedRigidbody);
+					Destroy (sliderJoint);
+					turnJoint = SetupTurnJoint (other.attachedRigidbody);
+					lockBody.transform.SetParent (other.transform, true);
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
 				float keyAngle = Vector3.Angle (other.transform.up, transform.up);
+				//CHECK IF KEY IS TURNED HERE
 			}
 		}
 	}
@@ -55,11 +57,10 @@ public class LockGuide : MonoBehaviour {
 	void OnTriggerExit(Collider other) {
 		if (isKey(other) && state == LockState.Sliding) {
 			state = LockState.Empty;
-			//			Destroy (currJoint);
-			//			MakeKeyCollider (other.gameObject);
+			Destroy (sliderJoint);
+			MakeKeyCollider (other.gameObject);
 		}
 	}
-
 
 	void SnapKeyToPosition(GameObject key) {
 		key.transform.rotation = snapPoint.transform.rotation;
@@ -87,9 +88,9 @@ public class LockGuide : MonoBehaviour {
 		return joint;
 	}
 
-	ConfigurableJoint SwitchToTurnJoint(Rigidbody connectedBody) {
+	ConfigurableJoint SetupTurnJoint(Rigidbody connectedBody) {
 
-		var joint = lockBody.AddComponent<ConfigurableJoint> ();
+		var joint = connectedBody.gameObject.AddComponent<ConfigurableJoint> ();
 
 		joint.angularXMotion = ConfigurableJointMotion.Limited;
 		joint.angularYMotion = ConfigurableJointMotion.Locked;
@@ -98,9 +99,12 @@ public class LockGuide : MonoBehaviour {
 		joint.yMotion = ConfigurableJointMotion.Locked;
 		joint.zMotion = ConfigurableJointMotion.Locked;
 
+//		joint.axis = transform.right;
+//		joint.secondaryAxis = transform.up;
+
 		var xLimit = new SoftJointLimit ();
-		xLimit.limit = 90; 
-		joint.highAngularXLimit = xLimit;
+		xLimit.limit = -90; 
+		joint.lowAngularXLimit = xLimit;
 
 		var xDrive = new JointDrive ();
 		xDrive.positionSpring = 1000f;
@@ -108,15 +112,29 @@ public class LockGuide : MonoBehaviour {
 		joint.angularXDrive = xDrive;
 
 		joint.autoConfigureConnectedAnchor = false;
-		joint.connectedAnchor = Vector3.zero;
-		joint.anchor = lockBody.transform.InverseTransformPoint (connectedBody.position);
+		joint.connectedAnchor = connectedBody.transform.position;
+		joint.anchor = Vector3.zero;
+//		joint.connectedAnchor = Vector3.zero;
+//		joint.anchor = lockBody.transform.InverseTransformPoint (connectedBody.position);
 
-		joint.connectedBody = connectedBody;
+//		joint.connectedBody = connectedBody;
 
-		joint.enableCollision = false;
+//		joint.enableCollision = false;
 
 		return joint;
 	}
+
+	FixedJoint SetupFixedJoint(Rigidbody connectedBody) {
+		var joint = lockBody.AddComponent<FixedJoint> ();
+
+		joint.autoConfigureConnectedAnchor = false;
+		joint.connectedAnchor = Vector3.zero;
+		joint.anchor = lockBody.transform.InverseTransformPoint (connectedBody.position);
+		joint.connectedBody = connectedBody;
+
+		return joint;
+	}
+
 	bool isKey(Collider other) {
 		return other.GetComponent<Key> () != null;
 	}
