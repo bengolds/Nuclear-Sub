@@ -107,7 +107,6 @@ public class Dial : VRTK_InteractableObject {
 			controller.TriggerHapticPulse (clickingHapticsStrength, 1f, 1f);		
 		} else {
 			controller.TriggerHapticPulse (scrollingHapticsStrength, 0.1f, 0.1f);
-			Debug.Log ("pulse");
 		}
 
 		scrollAmount += amountToAdd;
