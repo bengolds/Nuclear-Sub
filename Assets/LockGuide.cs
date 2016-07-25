@@ -13,7 +13,6 @@ public class LockGuide : MonoBehaviour {
 	public GameObject lockBody;
 	private ConfigurableJoint sliderJoint;
 	private ConfigurableJoint turnJoint;
-	private FixedJoint fixedJoint;
 	private LockState state;
 
 	// Use this for initialization
@@ -67,7 +66,7 @@ public class LockGuide : MonoBehaviour {
 		key.transform.position = snapPoint.transform.position;
 	}
 
-	ConfigurableJoint SetupSliderJoint(Rigidbody connectedBody) {
+	ConfigurableJoint SetupSliderJoint(Rigidbody key) {
 		var joint = lockBody.AddComponent<ConfigurableJoint> ();
 
 		joint.angularXMotion = ConfigurableJointMotion.Locked;
@@ -81,16 +80,16 @@ public class LockGuide : MonoBehaviour {
 		linearLimit.limit = lockDepth; 
 		joint.linearLimit = linearLimit;
 
-		joint.connectedBody = connectedBody;
+		joint.connectedBody = key;
 
 		joint.enableCollision = false;
 
 		return joint;
 	}
 
-	ConfigurableJoint SetupTurnJoint(Rigidbody connectedBody) {
+	ConfigurableJoint SetupTurnJoint(Rigidbody key) {
 
-		var joint = connectedBody.gameObject.AddComponent<ConfigurableJoint> ();
+		var joint = key.gameObject.AddComponent<ConfigurableJoint> ();
 
 		joint.angularXMotion = ConfigurableJointMotion.Limited;
 		joint.angularYMotion = ConfigurableJointMotion.Locked;
@@ -98,9 +97,6 @@ public class LockGuide : MonoBehaviour {
 		joint.xMotion = ConfigurableJointMotion.Locked;
 		joint.yMotion = ConfigurableJointMotion.Locked;
 		joint.zMotion = ConfigurableJointMotion.Locked;
-
-//		joint.axis = transform.right;
-//		joint.secondaryAxis = transform.up;
 
 		var xLimit = new SoftJointLimit ();
 		xLimit.limit = -90; 
@@ -112,25 +108,8 @@ public class LockGuide : MonoBehaviour {
 		joint.angularXDrive = xDrive;
 
 		joint.autoConfigureConnectedAnchor = false;
-		joint.connectedAnchor = connectedBody.transform.position;
+		joint.connectedAnchor = key.transform.position;
 		joint.anchor = Vector3.zero;
-//		joint.connectedAnchor = Vector3.zero;
-//		joint.anchor = lockBody.transform.InverseTransformPoint (connectedBody.position);
-
-//		joint.connectedBody = connectedBody;
-
-//		joint.enableCollision = false;
-
-		return joint;
-	}
-
-	FixedJoint SetupFixedJoint(Rigidbody connectedBody) {
-		var joint = lockBody.AddComponent<FixedJoint> ();
-
-		joint.autoConfigureConnectedAnchor = false;
-		joint.connectedAnchor = Vector3.zero;
-		joint.anchor = lockBody.transform.InverseTransformPoint (connectedBody.position);
-		joint.connectedBody = connectedBody;
 
 		return joint;
 	}
