@@ -11,6 +11,7 @@ public class SafeBolt : MonoBehaviour {
 	private Vector3 boltDirection;
 	private bool traveling = false;
 	private Vector3 restPosition;
+	private bool lockable = true;
 
 	// Use this for initialization
 	void Start () {
@@ -39,10 +40,20 @@ public class SafeBolt : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerStay(Collider other) {
+		var chisel = other.GetComponent<Chisel> ();
+		if (chisel != null && lockable) {
+			if (Quaternion.Angle (chisel.transform.rotation, chiselSnapPoint.rotation) < 15.0f) {
+				chisel.LockIntoPlace (chiselSnapPoint, this);
+				lockable = false;
+			}
+		}
+	}
+
+	void OnTriggerExit(Collider other) {
 		var chisel = other.GetComponent<Chisel> ();
 		if (chisel != null) {
-			chisel.LockIntoPlace (chiselSnapPoint, this);
+			lockable = true;	
 		}
 	}
 

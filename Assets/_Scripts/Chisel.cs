@@ -7,6 +7,7 @@ public class Chisel : VRTK_InteractableObject {
 	public float detachFromBoltDistance;
 	private FixedJoint boltJoint;
 	private SafeBolt attachedBolt;
+	private Vector3 handleAttachPosition;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -16,10 +17,9 @@ public class Chisel : VRTK_InteractableObject {
 	// Update is called once per frame
 	protected override void Update () {
 		base.Update ();
-		if (IsGrabbed () && boltJoint != null) {
+		if (IsGrabbed () && boltJoint != null) {				
 			Vector3 attachPosition = grabbingObject.GetComponent<VRTK_InteractGrab> ().controllerAttachPoint.position;
-			float handDistance = Vector3.Distance (transform.position, attachPosition);
-			Debug.Log ("Grab distance: " + handDistance);
+			float handDistance = Vector3.Distance (rightSnapHandle.position, attachPosition);
 			if (handDistance > detachFromBoltDistance) {
 				Destroy (boltJoint);
 				attachedBolt = null;
@@ -31,13 +31,14 @@ public class Chisel : VRTK_InteractableObject {
 	{
 		base.Ungrabbed (previousGrabbingObject);
 		if (boltJoint != null) {
-//			Destroy (boltJoint);
-//			attachedBolt = null;
+			Destroy (boltJoint);
+			attachedBolt = null;
 		}
 	}
 
 	public void LockIntoPlace(Transform snapPoint, SafeBolt bolt) {
 		if (IsGrabbed()) {
+			Debug.Log ("lock into place.");
 			transform.rotation = snapPoint.rotation;
 			transform.position = snapPoint.position;
 			boltJoint = gameObject.AddComponent<FixedJoint> ();
@@ -48,9 +49,9 @@ public class Chisel : VRTK_InteractableObject {
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.GetComponentInParent<Hammer> () != null && 
 			attachedBolt != null) {
-			Vector3 chiselAxis = -transform.right;
+			Vector3 chiselAxis = transform.right;
 			float speedAlongAxis = Vector3.Dot (collision.relativeVelocity, chiselAxis);
-			attachedBolt.KnockBolt (speedAlongAxis);
+			attachedBolt.KnockBolt (Mathf.Clamp(speedAlongAxis, 0, float.PositiveInfinity));
 		}
 	}
 }
