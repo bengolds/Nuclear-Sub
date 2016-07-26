@@ -5,13 +5,20 @@ public class SafeBolt : MonoBehaviour {
 
 	public Transform chiselSnapPoint;
 	public GameObject boltBody;
+	public GameObject victoryArea;
 	public float maxTravelDistance;
 	public float forceMultiplier;
+	public float victoryMax, victoryMin;
+	public float boltLength;
+	public bool unlocked;
+
+
 	private ConfigurableJoint springJoint;
 	private Vector3 boltDirection;
 	private bool traveling = false;
 	private Vector3 restPosition;
 	private bool lockable = true;
+	private Vector3 lastVelocity;
 
 	// Use this for initialization
 	void Start () {
@@ -27,16 +34,36 @@ public class SafeBolt : MonoBehaviour {
 		linearLimit.limit = maxTravelDistance / 2;
 		springJoint.linearLimit = linearLimit;
 
-	}
+		boltBody.transform.localScale = new Vector3(boltLength, boltBody.transform.localScale.y, boltBody.transform.localScale.z);
+		victoryArea.transform.localScale = new Vector3(victoryMax - victoryMin, victoryArea.transform.localScale.y, victoryArea.transform.localScale.z);
+
+		var victoryPos = victoryArea.transform.localPosition;
+		victoryPos.x = victoryMin + (victoryMax - victoryMin) / 2;
+		victoryArea.transform.localPosition = -victoryPos;
+		}
 	
 	// Update is called once per frame
 	void Update () {
 		if (traveling) {
 			var rb = boltBody.GetComponent<Rigidbody> ();
-			if (Vector3.Distance (rb.position, restPosition) < 0.002f &&
+
+			float travelDistance = Vector3.Distance (rb.position, restPosition);
+
+			if (Vector3.Dot (rb.velocity, lastVelocity) <= 0 && 
+				travelDistance + boltLength/2 <= victoryMax &&
+				travelDistance - boltLength/2 >= victoryMin) {
+				Debug.Log ("You win! Turned around in right space");
+				unlocked = true;
+				rb.isKinematic = true;
+				//Call other unlock event.
+			}
+
+			if (travelDistance < 0.002f &&
 			    rb.velocity.magnitude < 0.002f) {
 				traveling = false;
+				lastVelocity = Vector3.zero;
 			}
+			lastVelocity = rb.velocity;
 		}
 	}
 

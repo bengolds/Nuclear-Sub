@@ -5,6 +5,7 @@ using VRTK;
 public class Chisel : VRTK_InteractableObject {
 
 	public float detachFromBoltDistance;
+	public bool detachesWhenUngrabbed = true;
 	private FixedJoint boltJoint;
 	private SafeBolt attachedBolt;
 	private Vector3 handleAttachPosition;
@@ -30,15 +31,14 @@ public class Chisel : VRTK_InteractableObject {
 	public override void Ungrabbed (GameObject previousGrabbingObject)
 	{
 		base.Ungrabbed (previousGrabbingObject);
-		if (boltJoint != null) {
+		if (boltJoint != null && detachesWhenUngrabbed) {
 			Destroy (boltJoint);
 			attachedBolt = null;
 		}
 	}
 
 	public void LockIntoPlace(Transform snapPoint, SafeBolt bolt) {
-		if (IsGrabbed()) {
-			Debug.Log ("lock into place.");
+		if (IsGrabbed()) {	
 			transform.rotation = snapPoint.rotation;
 			transform.position = snapPoint.position;
 			boltJoint = gameObject.AddComponent<FixedJoint> ();
