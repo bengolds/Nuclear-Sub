@@ -51,7 +51,7 @@ public class SafeBolt : MonoBehaviour {
 
 			if (Vector3.Dot (rb.velocity, lastVelocity) <= 0 && 
 				travelDistance + boltLength/2 <= victoryMax &&
-				travelDistance - boltLength/2 >= victoryMin) {
+				travelDistance - boltLength/2 >= victoryMin) {	
 				unlocked = true;
 				rb.isKinematic = true;
 				//Call other unlock event.
