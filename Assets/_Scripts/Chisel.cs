@@ -6,8 +6,11 @@ public class Chisel : VRTK_InteractableObject {
 
 	public float detachFromBoltDistance;
 	public bool detachesWhenUngrabbed = true;
+	public Collider hammerHead;
+	public Collider chiselHead;
+	[HideInInspector]
+	public SafeBolt attachedBolt;
 	private FixedJoint boltJoint;
-	private SafeBolt attachedBolt;
 	private Vector3 handleAttachPosition;
 
 	// Use this for initialization
@@ -45,12 +48,18 @@ public class Chisel : VRTK_InteractableObject {
 			attachedBolt = bolt;
 		}
 	}
-
+		
 	void OnCollisionEnter(Collision collision) {
-		if (collision.gameObject.GetComponentInParent<Hammer> () != null && 
+		var hammer = collision.gameObject.GetComponentInParent<Hammer> ();
+
+		if (collision.collider == hammerHead &&
+			collision.contacts[0].thisCollider == chiselHead &&
 			attachedBolt != null) {
 			Vector3 chiselAxis = transform.right;
-			float speedAlongAxis = Vector3.Dot (collision.relativeVelocity, chiselAxis);
+
+			Vector3 controllerSpeed = hammer.GetGrabbingObject().GetComponent<VRTK_ControllerEvents> ().GetVelocity ();
+			float speedAlongAxis = Vector3.Dot (controllerSpeed, chiselAxis);
+
 			attachedBolt.KnockBolt (Mathf.Clamp(speedAlongAxis, 0, float.PositiveInfinity));
 		}
 	}

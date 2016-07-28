@@ -52,7 +52,6 @@ public class SafeBolt : MonoBehaviour {
 			if (Vector3.Dot (rb.velocity, lastVelocity) <= 0 && 
 				travelDistance + boltLength/2 <= victoryMax &&
 				travelDistance - boltLength/2 >= victoryMin) {
-				Debug.Log ("You win! Turned around in right space");
 				unlocked = true;
 				rb.isKinematic = true;
 				//Call other unlock event.
@@ -68,24 +67,24 @@ public class SafeBolt : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other) {
-		var chisel = other.GetComponent<Chisel> ();
-		if (chisel != null && lockable) {
-			if (Quaternion.Angle (chisel.transform.rotation, chiselSnapPoint.rotation) < 15.0f) {
-				chisel.LockIntoPlace (chiselSnapPoint, this);
+		var chiselHead = other.GetComponent<ChiselHead> ();
+		if (chiselHead != null && lockable) {
+			if (Quaternion.Angle (chiselHead.transform.rotation, chiselSnapPoint.rotation) < 15.0f) {
+				chiselHead.GetComponentInParent<Chisel>().LockIntoPlace (chiselSnapPoint, this);
 				lockable = false;
 			}
 		}
 	}
 
 	void OnTriggerExit(Collider other) {
-		var chisel = other.GetComponent<Chisel> ();
-		if (chisel != null) {
+		var chiselHead = other.GetComponent<ChiselHead> ();
+		if (chiselHead != null) {
 			lockable = true;	
 		}
 	}
 
 	public void KnockBolt(float force) {
-		if (!traveling) {
+		if (!traveling && force > 0 ) {
 			var rb = boltBody.GetComponent<Rigidbody> ();
 			rb.AddForce (boltDirection * force * forceMultiplier);
 			traveling = true;
