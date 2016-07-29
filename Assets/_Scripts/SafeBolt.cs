@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 
 public class SafeBolt : MonoBehaviour {
@@ -10,8 +11,9 @@ public class SafeBolt : MonoBehaviour {
 	public float forceMultiplier;
 	public float victoryMax, victoryMin;
 	public float boltLength;
+	[HideInInspector]
 	public bool unlocked;
-
+	public UnityEvent onUnlock;
 
 	private ConfigurableJoint springJoint;
 	private Vector3 boltDirection;
@@ -19,6 +21,7 @@ public class SafeBolt : MonoBehaviour {
 	private Vector3 restPosition;
 	private bool lockable = true;
 	private Vector3 lastVelocity;
+	private bool justHit = false;
 
 	// Use this for initialization
 	void Start () {
@@ -44,26 +47,32 @@ public class SafeBolt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (traveling) {
+		if (traveling && !unlocked) {
 			var rb = boltBody.GetComponent<Rigidbody> ();
 
 			float travelDistance = Vector3.Distance (rb.position, restPosition);
 
-			if (Vector3.Dot (rb.velocity, lastVelocity) <= 0 && 
-				travelDistance + boltLength/2 <= victoryMax &&
-				travelDistance - boltLength/2 >= victoryMin) {	
-				unlocked = true;
-				rb.isKinematic = true;
-				//Call other unlock event.
+			if (Vector3.Dot (rb.velocity, lastVelocity) <= 0 &&
+				travelDistance + boltLength / 2 <= victoryMax &&
+				travelDistance - boltLength / 2 >= victoryMin &&
+				!justHit) {	
+					unlocked = true;
+					rb.isKinematic = true;
+					Debug.Log ("unlocked!");
+					//Call other unlock event.
 			}
+			
 
 			if (travelDistance < 0.002f &&
-			    rb.velocity.magnitude < 0.002f) {
+			    rb.velocity.magnitude < 0.002f &&
+				!justHit) {
 				traveling = false;
 				lastVelocity = Vector3.zero;
 			}
 			lastVelocity = rb.velocity;
 		}
+
+		justHit = false;
 	}
 
 	void OnTriggerStay(Collider other) {
@@ -88,6 +97,7 @@ public class SafeBolt : MonoBehaviour {
 			var rb = boltBody.GetComponent<Rigidbody> ();
 			rb.AddForce (boltDirection * force * forceMultiplier);
 			traveling = true;
+			justHit = true;
 		}
 	}
 }

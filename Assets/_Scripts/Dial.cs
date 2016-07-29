@@ -17,6 +17,7 @@ public class Dial : VRTK_InteractableObject {
 	public int value {
 		get { return m_value; }
 	}
+	
 
 	private MeshRenderer meshRenderer;
 	private Vector2? lastTrackpadPos;

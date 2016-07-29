@@ -30,6 +30,9 @@ public class WireEnd : MonoBehaviour {
 	}
 
 	void OnCollisionExit(Collision collision) {
-		
+		var powerTerminal = collision.gameObject.GetComponent<PowerTerminal> ();
+		if (powerTerminal == connectedTo) {
+			connectedTo = null;
+		}
 	}
 }

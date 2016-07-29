@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;using VRTK;
 
 
 public class VRButton : VRTK_InteractableObject {
 	public Material touchedStateMaterial;
 	public Material usedStateMaterial;
+	public UnityEvent onPress;
 	protected Material normalStateMaterial;
 	private MeshRenderer meshRenderer;
 
@@ -35,5 +37,6 @@ public class VRButton : VRTK_InteractableObject {
 
 	void ButtonPressed() {
 		Debug.Log ("Button pressed");
+		onPress.Invoke ();
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections.Generic;
 
 public class LockGuide : MonoBehaviour {
@@ -9,20 +10,27 @@ public class LockGuide : MonoBehaviour {
 	}
 
 	public float lockDepth = 0.02f;
+	public float maxAngle = 90f;
 	public GameObject snapPoint;
 	public GameObject lockBody;
+	public UnityEvent onTurn;
+
 	private ConfigurableJoint sliderJoint;
 	private ConfigurableJoint turnJoint;
 	private LockState state;
+	private bool justTurned;
+	private float keyAngle;
 
 	// Use this for initialization
 	void Start () {
-	
+		keyAngle = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (keyAngle < maxAngle - 25f) {
+			justTurned = false;
+		}
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -47,8 +55,10 @@ public class LockGuide : MonoBehaviour {
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
-				float keyAngle = Vector3.Angle (other.transform.up, transform.up);
-				//CHECK IF KEY IS TURNED HERE
+				keyAngle = Vector3.Angle (other.transform.up, transform.up);
+				if (keyAngle >= maxAngle-2f && !justTurned) {
+					KeyTurned ();
+				}
 			}
 		}
 	}
@@ -59,6 +69,11 @@ public class LockGuide : MonoBehaviour {
 			Destroy (sliderJoint);
 			MakeKeyCollider (other.gameObject);
 		}
+	}
+
+	void KeyTurned() {
+		justTurned = true;
+		onTurn.Invoke ();
 	}
 
 	void SnapKeyToPosition(GameObject key) {
@@ -99,7 +114,7 @@ public class LockGuide : MonoBehaviour {
 		joint.zMotion = ConfigurableJointMotion.Locked;
 
 		var xLimit = new SoftJointLimit ();
-		xLimit.limit = -90; 
+		xLimit.limit = -maxAngle; 
 		joint.lowAngularXLimit = xLimit;
 
 		var xDrive = new JointDrive ();
