@@ -127,8 +127,9 @@ namespace VRTK
 		private void Update() {
 			if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin) {
 				if (touchedObjects.Count >= 1) {
-					var controllerOrigin = GetComponent<VRTK_InteractGrab>() ? 
-											GetComponent<VRTK_InteractGrab>().controllerAttachPoint.transform.position :
+					var grabScript = GetComponent<VRTK_InteractGrab> ();
+					var controllerOrigin = grabScript != null && grabScript.controllerAttachPoint != null ? 
+											grabScript.controllerAttachPoint.transform.position :
 											transform.position;
 					var closestTouched = touchedObjects.OrderBy (element => Vector3.Distance (controllerOrigin, element.transform.position)).FirstOrDefault();
 					if (touchedObject != closestTouched) {
