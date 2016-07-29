@@ -8,21 +8,25 @@ public class Dial : VRTK_InteractableObject {
 	[Header("Dial Settings", order = 5)]
 	public Material touchedStateMaterial;
 	public Material usedStateMaterial;
-	protected Material normalStateMaterial;
+    protected Material normalStateMaterial;
+
+    public enum DialType {
+        IndexedValues, Numbers
+    }
+    public DialType dialType;
+    public int numFaces = 5;
+    public int startingNumber;
+    public List<string> values;
+
 	public ushort scrollingHapticsStrength;
 	public ushort clickingHapticsStrength;
 	public float scrollSpeed = 60.0f;
 	public float snapDuration = 0.5f;
-	public int numFaces = 5;
-	public int value {
-		get { return m_value; }
-	}
-	
 
 	private MeshRenderer meshRenderer;
 	private Vector2? lastTrackpadPos;
 	private float scrollAmount = 0;
-	private int m_value = 0;
+	private int index = 0;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -93,7 +97,7 @@ public class Dial : VRTK_InteractableObject {
 		float snapIncrement = 360f / numFaces;
 		int selectedFace = Mathf.RoundToInt(scrollAmount / snapIncrement);
 		float snapTo = selectedFace * snapIncrement;
-		m_value = mod(selectedFace, numFaces) + 2;
+		index = mod(selectedFace, numFaces);
 		
 		DOTween.To (x => scrollAmount = x, scrollAmount, snapTo, snapDuration);
 	}
@@ -112,4 +116,17 @@ public class Dial : VRTK_InteractableObject {
 
 		scrollAmount += amountToAdd;
 	}
+
+    public string GetValue()
+    {
+        switch (dialType)
+        {
+            case DialType.IndexedValues:
+                return values[index];
+            case DialType.Numbers:
+                return (index + startingNumber).ToString();
+            default:
+                return string.Empty;
+        }
+    }
 }
