@@ -29,7 +29,7 @@ public class SafeWheel : MonoBehaviour {
 	void Update () {
 		if (!unlocked) {
 			//TODO: Make this transform/rotation independent.
-			float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, -joint.axis);
+            float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, transform.TransformDirection(-joint.axis));
 
 			int numTurns = Mathf.FloorToInt (currAngle / 360);
 
