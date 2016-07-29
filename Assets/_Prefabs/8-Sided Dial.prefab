@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11498970}
   - 114: {fileID: 11495946}
   m_Layer: 5
-  m_Name: Numbers
+  m_Name: Faces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ GameObject:
   - 114: {fileID: 11459948}
   - 54: {fileID: 5467838}
   m_Layer: 0
-  m_Name: Dial
+  m_Name: 8-Sided Dial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1910,10 +1910,27 @@ MonoBehaviour:
   touchedStateMaterial: {fileID: 2100000, guid: 330a8de0dda3b2d48a9b95b82261be0a,
     type: 2}
   usedStateMaterial: {fileID: 2100000, guid: de4625b0a8c7316478c9eb494a5b8d14, type: 2}
-  dialType: 0
+  dialType: 1
   numFaces: 8
-  startingNumber: 0
-  values: []
+  startingNumber: 1
+  values:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  faceText:
+  - {fileID: 11452086}
+  - {fileID: 11460824}
+  - {fileID: 11453018}
+  - {fileID: 11406542}
+  - {fileID: 11479622}
+  - {fileID: 11413688}
+  - {fileID: 11497360}
+  - {fileID: 11494030}
   scrollingHapticsStrength: 200
   clickingHapticsStrength: 3999
   scrollSpeed: 60
@@ -2086,7 +2103,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 40000
+  m_DynamicPixelsPerUnit: 50000
 --- !u!114 &11499084
 MonoBehaviour:
   m_ObjectHideFlags: 1

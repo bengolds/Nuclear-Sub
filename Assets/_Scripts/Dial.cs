@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using DG.Tweening;
 using VRTK;
@@ -17,6 +18,7 @@ public class Dial : VRTK_InteractableObject {
     public int numFaces = 5;
     public int startingNumber;
     public List<string> values;
+    public List<Text> faceText;
 
 	public ushort scrollingHapticsStrength;
 	public ushort clickingHapticsStrength;
@@ -34,6 +36,21 @@ public class Dial : VRTK_InteractableObject {
 		meshRenderer = GetComponent<MeshRenderer> ();
 		normalStateMaterial = meshRenderer.material;
 		lastTrackpadPos = null;
+
+        for (int i = 0; i < numFaces; i++)
+        {
+            switch (dialType)
+            {
+                case DialType.IndexedValues:
+                    faceText[i].text = values[i];
+                    break;
+                case DialType.Numbers:
+                    faceText[i].text = (startingNumber + i).ToString();
+                    break;
+                default:
+                    break;
+            }
+        }
 	}
 	
 	// Update is called once per frame
