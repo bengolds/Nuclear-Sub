@@ -28,7 +28,8 @@ public class SafeWheel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!unlocked) {
-			float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, -joint.axis);
+			//TODO: Make this transform/rotation independent.
+            float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, transform.TransformDirection(-joint.axis));
 
 			int numTurns = Mathf.FloorToInt (currAngle / 360);
 
@@ -46,8 +47,7 @@ public class SafeWheel : MonoBehaviour {
 			}
 			currAngle = numTurns * 360 + angleFromVertical;
 
-			float angleOfNewVertical = Mathf.Max (0, currAngle);
-			Vector3 newVertical = Quaternion.AngleAxis (angleOfNewVertical, joint.axis) * initialUpAxis;
+			//Setting this resets the anchor angle.
 			joint.secondaryAxis = initialUpAxis;
 
 			var lowerLimit = joint.lowAngularXLimit;

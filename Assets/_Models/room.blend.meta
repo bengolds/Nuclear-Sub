@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: 33588b392ab2b0045bc38ff623f29870
+timeCreated: 1470095537
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Documents_Shelf
+    100002: Door
+    100004: Launch_System
+    100006: Main_Receiver
+    100008: Nuclear_Safe
+    100010: References
+    100012: //RootNode
+    100014: Room_boundaries
+    100016: Room_Reference
+    100018: Table
+    100020: Targeting_System
+    100022: Targeting_System_Bottom_Half
+    100024: Targeting_System_Right_Half
+    100026: Unused
+    400000: Documents_Shelf
+    400002: Door
+    400004: Launch_System
+    400006: Main_Receiver
+    400008: Nuclear_Safe
+    400010: References
+    400012: //RootNode
+    400014: Room_boundaries
+    400016: Room_Reference
+    400018: Table
+    400020: Targeting_System
+    400022: Targeting_System_Bottom_Half
+    400024: Targeting_System_Right_Half
+    400026: Unused
+    2300000: Documents_Shelf
+    2300002: Door
+    2300004: Launch_System
+    2300006: Main_Receiver
+    2300008: Nuclear_Safe
+    2300010: Room_boundaries
+    2300012: Room_Reference
+    2300014: Table
+    2300016: Targeting_System_Bottom_Half
+    2300018: Targeting_System_Right_Half
+    3300000: Documents_Shelf
+    3300002: Door
+    3300004: Launch_System
+    3300006: Main_Receiver
+    3300008: Nuclear_Safe
+    3300010: Room_boundaries
+    3300012: Room_Reference
+    3300014: Table
+    3300016: Targeting_System_Bottom_Half
+    3300018: Targeting_System_Right_Half
+    4300000: Door
+    4300002: Documents_Shelf
+    4300004: Nuclear_Safe
+    4300006: Main_Receiver
+    4300008: Table
+    4300010: Launch_System
+    4300012: Targeting_System_Right_Half
+    4300014: Targeting_System_Bottom_Half
+    4300016: Room_boundaries
+    4300018: Room_Reference
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

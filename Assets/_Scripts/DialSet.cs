@@ -18,7 +18,6 @@ public class DialSet : MonoBehaviour {
 	void Update () {
 		Debug.Log ("Current dial value: " + GetValue ());
 		if (!unlocked && GetValue () == combination) {
-			Debug.Log ("unlocked!");
 			Unlock ();
 		}
 	}
@@ -31,7 +30,7 @@ public class DialSet : MonoBehaviour {
 	string GetValue() {
 		string value = "";
 		for (int i = 0; i < dials.Length; i++) {
-			value += dials [i].value.ToString ();
+			value += dials [i].GetValue();
 		}
 		return value;
 	}
