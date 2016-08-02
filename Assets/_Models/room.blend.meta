@@ -19,6 +19,14 @@ ModelImporter:
     100022: Targeting_System_Bottom_Half
     100024: Targeting_System_Right_Half
     100026: Unused
+    100028: Cylinder_001
+    100030: Hex_Border
+    100032: Label
+    100034: Left_Bolt
+    100036: Panel_Face
+    100038: Right_Bolt
+    100040: Speaker_Holes
+    100042: Text
     400000: Documents_Shelf
     400002: Door
     400004: Launch_System
@@ -33,6 +41,14 @@ ModelImporter:
     400022: Targeting_System_Bottom_Half
     400024: Targeting_System_Right_Half
     400026: Unused
+    400028: Cylinder_001
+    400030: Hex_Border
+    400032: Label
+    400034: Left_Bolt
+    400036: Panel_Face
+    400038: Right_Bolt
+    400040: Speaker_Holes
+    400042: Text
     2300000: Documents_Shelf
     2300002: Door
     2300004: Launch_System
@@ -43,6 +59,13 @@ ModelImporter:
     2300014: Table
     2300016: Targeting_System_Bottom_Half
     2300018: Targeting_System_Right_Half
+    2300020: Cylinder_001
+    2300022: Hex_Border
+    2300024: Label
+    2300026: Left_Bolt
+    2300028: Right_Bolt
+    2300030: Speaker_Holes
+    2300032: Text
     3300000: Documents_Shelf
     3300002: Door
     3300004: Launch_System
@@ -53,6 +76,13 @@ ModelImporter:
     3300014: Table
     3300016: Targeting_System_Bottom_Half
     3300018: Targeting_System_Right_Half
+    3300020: Cylinder_001
+    3300022: Hex_Border
+    3300024: Label
+    3300026: Left_Bolt
+    3300028: Right_Bolt
+    3300030: Speaker_Holes
+    3300032: Text
     4300000: Door
     4300002: Documents_Shelf
     4300004: Nuclear_Safe
@@ -63,6 +93,13 @@ ModelImporter:
     4300014: Targeting_System_Bottom_Half
     4300016: Room_boundaries
     4300018: Room_Reference
+    4300020: Cylinder_001
+    4300022: Label
+    4300024: Right_Bolt
+    4300026: Left_Bolt
+    4300028: Text
+    4300030: Speaker_Holes
+    4300032: Hex_Border
     7400000: Default Take
     9500000: //RootNode
   materials:
