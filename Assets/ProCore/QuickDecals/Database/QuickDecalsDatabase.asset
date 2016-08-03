@@ -13,12 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decalGroups:
   - decals:
-    - name: impossibly-cute-puppy-2
-      id: 5b0e5ce8848002846a8ade57f1d1e350
+    - name: Radio Grille
+      id: fbccf4ff72751934ba3e1ce32543aef1
       isPacked: 0
       materialId: 
       rotation: {x: -45, y: 45, z: 0}
-      scale: {x: 0.8, y: 1.2, z: 1}
+      scale: {x: 0.8, y: 1.2, z: 0.1}
       atlasRect:
         serializedVersion: 2
         x: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
       atlasIndex: 0
       rotationPlacement: 0
       scalePlacement: 0
-      texture: {fileID: 2800000, guid: 5b0e5ce8848002846a8ade57f1d1e350, type: 3}
+      texture: {fileID: 2800000, guid: fbccf4ff72751934ba3e1ce32543aef1, type: 3}
     name: 
     shader: {fileID: 0}
     isPacked: 0
@@ -41,13 +41,13 @@ MonoBehaviour:
   s_decals:
   - '{
 
-    impossibly-cute-puppy-2
+    Radio Grille
 
-    5b0e5ce8848002846a8ade57f1d1e350
+    fbccf4ff72751934ba3e1ce32543aef1
 
     (-45.0, 45.0, 0.0)
 
-    (0.8, 1.2, 1.0)
+    (0.8, 1.2, 0.1)
 
     (0, 0, 1, 1)
 
@@ -68,10 +68,13 @@ MonoBehaviour:
     }'
   names:
   - impossibly-cute-puppy-2
-  isPacked: 00
+  - impossibly-cute-puppy-2
+  isPacked: 0000
   materials:
+  - 
   - 
   shaders:
   - Legacy Shaders/Transparent/Diffuse
-  atlasSize: 00040000
-  padding: 03000000
+  - Legacy Shaders/Transparent/Diffuse
+  atlasSize: 0004000000040000
+  padding: 0300000003000000

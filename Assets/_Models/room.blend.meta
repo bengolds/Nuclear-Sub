@@ -27,6 +27,7 @@ ModelImporter:
     100038: Right_Bolt
     100040: Speaker_Holes
     100042: Text
+    100044: Button
     400000: Documents_Shelf
     400002: Door
     400004: Launch_System
@@ -49,6 +50,7 @@ ModelImporter:
     400038: Right_Bolt
     400040: Speaker_Holes
     400042: Text
+    400044: Button
     2300000: Documents_Shelf
     2300002: Door
     2300004: Launch_System
@@ -66,6 +68,7 @@ ModelImporter:
     2300028: Right_Bolt
     2300030: Speaker_Holes
     2300032: Text
+    2300034: Button
     3300000: Documents_Shelf
     3300002: Door
     3300004: Launch_System
@@ -83,6 +86,7 @@ ModelImporter:
     3300028: Right_Bolt
     3300030: Speaker_Holes
     3300032: Text
+    3300034: Button
     4300000: Door
     4300002: Documents_Shelf
     4300004: Nuclear_Safe
@@ -100,6 +104,7 @@ ModelImporter:
     4300028: Text
     4300030: Speaker_Holes
     4300032: Hex_Border
+    4300034: Button
     7400000: Default Take
     9500000: //RootNode
   materials:
