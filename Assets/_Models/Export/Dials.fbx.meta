@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: f731e47b6b743cf449801b7a407ba18a
+timeCreated: 1470349392
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 4-Dial
+    100002: Center
+    100004: Dial
+    100006: //RootNode
+    100008: Dials
+    100010: Dials.001
+    100012: Dials.002
+    100014: Dials.003
+    100016: Left End Cap
+    100018: Left End Cap.001
+    100020: Lock Reference
+    100022: Middle Section
+    100024: Pieces
+    400000: 4-Dial
+    400002: Center
+    400004: Dial
+    400006: Dials
+    400008: //RootNode
+    400010: Dials.001
+    400012: Dials.002
+    400014: Dials.003
+    400016: Left End Cap
+    400018: Left End Cap.001
+    400020: Lock Reference
+    400022: Middle Section
+    400024: Pieces
+    2300000: Center
+    2300002: Dial
+    2300004: Dials
+    2300006: Dials.001
+    2300008: Dials.002
+    2300010: Dials.003
+    2300012: Left End Cap
+    2300014: Left End Cap.001
+    2300016: Lock Reference
+    2300018: Middle Section
+    3300000: Center
+    3300002: Dial
+    3300004: Dials
+    3300006: Dials.001
+    3300008: Dials.002
+    3300010: Dials.003
+    3300012: Left End Cap
+    3300014: Left End Cap.001
+    3300016: Lock Reference
+    3300018: Middle Section
+    4300000: Dial
+    4300002: Middle Section
+    4300004: Left End Cap
+    4300006: Left End Cap.001
+    4300008: Center
+    4300010: Lock Reference
+    4300012: Dials.003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

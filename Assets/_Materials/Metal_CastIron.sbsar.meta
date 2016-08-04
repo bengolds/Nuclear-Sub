@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d4539e71d8de3494babb5980505e82b1
-timeCreated: 1470291445
+timeCreated: 1470350655
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -23,7 +23,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Rust_Speck_Density
       value:
-        scalar[0]: 0.42
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -177,7 +177,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Rust_Speck_Intensity
       value:
-        scalar[0]: 0.13
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -198,7 +198,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Exposed_Iron
       value:
-        scalar[0]: 0.31
+        scalar[0]: 0.01
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -412,8 +412,8 @@ SubstanceImporter:
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
-      textureWidth: 512
-      textureHeight: 512
+      textureWidth: 1024
+      textureHeight: 1024
       textureFormat: 0
       loadingBehavior: 1
   deletedPrototypes: []
