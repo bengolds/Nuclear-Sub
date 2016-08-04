@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: d39472a89b1c60746a49cffc2845c72c
+timeCreated: 1470285816
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Back_peen
+    100002: Blade_Pivot
+    100004: Center_Hex
+    100006: Finished_Head
+    100008: Hammer_face
+    100010: //RootNode
+    100012: Handle
+    100014: Handle-Connection
+    100016: Reference_Hammer
+    100018: Reference_HammerDriver
+    100020: ScrewDriverBlade
+    100022: Working_Head
+    400000: Back_peen
+    400002: Blade_Pivot
+    400004: Center_Hex
+    400006: Finished_Head
+    400008: Hammer_face
+    400010: //RootNode
+    400012: Handle
+    400014: Handle-Connection
+    400016: Reference_Hammer
+    400018: Reference_HammerDriver
+    400020: ScrewDriverBlade
+    400022: Working_Head
+    2300000: Back_peen
+    2300002: Center_Hex
+    2300004: Finished_Head
+    2300006: Hammer_face
+    2300008: Handle
+    2300010: Handle-Connection
+    2300012: Reference_Hammer
+    2300014: Reference_HammerDriver
+    2300016: ScrewDriverBlade
+    3300000: Back_peen
+    3300002: Center_Hex
+    3300004: Finished_Head
+    3300006: Hammer_face
+    3300008: Handle
+    3300010: Handle-Connection
+    3300012: Reference_Hammer
+    3300014: Reference_HammerDriver
+    3300016: ScrewDriverBlade
+    4300000: Finished_Head
+    4300002: Reference_Hammer
+    4300004: ScrewDriverBlade
+    4300006: Handle
+    4300008: Reference_HammerDriver
+    4300010: Hammer_face
+    4300012: Center_Hex
+    4300014: Back_peen
+    4300016: Handle-Connection
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
