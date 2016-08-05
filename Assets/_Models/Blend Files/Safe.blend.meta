@@ -17,6 +17,12 @@ ModelImporter:
     100018: Top_Hinge
     100020: Top_Hinge_001
     100022: Bottom_Hinge
+    100024: Bolt
+    100026: BoltNotch
+    100028: Handle
+    100030: NotchPivot
+    100032: Safe_Wheel_Body
+    100034: Safe_Wheel_BodyCutout
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -29,6 +35,12 @@ ModelImporter:
     400018: Top_Hinge
     400020: Top_Hinge_001
     400022: Bottom_Hinge
+    400024: Bolt
+    400026: BoltNotch
+    400028: Handle
+    400030: NotchPivot
+    400032: Safe_Wheel_Body
+    400034: Safe_Wheel_BodyCutout
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -37,6 +49,11 @@ ModelImporter:
     2300010: Hinge_Piece_Lower_001
     2300012: Hinge_Piece_Upper
     2300014: Hinge_Piece_Upper_001
+    2300016: Bolt
+    2300018: BoltNotch
+    2300020: Handle
+    2300022: Safe_Wheel_Body
+    2300024: Safe_Wheel_BodyCutout
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -45,6 +62,11 @@ ModelImporter:
     3300010: Hinge_Piece_Lower_001
     3300012: Hinge_Piece_Upper
     3300014: Hinge_Piece_Upper_001
+    3300016: Bolt
+    3300018: BoltNotch
+    3300020: Handle
+    3300022: Safe_Wheel_Body
+    3300024: Safe_Wheel_BodyCutout
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -53,6 +75,11 @@ ModelImporter:
     4300010: Hinge_Piece_Lower
     4300012: Cylinder
     4300014: Hinge_Piece_Upper
+    4300016: Handle
+    4300018: Bolt
+    4300020: BoltNotch
+    4300022: Safe_Wheel_Body
+    4300024: Safe_Wheel_BodyCutout
     7400000: Default Take
     9500000: //RootNode
   materials:

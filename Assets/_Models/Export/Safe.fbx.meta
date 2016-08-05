@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 85470efd6fbc8934392de12a7d068bf8
+timeCreated: 1470362864
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bolt
+    100004: BoltNotch
+    100006: Bottom Hinge
+    100008: Cutout
+    100010: Cylinder
+    100012: Door
+    100014: Handle
+    100016: Hinge Piece Lower
+    100018: Hinge Piece Lower.001
+    100020: Hinge Piece Upper
+    100022: Hinge Piece Upper.001
+    100024: NotchPivot
+    100026: //RootNode
+    100028: Safe Wheel Body
+    100030: Top Hinge
+    400000: Body
+    400002: Bolt
+    400004: BoltNotch
+    400006: Bottom Hinge
+    400008: Cutout
+    400010: Cylinder
+    400012: Door
+    400014: Handle
+    400016: Hinge Piece Lower
+    400018: Hinge Piece Lower.001
+    400020: Hinge Piece Upper
+    400022: Hinge Piece Upper.001
+    400024: NotchPivot
+    400026: //RootNode
+    400028: Safe Wheel Body
+    400030: Top Hinge
+    2300000: Body
+    2300002: Bolt
+    2300004: BoltNotch
+    2300006: Cutout
+    2300008: Cylinder
+    2300010: Door
+    2300012: Handle
+    2300014: Hinge Piece Lower
+    2300016: Hinge Piece Lower.001
+    2300018: Hinge Piece Upper
+    2300020: Hinge Piece Upper.001
+    2300022: Safe Wheel Body
+    3300000: Body
+    3300002: Bolt
+    3300004: BoltNotch
+    3300006: Cutout
+    3300008: Cylinder
+    3300010: Door
+    3300012: Handle
+    3300014: Hinge Piece Lower
+    3300016: Hinge Piece Lower.001
+    3300018: Hinge Piece Upper
+    3300020: Hinge Piece Upper.001
+    3300022: Safe Wheel Body
+    4300000: Handle
+    4300002: Bolt
+    4300004: BoltNotch
+    4300006: Safe Wheel Body
+    4300008: Hinge Piece Upper.001
+    4300010: Cylinder
+    4300012: Cutout
+    4300014: Body
+    4300016: Door
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
