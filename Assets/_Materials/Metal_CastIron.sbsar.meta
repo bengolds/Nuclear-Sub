@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d4539e71d8de3494babb5980505e82b1
-timeCreated: 1470350655
+timeCreated: 1470545214
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -23,7 +23,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Rust_Speck_Density
       value:
-        scalar[0]: 0
+        scalar[0]: 0.321
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -177,7 +177,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Rust_Speck_Intensity
       value:
-        scalar[0]: 0
+        scalar[0]: 0.32
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0

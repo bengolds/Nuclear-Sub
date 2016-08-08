@@ -16,6 +16,10 @@ ModelImporter:
     100016: Targeting_System
     100018: Targeting_System_Bottom_Half
     100020: Targeting_System_Right_Half
+    100022: Piping
+    100024: Wire
+    100026: Wire_001
+    100028: Wire_002
     400000: Documents_Shelf
     400002: Door
     400004: Launch_System
@@ -27,6 +31,10 @@ ModelImporter:
     400016: Targeting_System
     400018: Targeting_System_Bottom_Half
     400020: Targeting_System_Right_Half
+    400022: Piping
+    400024: Wire
+    400026: Wire_001
+    400028: Wire_002
     2300000: Documents_Shelf
     2300002: Door
     2300004: Launch_System
@@ -35,6 +43,10 @@ ModelImporter:
     2300010: Table
     2300012: Targeting_System_Bottom_Half
     2300014: Targeting_System_Right_Half
+    2300016: Piping
+    2300018: Wire
+    2300020: Wire_001
+    2300022: Wire_002
     3300000: Documents_Shelf
     3300002: Door
     3300004: Launch_System
@@ -43,6 +55,10 @@ ModelImporter:
     3300010: Table
     3300012: Targeting_System_Bottom_Half
     3300014: Targeting_System_Right_Half
+    3300016: Piping
+    3300018: Wire
+    3300020: Wire_001
+    3300022: Wire_002
     4300000: Door
     4300002: Documents_Shelf
     4300004: Table
@@ -51,6 +67,10 @@ ModelImporter:
     4300010: Targeting_System_Bottom_Half
     4300012: Room_boundaries
     4300014: Room_Reference
+    4300016: Wire_001
+    4300018: Wire
+    4300020: Piping
+    4300022: Wire_002
     7400000: Default Take
     9500000: //RootNode
   materials:

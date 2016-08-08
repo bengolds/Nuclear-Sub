@@ -1,0 +1,251 @@
+<html>
+  <style>
+  
+    @font-face {
+      font-family: "Report 1942";
+      src: url("1942.ttf");
+    }
+
+    @font-face {
+      font-family: "MS33558";
+      src: url("MS33558.ttf");
+    }
+
+    @font-face {
+      font-family: "Arvo";
+      src: url("Arvo-Regular.ttf");
+    }
+
+    .purple {
+      color: #A161B0;
+    }
+
+    .pink {
+      color: #D86A8C;
+    }
+
+    .red {
+      color: #BC1010;
+    }
+
+    .huge-text {
+      font-size: 36px;
+      line-height: 29px;
+    }
+
+    .grungy-text {
+      font-family: "Report 1942";
+    }
+
+    .military-spec-text {
+      font-family: "MS33558";
+    }
+
+    .official-text {
+      font-family: "Arvo";
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0px; right: 0px;
+      left: 0px; bottom: 0px;
+      width: 816px;
+      height: 1056px;
+      z-index: -1;
+    }
+
+    .top-secret-header {
+      position: relative;
+      color: #BC1010;
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 30px;
+    }
+
+    .top-secret-header .right {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .mission-code-container {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+
+    .mission-code-container .title {
+      font-size: 23px;
+    }
+
+    .mission-code-container .mission-code {
+      font-size: 30px;
+      padding-left: 20px;
+    }
+
+    .directive {
+      padding: 0px 20px;
+      width: 80%;
+      margin: 0px auto;
+      text-align: center;
+      font-size: 18px;
+      box-sizing: border-box;
+    }
+
+    .directive .title {
+      font-size: 24px;
+    }
+
+    .verification-code {
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+
+    .mission-procedure-items {
+      text-align: left;
+    }
+
+    .mission-procedure-items ol {
+      margin: 5px;
+    }
+
+    .mission-procedure-items li {
+      margin-bottom: 7px;
+    }
+
+    .mission-procedure {
+      text-decoration: underline;
+    }
+
+    .pink-info {
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 30px;
+    }
+
+    .pink-row {
+      margin-bottom: 8px;
+    }
+
+    .pink-row .title {
+      display: inline-block;
+      width: 150px;
+    }
+
+    .pink-row .colon {
+      width: 20px;
+    }
+
+    .pink-footer {
+      position: absolute;
+      bottom: 100px;
+      right: 30px;
+      width: 80%;
+    }
+
+    .pink-footer .chunk-1 {
+      padding-right: 5%;
+    }
+
+    .pink-footer .chunk-2 {
+      padding-right: 7%;
+    }
+
+    .pink-footer .chunk-3 {
+      padding-right: 4%;
+    }
+
+    .pink-footer .chunk-4 {
+      padding-right: 3%;
+    }
+
+    .pink-footer .chunk-5 {
+      
+    }
+
+    .pink-footer .chunk-6 {
+      position: absolute;
+      top: 23px;
+      left: 77%;
+    }
+
+    .top-secret-footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+  </style>
+
+  <body>
+
+    <img class="background-image" src="vintage-vignette-tan-paper-texture-3.jpg">
+
+    <div class="top-secret-header official-text huge-text">
+      <div class="left">TOP SECRET</div>
+      <div class="right">TOP SECRET</div>
+    </div>
+    
+    <div class="mission-code-container">
+      <span class="title red-capitals military-spec-text red">MISSION CODE:</span>
+      <span class="mission-code grungy-text purple">MISSIONCODE</span>
+    </div>
+
+    <div class="directive purple grungy-text">
+      <div class="title">DIRECTIVE OF MAIN COMMAND</div>
+      
+      <div class="verification-code">
+        <div>Verification Code</div>
+        <div>VERIFICATIONCODE</div>
+      </div>
+
+      <div class="mission-procedure">Mission Procedure</div>
+
+      <div class="mission-procedure-items">
+        <ol type="A">
+          <li>Open the Nuclear Safe. Access Code: SAFECODE</li>
+          <li>Select the Target Profile document based on received target information.</li>
+          <li>Check targeting system failsafe.</li>
+          <li>Set targeting system to Target Profile.</li>
+          <li>Check launch system failsafe.</li>
+          <li>Activate launch system.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="pink-info pink grungy-text">
+      <div class="pink-row">
+        <span class="title">ORIGINATOR</span>
+        <span class="colon">:</span>
+        <span class="content">SUPREME COMMANDER</span>
+      </div>
+      <div class="pink-row">
+        <span class="title">AUTHENTICATION</span>
+        <span class="colon">:</span>
+        <span class="content">L S STEVENS Lt Colonel</span>
+      </div>
+      <div class="pink-row">
+        <span class="title">INFORMATION</span>
+        <span class="colon">:</span>
+        <span class="content">TO ALL COMMISSIONED NSD OFFICERS</span>
+      </div>
+    </div>
+
+    <div class="pink-footer grungy-text pink">
+      <span class="chunk-1">FS OUT 3674</span>
+      <span class="chunk-2">S/N 1198</span>
+      <span class="chunk-3">0324B</span>
+      <span class="chunk-4">JOB/jg</span>
+      <span class="chunk-5">REF NO: FWD-90</span>
+      <span class="chunk-6">TOO: 09032</span>
+    </div>
+
+    <div class="top-secret-footer red">
+      <div class="huge-text official-text">TOP SECRET</div>
+      <div class="military-spec-text">THE MAKING OF AN EXACT COPY OF THIS MESSAGE IS FORBIDDEN</div>
+    </div>
+  </body>
+</html>
