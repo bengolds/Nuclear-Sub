@@ -16,7 +16,7 @@ public class DialSet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log ("Current dial value: " + GetValue ());
+		//Debug.Log ("Current dial value: " + GetValue ());
 		if (!unlocked && GetValue () == combination) {
 			Unlock ();
 		}

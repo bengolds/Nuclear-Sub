@@ -29,6 +29,7 @@ public class Dial : VRTK_InteractableObject {
 	private Vector2? lastTrackpadPos;
 	private float scrollAmount = 0;
 	private int index = 0;
+    private Quaternion baseRotation;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -36,6 +37,7 @@ public class Dial : VRTK_InteractableObject {
 		meshRenderer = GetComponent<MeshRenderer> ();
 		normalStateMaterial = meshRenderer.material;
 		lastTrackpadPos = null;
+        baseRotation = transform.rotation;
 
         for (int i = 0; i < numFaces; i++)
         {
@@ -64,7 +66,7 @@ public class Dial : VRTK_InteractableObject {
 			meshRenderer.material = normalStateMaterial;
 		}
 
-		transform.rotation = transform.parent.rotation * Quaternion.AngleAxis (-scrollAmount, Vector3.right);
+		transform.rotation = baseRotation * Quaternion.AngleAxis (-scrollAmount, Vector3.right);
 	}
 
 	public override void StartUsing(GameObject usingWith)
