@@ -776,18 +776,18 @@ MonoBehaviour:
   touchedStateMaterial: {fileID: 2100000, guid: 330a8de0dda3b2d48a9b95b82261be0a,
     type: 2}
   usedStateMaterial: {fileID: 2100000, guid: de4625b0a8c7316478c9eb494a5b8d14, type: 2}
-  dialType: 1
+  dialType: 0
   numFaces: 8
   startingNumber: 1
   values:
   - A
-  - B
   - C
-  - D
-  - E
-  - F
-  - G
-  - H
+  - X
+  - Y
+  - T
+  - Z
+  - S
+  - L
   faceText:
   - {fileID: 11474622}
   - {fileID: 11411632}
