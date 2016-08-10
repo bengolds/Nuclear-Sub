@@ -6,14 +6,15 @@ public class SafeWheel : MonoBehaviour {
 
 	public float maxAngle = 720;
 	public float minAngle = 0;
-	public UnityEvent onUnlock;
+    public bool locked = true;
+    public UnityEvent onOpen;
 
 	private float currAngle;
 	private ConfigurableJoint joint;
 	private Vector3 initialUpAxisWorld;
     private Vector3 initialForwardAxisWorld;
     private Vector3 localUpAxis;
-	private bool unlocked;
+	private bool isOpen;
 
 
 	// Use this for initialization
@@ -31,7 +32,9 @@ public class SafeWheel : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!unlocked) {
+        joint.angularXMotion = locked ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Limited;
+
+		if (!isOpen) {
             //TODO: Make this transform/rotation independent.
             Vector3 currUpAxis = transform.TransformDirection(localUpAxis);
             float angleFromVertical = AngleOffAroundAxis(currUpAxis, initialUpAxisWorld, initialForwardAxisWorld);
@@ -65,7 +68,7 @@ public class SafeWheel : MonoBehaviour {
 			joint.highAngularXLimit = upperLimit;
 
 			if (Mathf.Approximately (currAngle, maxAngle)) {
-				Unlock ();
+				Open ();
 			}
 		}
 	}
@@ -78,10 +81,15 @@ public class SafeWheel : MonoBehaviour {
 		return Mathf.Rad2Deg * angleInRadians;
 	}
 
-	public void Unlock() {
-		unlocked = true;
+    public void Unlock()
+    {
+        locked = false;
+    }
+
+	private void Open() {
+		isOpen = true;
 		joint.angularXMotion = ConfigurableJointMotion.Locked;
-		onUnlock.Invoke ();
+		onOpen.Invoke ();
 	}
 
 	public void Hello() {
