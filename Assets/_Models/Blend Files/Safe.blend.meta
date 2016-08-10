@@ -46,6 +46,7 @@ ModelImporter:
     100076: Hinge_Body_Upper
     100078: Hinge_Door_Lower
     100080: Hinge_Door_Upper
+    100082: Handle_006
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -87,6 +88,7 @@ ModelImporter:
     400076: Hinge_Body_Upper
     400078: Hinge_Door_Lower
     400080: Hinge_Door_Upper
+    400082: Handle_006
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -122,6 +124,7 @@ ModelImporter:
     2300064: Hinge_Body_Upper
     2300066: Hinge_Door_Lower
     2300068: Hinge_Door_Upper
+    2300070: Handle_006
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -157,6 +160,7 @@ ModelImporter:
     3300064: Hinge_Body_Upper
     3300066: Hinge_Door_Lower
     3300068: Hinge_Door_Upper
+    3300070: Handle_006
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -192,6 +196,31 @@ ModelImporter:
     4300064: Hinge_Body_Lower
     4300066: Hinge_Door_Upper
     4300068: Hinge_Door_Lower
+    4300070: Handle_006
+    6400000: Body
+    6400002: Body_Cutout
+    6400004: Bolt
+    6400006: Bolt_001
+    6400008: Bolt_002
+    6400010: Bolt_003
+    6400012: Bolt_004
+    6400014: Bolt_005
+    6400016: Bolt_Working
+    6400018: BoltNotchCutout
+    6400020: Door
+    6400022: Handle
+    6400024: Handle_001
+    6400026: Handle_002
+    6400028: Handle_003
+    6400030: Handle_004
+    6400032: Handle_005
+    6400034: Handle_006
+    6400036: Handle_Working
+    6400038: Hinge_Body_Lower
+    6400040: Hinge_Body_Upper
+    6400042: Hinge_Door_Lower
+    6400044: Hinge_Door_Upper
+    6400046: Safe_Wheel_BodyCutout
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -10,14 +10,18 @@ public class SafeWheel : MonoBehaviour {
 
 	private float currAngle;
 	private ConfigurableJoint joint;
-	private Vector3 initialUpAxis;
+	private Vector3 initialUpAxisWorld;
+    private Vector3 initialForwardAxisWorld;
+    private Vector3 localUpAxis;
 	private bool unlocked;
 
 
 	// Use this for initialization
 	void Start () {
 		joint = GetComponent<ConfigurableJoint> ();
-		initialUpAxis = joint.secondaryAxis;
+		localUpAxis = joint.secondaryAxis;
+        initialUpAxisWorld = transform.TransformDirection(localUpAxis);
+        initialForwardAxisWorld = transform.TransformDirection(-joint.axis);
 	}
 
 	private float mod(float a, float b)
@@ -28,8 +32,10 @@ public class SafeWheel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!unlocked) {
-			//TODO: Make this transform/rotation independent.
-            float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, transform.TransformDirection(-joint.axis));
+            //TODO: Make this transform/rotation independent.
+            Vector3 currUpAxis = transform.TransformDirection(localUpAxis);
+            float angleFromVertical = AngleOffAroundAxis(currUpAxis, initialUpAxisWorld, initialForwardAxisWorld);
+
 
 			int numTurns = Mathf.FloorToInt (currAngle / 360);
 
@@ -48,7 +54,7 @@ public class SafeWheel : MonoBehaviour {
 			currAngle = numTurns * 360 + angleFromVertical;
 
 			//Setting this resets the anchor angle.
-			joint.secondaryAxis = initialUpAxis;
+			joint.secondaryAxis = localUpAxis;
 
 			var lowerLimit = joint.lowAngularXLimit;
 			lowerLimit.limit = Mathf.Clamp (minAngle - currAngle, -90, 0);
