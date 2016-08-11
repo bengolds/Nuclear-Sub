@@ -23,6 +23,30 @@ ModelImporter:
     100030: NotchPivot
     100032: Safe_Wheel_Body
     100034: Safe_Wheel_BodyCutout
+    100036: Body_Cutout
+    100038: Bolt_001
+    100040: Bolt_002
+    100042: Bolt_003
+    100044: Bolt_004
+    100046: Bolt_005
+    100048: Bolt_Working
+    100050: BoltNotchCutout
+    100052: Handle_001
+    100054: Handle_002
+    100056: Handle_003
+    100058: Handle_004
+    100060: Handle_005
+    100062: Handle_Working
+    100064: Lower_Body_Hinge
+    100066: Lower_Door_Hinge
+    100068: Upper_Body_Hinge
+    100070: Upper_Door_Hinge
+    100072: Working
+    100074: Hinge_Body_Lower
+    100076: Hinge_Body_Upper
+    100078: Hinge_Door_Lower
+    100080: Hinge_Door_Upper
+    100082: Handle_006
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -41,6 +65,30 @@ ModelImporter:
     400030: NotchPivot
     400032: Safe_Wheel_Body
     400034: Safe_Wheel_BodyCutout
+    400036: Body_Cutout
+    400038: Bolt_001
+    400040: Bolt_002
+    400042: Bolt_003
+    400044: Bolt_004
+    400046: Bolt_005
+    400048: Bolt_Working
+    400050: BoltNotchCutout
+    400052: Handle_001
+    400054: Handle_002
+    400056: Handle_003
+    400058: Handle_004
+    400060: Handle_005
+    400062: Handle_Working
+    400064: Lower_Body_Hinge
+    400066: Lower_Door_Hinge
+    400068: Upper_Body_Hinge
+    400070: Upper_Door_Hinge
+    400072: Working
+    400074: Hinge_Body_Lower
+    400076: Hinge_Body_Upper
+    400078: Hinge_Door_Lower
+    400080: Hinge_Door_Upper
+    400082: Handle_006
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -54,6 +102,29 @@ ModelImporter:
     2300020: Handle
     2300022: Safe_Wheel_Body
     2300024: Safe_Wheel_BodyCutout
+    2300026: Body_Cutout
+    2300028: Bolt_001
+    2300030: Bolt_002
+    2300032: Bolt_003
+    2300034: Bolt_004
+    2300036: Bolt_005
+    2300038: Bolt_Working
+    2300040: BoltNotchCutout
+    2300042: Handle_001
+    2300044: Handle_002
+    2300046: Handle_003
+    2300048: Handle_004
+    2300050: Handle_005
+    2300052: Handle_Working
+    2300054: Lower_Body_Hinge
+    2300056: Lower_Door_Hinge
+    2300058: Upper_Body_Hinge
+    2300060: Upper_Door_Hinge
+    2300062: Hinge_Body_Lower
+    2300064: Hinge_Body_Upper
+    2300066: Hinge_Door_Lower
+    2300068: Hinge_Door_Upper
+    2300070: Handle_006
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -67,6 +138,29 @@ ModelImporter:
     3300020: Handle
     3300022: Safe_Wheel_Body
     3300024: Safe_Wheel_BodyCutout
+    3300026: Body_Cutout
+    3300028: Bolt_001
+    3300030: Bolt_002
+    3300032: Bolt_003
+    3300034: Bolt_004
+    3300036: Bolt_005
+    3300038: Bolt_Working
+    3300040: BoltNotchCutout
+    3300042: Handle_001
+    3300044: Handle_002
+    3300046: Handle_003
+    3300048: Handle_004
+    3300050: Handle_005
+    3300052: Handle_Working
+    3300054: Lower_Body_Hinge
+    3300056: Lower_Door_Hinge
+    3300058: Upper_Body_Hinge
+    3300060: Upper_Door_Hinge
+    3300062: Hinge_Body_Lower
+    3300064: Hinge_Body_Upper
+    3300066: Hinge_Door_Lower
+    3300068: Hinge_Door_Upper
+    3300070: Handle_006
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -80,6 +174,53 @@ ModelImporter:
     4300020: BoltNotch
     4300022: Safe_Wheel_Body
     4300024: Safe_Wheel_BodyCutout
+    4300026: Upper_Body_Hinge
+    4300028: Lower_Body_Hinge
+    4300030: Upper_Door_Hinge
+    4300032: Bolt_005
+    4300034: Bolt_004
+    4300036: Bolt_003
+    4300038: Bolt_002
+    4300040: Bolt_001
+    4300042: Handle_005
+    4300044: Handle_004
+    4300046: Handle_003
+    4300048: Handle_002
+    4300050: Handle_001
+    4300052: Lower_Door_Hinge
+    4300054: Body_Cutout
+    4300056: BoltNotchCutout
+    4300058: Handle_Working
+    4300060: Bolt_Working
+    4300062: Hinge_Body_Upper
+    4300064: Hinge_Body_Lower
+    4300066: Hinge_Door_Upper
+    4300068: Hinge_Door_Lower
+    4300070: Handle_006
+    6400000: Body
+    6400002: Body_Cutout
+    6400004: Bolt
+    6400006: Bolt_001
+    6400008: Bolt_002
+    6400010: Bolt_003
+    6400012: Bolt_004
+    6400014: Bolt_005
+    6400016: Bolt_Working
+    6400018: BoltNotchCutout
+    6400020: Door
+    6400022: Handle
+    6400024: Handle_001
+    6400026: Handle_002
+    6400028: Handle_003
+    6400030: Handle_004
+    6400032: Handle_005
+    6400034: Handle_006
+    6400036: Handle_Working
+    6400038: Hinge_Body_Lower
+    6400040: Hinge_Body_Upper
+    6400042: Hinge_Door_Lower
+    6400044: Hinge_Door_Upper
+    6400046: Safe_Wheel_BodyCutout
     7400000: Default Take
     9500000: //RootNode
   materials:

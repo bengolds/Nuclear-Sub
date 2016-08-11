@@ -6,18 +6,23 @@ public class SafeWheel : MonoBehaviour {
 
 	public float maxAngle = 720;
 	public float minAngle = 0;
-	public UnityEvent onUnlock;
+    public bool locked = true;
+    public UnityEvent onOpen;
 
 	private float currAngle;
 	private ConfigurableJoint joint;
-	private Vector3 initialUpAxis;
-	private bool unlocked;
+	private Vector3 initialUpAxisWorld;
+    private Vector3 initialForwardAxisWorld;
+    private Vector3 localUpAxis;
+	private bool isOpen;
 
 
 	// Use this for initialization
 	void Start () {
 		joint = GetComponent<ConfigurableJoint> ();
-		initialUpAxis = joint.secondaryAxis;
+		localUpAxis = joint.secondaryAxis;
+        initialUpAxisWorld = transform.TransformDirection(localUpAxis);
+        initialForwardAxisWorld = transform.TransformDirection(-joint.axis);
 	}
 
 	private float mod(float a, float b)
@@ -27,9 +32,13 @@ public class SafeWheel : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!unlocked) {
-			//TODO: Make this transform/rotation independent.
-            float angleFromVertical = AngleOffAroundAxis (transform.up, initialUpAxis, transform.TransformDirection(-joint.axis));
+        joint.angularXMotion = locked ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Limited;
+
+		if (!isOpen) {
+            //TODO: Make this transform/rotation independent.
+            Vector3 currUpAxis = transform.TransformDirection(localUpAxis);
+            float angleFromVertical = AngleOffAroundAxis(currUpAxis, initialUpAxisWorld, initialForwardAxisWorld);
+
 
 			int numTurns = Mathf.FloorToInt (currAngle / 360);
 
@@ -48,7 +57,7 @@ public class SafeWheel : MonoBehaviour {
 			currAngle = numTurns * 360 + angleFromVertical;
 
 			//Setting this resets the anchor angle.
-			joint.secondaryAxis = initialUpAxis;
+			joint.secondaryAxis = localUpAxis;
 
 			var lowerLimit = joint.lowAngularXLimit;
 			lowerLimit.limit = Mathf.Clamp (minAngle - currAngle, -90, 0);
@@ -59,7 +68,7 @@ public class SafeWheel : MonoBehaviour {
 			joint.highAngularXLimit = upperLimit;
 
 			if (Mathf.Approximately (currAngle, maxAngle)) {
-				Unlock ();
+				Open ();
 			}
 		}
 	}
@@ -72,10 +81,15 @@ public class SafeWheel : MonoBehaviour {
 		return Mathf.Rad2Deg * angleInRadians;
 	}
 
-	public void Unlock() {
-		unlocked = true;
+    public void Unlock()
+    {
+        locked = false;
+    }
+
+	private void Open() {
+		isOpen = true;
 		joint.angularXMotion = ConfigurableJointMotion.Locked;
-		onUnlock.Invoke ();
+		onOpen.Invoke ();
 	}
 
 	public void Hello() {
