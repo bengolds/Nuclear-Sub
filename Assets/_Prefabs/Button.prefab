@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143834}
   m_LocalRotation: {x: 0.7071069, y: 0.7071067, z: 0.00000011175868, w: -0.00000016391274}
-  m_LocalPosition: {x: 0, y: -0, z: 0.010216523}
+  m_LocalPosition: {x: 0.0001, y: 0.0012, z: 0.0112}
   m_LocalScale: {x: 0.00080159877, y: 0.00081354636, z: 0.0008015977}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
   m_Children: []
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.034699913, y: -0.17130002, z: 0}
+  m_LocalPosition: {x: 2.086661, y: 0.1022, z: -3.1850533}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -130,7 +130,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 376ad3c37e2de374cb7cf156a8556022, type: 3}
+  - {fileID: 2100000, guid: d9245984567b436498b64ef2bf81c427, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -163,8 +163,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.019999998, z: 0.010000002}
-  m_Center: {x: -0.000000014901161, y: -0.000000059604645, z: 0.000000014901161}
+  m_Size: {x: 0.03, y: 0.02, z: 0.011}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9567510
 Animator:
   serializedVersion: 3
