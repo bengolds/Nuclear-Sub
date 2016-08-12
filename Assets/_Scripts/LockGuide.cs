@@ -20,10 +20,12 @@ public class LockGuide : MonoBehaviour {
 	private LockState state;
 	private bool justTurned;
 	private float keyAngle;
+    private Vector3 initialUp;
 
 	// Use this for initialization
 	void Start () {
 		keyAngle = 0;
+        initialUp = transform.up;
 	}
 	
 	// Update is called once per frame
@@ -57,8 +59,8 @@ public class LockGuide : MonoBehaviour {
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
-				//TODO I THINK THIS IS WRONG
-				keyAngle = Vector3.Angle (otherCollider.transform.up, transform.up);
+				keyAngle = Vector3.Angle (initialUp, transform.up);
+                Debug.Log(keyAngle);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
 				}
