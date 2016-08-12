@@ -1887,6 +1887,7 @@ MonoBehaviour:
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   rumbleOnTouch: {x: 0, y: 0}
   allowedTouchControllers: 0
+  hideControllerOnTouch: 0
   isGrabbable: 0
   isDroppable: 1
   isSwappable: 1
@@ -1896,6 +1897,7 @@ MonoBehaviour:
   precisionSnap: 0
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
+  hideControllerOnGrab: 0
   grabAttachMechanic: 0
   detachThreshold: 500
   springJointStrength: 500
@@ -1903,10 +1905,12 @@ MonoBehaviour:
   throwMultiplier: 1
   onGrabCollisionDelay: 0
   isUsable: 1
+  useOnlyIfGrabbed: 0
   holdButtonToUse: 1
   pointerActivatesUseAction: 0
   rumbleOnUse: {x: 0, y: 0}
   allowedUseControllers: 0
+  hideControllerOnUse: 0
   touchedStateMaterial: {fileID: 2100000, guid: 330a8de0dda3b2d48a9b95b82261be0a,
     type: 2}
   usedStateMaterial: {fileID: 2100000, guid: de4625b0a8c7316478c9eb494a5b8d14, type: 2}

@@ -33,30 +33,32 @@ public class LockGuide : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if (isKey(other) && state == LockState.Empty) {
-			SnapKeyToPosition (other.gameObject);	
+	void OnTriggerEnter(Collider otherCollider) {
+        var key = getKey(otherCollider);
+		if (key != null && state == LockState.Empty) {
+			SnapKeyToPosition (key.gameObject);	
 
-			sliderJoint = SetupSliderJoint (other.attachedRigidbody);
+			sliderJoint = SetupSliderJoint (otherCollider.attachedRigidbody);
 			state = LockState.Sliding;
-			MakeKeyTrigger (other.gameObject);
+			MakeKeyTrigger (otherCollider);
 		}
 	}
 
 
-	void OnTriggerStay(Collider other) {
-		if (isKey(other)) {
+	void OnTriggerStay(Collider otherCollider) {
+        var key = getKey(otherCollider);
+		if (key != null) {
 			if (state == LockState.Sliding) {
-				float keyTravel = Vector3.Distance (other.transform.position, snapPoint.transform.position);
+				float keyTravel = Vector3.Distance (key.transform.position, snapPoint.transform.position);
 				if (Mathf.Approximately (keyTravel, lockDepth)) {
 					Destroy (sliderJoint);
-					turnJoint = SetupTurnJoint (other.attachedRigidbody);
-					lockBody.transform.SetParent (other.transform, true);
+					turnJoint = SetupTurnJoint (otherCollider.attachedRigidbody);
+					lockBody.transform.SetParent (otherCollider.transform, true);
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
 				//TODO I THINK THIS IS WRONG
-				keyAngle = Vector3.Angle (other.transform.up, transform.up);
+				keyAngle = Vector3.Angle (otherCollider.transform.up, transform.up);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
 				}
@@ -65,10 +67,10 @@ public class LockGuide : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other) {
-		if (isKey(other) && state == LockState.Sliding) {
+		if (getKey(other) != null && state == LockState.Sliding) {
 			state = LockState.Empty;
 			Destroy (sliderJoint);
-			MakeKeyCollider (other.gameObject);
+			MakeKeyCollider (other);
 		}
 	}
 
@@ -96,11 +98,15 @@ public class LockGuide : MonoBehaviour {
 		linearLimit.limit = lockDepth; 
 		joint.linearLimit = linearLimit;
 
-		joint.connectedBody = key;
-
 		joint.enableCollision = false;
 
-		return joint;
+        joint.autoConfigureConnectedAnchor = false;
+        joint.anchor = lockBody.transform.InverseTransformPoint(snapPoint.transform.position);
+        joint.connectedAnchor = Vector3.zero;
+
+        joint.connectedBody = key;
+
+        return joint;
 	}
 
 	ConfigurableJoint SetupTurnJoint(Rigidbody key) {
@@ -130,15 +136,16 @@ public class LockGuide : MonoBehaviour {
 		return joint;
 	}
 
-	bool isKey(Collider other) {
-		return other.GetComponent<Key> () != null;
+    Key getKey(Collider other)
+    {
+        return other.GetComponentInParent<Key>();
+    }
+
+	void MakeKeyTrigger(Collider keyCollider) {
+        keyCollider.isTrigger = true;
 	}
 
-	void MakeKeyTrigger(GameObject key) {
-		key.GetComponent<Collider> ().isTrigger = true;
-	}
-
-	void MakeKeyCollider(GameObject key) {
-		key.GetComponent<Collider> ().isTrigger = false;
+	void MakeKeyCollider(Collider keyCollider) {
+        keyCollider.isTrigger = false;
 	}
 }
