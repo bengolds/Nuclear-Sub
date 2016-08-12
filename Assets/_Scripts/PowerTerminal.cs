@@ -16,7 +16,7 @@ public class PowerTerminal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isPoweredOn) {
+		if (isPoweredOn && meshRenderer != null) {
 			meshRenderer.material = poweredMaterial;
 		}
 	}

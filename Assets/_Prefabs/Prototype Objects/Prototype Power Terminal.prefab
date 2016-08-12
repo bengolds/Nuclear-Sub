@@ -13,12 +13,12 @@ GameObject:
   - 23: {fileID: 2361140}
   - 114: {fileID: 11403672}
   m_Layer: 0
-  m_Name: Power Terminal 1
+  m_Name: Prototype Power Terminal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &406890
 Transform:
   m_ObjectHideFlags: 1
