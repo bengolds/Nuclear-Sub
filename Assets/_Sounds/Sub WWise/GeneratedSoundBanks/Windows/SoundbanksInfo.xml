@@ -16,13 +16,36 @@
 			<ShortName>BaseSoundbank</ShortName>
 			<Path>BaseSoundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2338373231" Name="MuteRadio" ObjectPath="\Events\Default Work Unit\MuteRadio" MaxAttenuation="0.000000"/>
 				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\PlayBuzzer"/>
+				<Event Id="2960360108" Name="StartRadio" ObjectPath="\Events\Default Work Unit\StartRadio"/>
 				<Event Id="1824701367" Name="StopBuzzer" ObjectPath="\Events\Default Work Unit\StopBuzzer" MaxAttenuation="0.000000"/>
+				<Event Id="1023743104" Name="UnmuteRadio" ObjectPath="\Events\Default Work Unit\UnmuteRadio" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="95719391" Language="SFX">
+					<ShortName>Yankee.wav</ShortName>
+					<Path>SFX\Yankee_9E69E797.wem</Path>
+				</File>
+				<File Id="97347378" Language="SFX">
+					<ShortName>Zulu.wav</ShortName>
+					<Path>SFX\Zulu_9E69E797.wem</Path>
+				</File>
+				<File Id="243685464" Language="SFX">
+					<ShortName>Opening Line.wav</ShortName>
+					<Path>SFX\Opening Line_9E69E797.wem</Path>
+				</File>
+				<File Id="668472289" Language="SFX">
+					<ShortName>Charlie.wav</ShortName>
+					<Path>SFX\Charlie_9E69E797.wem</Path>
+				</File>
 				<File Id="961876673" Language="SFX">
 					<ShortName>Zero.wav</ShortName>
 					<Path>SFX\Zero_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1058083344" Language="SFX">
+					<ShortName>Tango.wav</ShortName>
+					<Path>SFX\Tango_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

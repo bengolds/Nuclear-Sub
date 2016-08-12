@@ -13,12 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MUTERADIO = 2338373231U;
         static const AkUniqueID PLAYBUZZER = 607422545U;
+        static const AkUniqueID STARTRADIO = 2960360108U;
         static const AkUniqueID STOPBUZZER = 1824701367U;
+        static const AkUniqueID UNMUTERADIO = 1023743104U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID RADIOTOGGLE = 986853878U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

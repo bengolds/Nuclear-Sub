@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B046E935-A6C1-460C-ADF3-9BD383EEF5A5}" SchemaVersion="72">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{B046E935-A6C1-460C-ADF3-9BD383EEF5A5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B046E935-A6C1-460C-ADF3-9BD383EEF5A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RadioToggle" ID="{9F1BBCAA-9A7F-4822-ADE8-F98B50B4C5BA}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

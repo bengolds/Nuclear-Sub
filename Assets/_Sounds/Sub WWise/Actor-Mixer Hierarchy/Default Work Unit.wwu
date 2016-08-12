@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Test Sequence" ID="{6AF11A36-AE71-4C74-AE26-326CC77E7D76}" ShortID="855540136">
 					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
@@ -734,44 +736,6 @@
 				</Folder>
 				<Folder Name="Numbers" ID="{D7B982D4-17D2-4975-8C22-B4962E8FC1CD}" ShortID="657140882">
 					<ChildrenList>
-						<Sound Name="0" ID="{9CB54F04-4E44-49B4-BBFB-62CBB2B0751D}" ShortID="14927143" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Zero" ID="{8F50170E-4576-44E5-889D-275D409426D4}" ShortID="663585161">
-									<Language>SFX</Language>
-									<AudioFile>Zero.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Zero" ID="{8F50170E-4576-44E5-889D-275D409426D4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="2" ID="{58ED325E-0918-4234-AC24-3D8B9F3B12CE}" ShortID="912492276" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Two" ID="{4CFED1F0-86B5-466A-96EB-4EF7E13D7084}" ShortID="193143402">
-									<Language>SFX</Language>
-									<AudioFile>Two.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Two" ID="{4CFED1F0-86B5-466A-96EB-4EF7E13D7084}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="5" ID="{19906887-AA20-4749-A774-34FE05EF0AEC}" ShortID="522834049" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -922,6 +886,44 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Eight" ID="{FBBF145A-8AF9-467D-92B3-EAFD28490138}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="2" ID="{58ED325E-0918-4234-AC24-3D8B9F3B12CE}" ShortID="912492276" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Two" ID="{4CFED1F0-86B5-466A-96EB-4EF7E13D7084}" ShortID="193143402">
+									<Language>SFX</Language>
+									<AudioFile>Two.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Two" ID="{4CFED1F0-86B5-466A-96EB-4EF7E13D7084}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="0" ID="{9CB54F04-4E44-49B4-BBFB-62CBB2B0751D}" ShortID="14927143" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Zero" ID="{8F50170E-4576-44E5-889D-275D409426D4}" ShortID="663585161">
+									<Language>SFX</Language>
+									<AudioFile>Zero.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Zero" ID="{8F50170E-4576-44E5-889D-275D409426D4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
