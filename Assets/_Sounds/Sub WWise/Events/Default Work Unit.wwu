@@ -63,16 +63,6 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Post Event" ID="{F4E26316-5D4E-4BAB-B3C0-88699BD6CE5F}" ShortID="332162431" Type="PlayEvent" Scope="One" Global="false">
-							<ExcludedPlatformList>
-								<Platform>Windows</Platform>
-							</ExcludedPlatformList>
-							<ElementList>
-								<Element ID="{A69DB9CC-A89D-41AC-BB9E-CC1BB54A4D5C}" Global="false">
-									<ObjectRef Name="UnmuteRadio" ID="{B30C6AF4-6B09-4CBB-B878-DF7892641C19}" WorkUnitID="{1482C8C4-6435-4D7B-8D0D-5A01751F6136}"/>
-								</Element>
-							</ElementList>
-						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>
