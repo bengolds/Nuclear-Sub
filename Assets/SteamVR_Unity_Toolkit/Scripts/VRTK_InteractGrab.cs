@@ -125,6 +125,11 @@ namespace VRTK
             }
         }
 
+        public Transform GetDefaultControllerAttachPoint()
+        {
+            return transform.Find("Model/tip/attach"); ;
+        }
+
         private bool IsObjectGrabbable(GameObject obj)
         {
             return (interactTouch.IsObjectInteractable(obj) && obj.GetComponent<VRTK_InteractableObject>().isGrabbable);

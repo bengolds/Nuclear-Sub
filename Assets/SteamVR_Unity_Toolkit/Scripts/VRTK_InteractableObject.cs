@@ -107,6 +107,8 @@ namespace VRTK
         private bool previousIsGrabbable;
         private bool forcedDropped;
 
+        private static Mesh controllerMesh;
+
         public bool CheckHideMode(bool defaultMode, ControllerHideMode overrideMode)
         {
             switch (overrideMode)
@@ -657,7 +659,10 @@ namespace VRTK
 
             if (grabbedSnapHandle != null)
             {
-                rotationDelta = trackPoint.rotation * Quaternion.Inverse(grabbedSnapHandle.rotation);
+                //trackPoint is the controller's attach point. grabbedSnapHandle is the snapTransform of the picked up object
+                //rotationDelta = trackPoint.rotation * Quaternion.Inverse(grabbedSnapHandle.rotation);
+                rotationDelta = trackPoint.rotation* Quaternion.AngleAxis(180, Vector3.up) * Quaternion.Inverse(grabbedSnapHandle.rotation);
+                //rotationDelta = trackPoint.rotation * grabbedSnapHandle.rotation;
                 positionDelta = trackPoint.position - grabbedSnapHandle.position;
             }
             else
@@ -685,6 +690,22 @@ namespace VRTK
             if (AttachIsTrackObject() && trackPoint)
             {
                 transform.position = grabbingObject.transform.position;
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (controllerMesh == null)
+            {
+                controllerMesh = Resources.Load("vr_controller_vive_1_5", typeof(Mesh)) as Mesh;
+                Debug.Log("loading mesh");
+            }
+            if (leftSnapHandle != null) {
+                //TODO: proper way to get left controller
+                //var leftAttachPoint = FindObjectsOfType<VRTK_InteractGrab>()[0].controllerAttachPoint;
+                Gizmos.DrawMesh(controllerMesh, leftSnapHandle.transform.position, leftSnapHandle.transform.rotation);
+                //Gizmos.DrawCube(leftSnapHandle.transform.position, 0.1f * Vector3.one);
+                //Gizmos.DrawMesh(controllerMesh);
             }
         }
     }
