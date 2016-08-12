@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	607422545	PlayBuzzer			\Default Work Unit\PlayBuzzer	
+	1824701367	StopBuzzer			\Default Work Unit\StopBuzzer	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	961876673	Buzzer	C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Zero_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buzzer		352320
+

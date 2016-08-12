@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="72">
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="734577674" DateHigh="30536742"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="427469017" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="427910206" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Attenuations\Default Work Unit.wwu" DateLow="427980389" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Audio Devices\Default Work Unit.wwu" DateLow="428040670" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Control Surface Sessions\Default Work Unit.wwu" DateLow="428110853" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Conversion Settings\Default Work Unit.wwu" DateLow="428190950" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="428231047" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="428301357" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Default Work Unit.wwu" DateLow="428361397" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory Auro Headphone.wwu" DateLow="428431716" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory Effects.wwu" DateLow="428521818" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Box Modeler.wwu" DateLow="579262634" DateHigh="30536741"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Delay.wwu" DateLow="428672224" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Dynamics.wwu" DateLow="428712328" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Filters.wwu" DateLow="428792541" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="429223688" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="429293881" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="429354191" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Effects\Factory McDSP Effects.wwu" DateLow="428581981" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Events\Default Work Unit.wwu" DateLow="1073378084" DateHigh="30536742"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Game Parameters\Default Work Unit.wwu" DateLow="429564604" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="429604705" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="429674898" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="429735049" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Mixing Sessions\Default Work Unit.wwu" DateLow="429805250" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Modulators\Default Work Unit.wwu" DateLow="429875440" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Presets\Default Work Unit.wwu" DateLow="431559904" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Queries\Default Work Unit.wwu" DateLow="431620070" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Queries\Factory Queries.wwu" DateLow="431670350" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\SoundBanks\Default Work Unit.wwu" DateLow="918676701" DateHigh="30536743"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="431810805" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\States\Default Work Unit.wwu" DateLow="431890787" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Sub WWise.Ben.wsettings" DateLow="3534457708" DateHigh="30536745"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Sub WWise.wproj" DateLow="3482097349" DateHigh="30536744"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Switches\Default Work Unit.wwu" DateLow="432161510" DateHigh="30536140"/>
+	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\Triggers\Default Work Unit.wwu" DateLow="432241721" DateHigh="30536140"/>
 	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2997425696" DateHigh="30536137"/>
 	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1418857453" DateHigh="30536137"/>
 	<ValidationCacheItem File="C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1419067597" DateHigh="30536137"/>

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1482C8C4-6435-4D7B-8D0D-5A01751F6136}" SchemaVersion="72">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{1482C8C4-6435-4D7B-8D0D-5A01751F6136}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1482C8C4-6435-4D7B-8D0D-5A01751F6136}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayBuzzer" ID="{AE3A8170-574F-4623-A336-99752007E694}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B71D2F53-FF0A-447E-B5FF-96A2428EBB62}" ShortID="1071725737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F1A1FFEF-5AD8-477B-94E1-6361CE6D386C}" Global="false">
+									<ObjectRef Name="Buzzer" ID="{5323EFFF-A65F-4958-8200-E8E49FC0F41A}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopBuzzer" ID="{3F36617F-F35D-4049-AED0-F6F5F5319455}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{35434AD8-E23F-446B-BB2D-36CC03EA1DB4}" ShortID="15965864" Type="Stop" Scope="One" Global="true">
+							<ElementList>
+								<Element ID="{2C6F1192-65D6-4151-8555-52C8492EC454}" Global="true">
+									<ObjectRef Name="Buzzer" ID="{5323EFFF-A65F-4958-8200-E8E49FC0F41A}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
