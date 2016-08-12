@@ -30,9 +30,9 @@ public class SafeWheel : MonoBehaviour {
 		return a - b * Mathf.Floor(a / b);
 	}
 
-	// Update is called once per frame
-	void Update () {
-        joint.angularXMotion = locked ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Limited;
+    // Update is called once per frame
+    void Update() {
+        joint.angularXMotion = locked || isOpen ? ConfigurableJointMotion.Locked : ConfigurableJointMotion.Limited;
 
 		if (!isOpen) {
             //TODO: Make this transform/rotation independent.
@@ -63,11 +63,12 @@ public class SafeWheel : MonoBehaviour {
 			lowerLimit.limit = Mathf.Clamp (minAngle - currAngle, -90, 0);
 			joint.lowAngularXLimit = lowerLimit;
 
+
 			var upperLimit = joint.highAngularXLimit;
 			upperLimit.limit = Mathf.Clamp (maxAngle - currAngle, 0, 90);
 			joint.highAngularXLimit = upperLimit;
-
-			if (Mathf.Approximately (currAngle, maxAngle)) {
+            
+            if (Mathf.Abs(currAngle - maxAngle) < 0.1) {
 				Open ();
 			}
 		}
@@ -90,9 +91,5 @@ public class SafeWheel : MonoBehaviour {
 		isOpen = true;
 		joint.angularXMotion = ConfigurableJointMotion.Locked;
 		onOpen.Invoke ();
-	}
-
-	public void Hello() {
-		Debug.Log ("I'm unlocked. I'm " + name);
 	}
 }
