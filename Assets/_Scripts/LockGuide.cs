@@ -60,7 +60,6 @@ public class LockGuide : MonoBehaviour {
 				}
 			} else if (state == LockState.Turning) {
 				keyAngle = Vector3.Angle (initialUp, transform.up);
-                Debug.Log(keyAngle);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
 				}
