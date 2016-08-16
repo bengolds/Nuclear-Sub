@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,13 +16,17 @@
 			<ShortName>BaseSoundbank</ShortName>
 			<Path>BaseSoundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2338373231" Name="MuteRadio" ObjectPath="\Events\Default Work Unit\MuteRadio" MaxAttenuation="0.000000"/>
-				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\PlayBuzzer"/>
-				<Event Id="2960360108" Name="StartRadio" ObjectPath="\Events\Default Work Unit\StartRadio"/>
-				<Event Id="1824701367" Name="StopBuzzer" ObjectPath="\Events\Default Work Unit\StopBuzzer" MaxAttenuation="0.000000"/>
-				<Event Id="1023743104" Name="UnmuteRadio" ObjectPath="\Events\Default Work Unit\UnmuteRadio" MaxAttenuation="0.000000"/>
+				<Event Id="1172811353" Name="MuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\MuteMissionRadio" MaxAttenuation="0.000000"/>
+				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer" MaxAttenuation="100.000000"/>
+				<Event Id="1471546448" Name="StartMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\StartMissionRadio" MaxAttenuation="100.000000"/>
+				<Event Id="1824701367" Name="StopBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\StopBuzzer" MaxAttenuation="0.000000"/>
+				<Event Id="4043917796" Name="UnmuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\UnmuteMissionRadio" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="47218279" Language="SFX">
+					<ShortName>Niner.wav</ShortName>
+					<Path>SFX\Niner_9E69E797.wem</Path>
+				</File>
 				<File Id="95719391" Language="SFX">
 					<ShortName>Yankee.wav</ShortName>
 					<Path>SFX\Yankee_9E69E797.wem</Path>
@@ -35,9 +39,25 @@
 					<ShortName>Opening Line.wav</ShortName>
 					<Path>SFX\Opening Line_9E69E797.wem</Path>
 				</File>
+				<File Id="336429519" Language="SFX">
+					<ShortName>Verification Code.wav</ShortName>
+					<Path>SFX\Verification Code_9E69E797.wem</Path>
+				</File>
+				<File Id="341628915" Language="SFX">
+					<ShortName>Target.wav</ShortName>
+					<Path>SFX\Target_9E69E797.wem</Path>
+				</File>
+				<File Id="663585161" Language="SFX">
+					<ShortName>Zero.wav</ShortName>
+					<Path>SFX\Zero_9E69E797.wem</Path>
+				</File>
 				<File Id="668472289" Language="SFX">
 					<ShortName>Charlie.wav</ShortName>
 					<Path>SFX\Charlie_9E69E797.wem</Path>
+				</File>
+				<File Id="857242971" Language="SFX">
+					<ShortName>One.wav</ShortName>
+					<Path>SFX\One_9E69E797.wem</Path>
 				</File>
 				<File Id="961876673" Language="SFX">
 					<ShortName>Zero.wav</ShortName>
