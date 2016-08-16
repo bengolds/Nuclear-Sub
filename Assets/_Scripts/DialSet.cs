@@ -27,7 +27,7 @@ public class DialSet : MonoBehaviour {
 		onUnlock.Invoke ();
 	}
 
-	string GetValue() {
+	public string GetValue() {
 		string value = "";
 		for (int i = 0; i < dials.Length; i++) {
 			value += dials [i].GetValue();
