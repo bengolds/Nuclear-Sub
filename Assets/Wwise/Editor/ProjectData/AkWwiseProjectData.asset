@@ -16,9 +16,33 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: -1827649993
-    m_lastTimePart2: -1999387110
+    m_lastTimePsrt1: 747509955
+    m_lastTimePart2: -1999387101
     List:
+    - Name: MuteFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: MuteFailsafe1Radio
+        ObjectType: 3
+      ID: -2106672017
+      Guid: 23a9acd0ca5b8442b376abcd0ddaac5e
+      maxAttenuation: 0
+    - Name: MuteFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: MuteFailsafe2Radio
+        ObjectType: 3
+      ID: -692109070
+      Guid: dce64cccb739ed4f81e8807dddd0f4c2
+      maxAttenuation: 0
     - Name: MuteMissionRadio
       Path: Default Work Unit\MissionRadio\MuteMissionRadio
       PathAndIcons:
@@ -42,6 +66,30 @@ MonoBehaviour:
         ObjectType: 3
       ID: 607422545
       Guid: 70813aae4f572346a33699752007e694
+      maxAttenuation: 100
+    - Name: StartFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\StartFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: StartFailsafe1Radio
+        ObjectType: 3
+      ID: 1503708514
+      Guid: db315dd51aff39489012bf4ef6b6763f
+      maxAttenuation: 0
+    - Name: StartFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: StartFailsafe2Radio
+        ObjectType: 3
+      ID: 120276447
+      Guid: 36752ecb5a4908429a5035264bd2ad61
       maxAttenuation: 0
     - Name: StartMissionRadio
       Path: Default Work Unit\MissionRadio\StartMissionRadio
@@ -66,6 +114,30 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1824701367
       Guid: 7f61363f5df34940aed0f6f5f5319455
+      maxAttenuation: 0
+    - Name: UnmuteFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: UnmuteFailsafe1Radio
+        ObjectType: 3
+      ID: 2003129982
+      Guid: a17ac14c26dbad41b31207f13951f33d
+      maxAttenuation: 0
+    - Name: UnmuteFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\UnmuteFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: UnmuteFailsafe2Radio
+        ObjectType: 3
+      ID: -1680795029
+      Guid: d35ea23d1902c74c916e5fe3e146a8c3
       maxAttenuation: 0
     - Name: UnmuteMissionRadio
       Path: Default Work Unit\MissionRadio\UnmuteMissionRadio
@@ -104,8 +176,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B6F4D516-1565-42AC-86D6-1A599B4223F2}'
-    m_lastTimePsrt1: 1518473286
-    m_lastTimePart2: -1999387935
+    m_lastTimePsrt1: 599765285
+    m_lastTimePart2: -1999387109
     List:
     - Name: BaseSoundbank
       Path: Default Work Unit\BaseSoundbank
@@ -120,6 +192,7 @@ MonoBehaviour:
   - /Sub WWise
   - /Sub WWise/Events
   - /Sub WWise/Events/Default Work Unit
+  - /Sub WWise/Events/Default Work Unit/Failsafe1Radio
   - /Sub WWise/Events/Default Work Unit/MissionRadio
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
