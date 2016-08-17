@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0213c98ef88a7cf4ca757bdf78ad628b, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 2
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -188,11 +188,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 795106865
       Guid: 5d51e5585d2d6345af5b57554691bae2
-  ExpandedItems:
-  - /Sub WWise
-  - /Sub WWise/Events
-  - /Sub WWise/Events/Default Work Unit
-  - /Sub WWise/Events/Default Work Unit/Failsafe2Radio
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
