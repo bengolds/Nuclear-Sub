@@ -198,13 +198,6 @@ namespace VRTK
                     lastTouchedObject = GetColliderInteractableObject(collider);
                 }
             }
-            else if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin)
-            {
-                if (IsObjectInteractable(collider.gameObject))
-                {
-                    touchedObjects.Add(collider.gameObject);
-                }
-            }
         }
 
         private void OnTriggerStay(Collider collider)
@@ -222,6 +215,16 @@ namespace VRTK
                 {
                     StartTouching(GetColliderInteractableObject(collider));
                     lastTouchedObject = touchedObject;
+                }
+            }
+            else if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin)
+            {
+                if (IsObjectInteractable(collider.gameObject))
+                {
+                    touchedObjects.Add(collider.gameObject);
+                } else
+                {
+                    touchedObjects.Remove(collider.gameObject);
                 }
             }
         }
