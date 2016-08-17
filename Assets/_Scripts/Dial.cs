@@ -198,6 +198,30 @@ public class Dial : MonoBehaviour {
 		scrollAmount += amountToAdd;
 	}
 
+    public void SetValue(char value)
+    {
+        int index = -1;
+        switch (dialType)
+        {
+            case DialType.IndexedValues:
+                index = values.IndexOf(value.ToString());
+                break;
+            case DialType.Numbers:
+                index = int.Parse(value.ToString()) - startingNumber;
+                break;
+            default:
+                break;
+        }
+
+        if (index  == -1)
+        {
+            Debug.LogError("That starting value doesn't exist.");
+        }
+        scrollAmount = index * (360 / numFaces);
+        SnapDial();
+
+    }
+
     public string GetValue()
     {
         switch (dialType)

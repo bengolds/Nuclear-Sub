@@ -5,13 +5,20 @@ using UnityEngine.Events;
 public class DialSet : MonoBehaviour {
 	public Dial[] dials;
 	public string combination;
+    public string startingValue;
 	public UnityEvent onUnlock;
 	private bool unlocked = false;
 
 
 	// Use this for initialization
 	void Start () {
-	
+        if (startingValue != string.Empty)
+        {
+            for (int i = 0; i < dials.Length; i++)
+            {
+                dials[i].SetValue(startingValue[i]);
+            }
+        }
 	}
 	
 	// Update is called once per frame
