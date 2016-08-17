@@ -36,7 +36,7 @@ public class Dial : MonoBehaviour {
 	private MeshRenderer meshRenderer;
 	private Vector2? lastTrackpadPos;
 	private float scrollAmount = 0;
-	private int index = 0;
+	private int snappedIndex = 0;
     private Quaternion baseLocalRotation;
 
 	// Use this for initialization
@@ -173,12 +173,19 @@ public class Dial : MonoBehaviour {
 	int mod(int x, int m) {
 		return (x%m + m)%m;
 	}
+   
+    int GetCurrIncrementalIndex()
+    {
+        float snapIncrement = 360f / numFaces;
+        int selectedFace = Mathf.RoundToInt(scrollAmount / snapIncrement);
+        return mod(selectedFace, numFaces);
+    }
 
 	void SnapDial() {
 		float snapIncrement = 360f / numFaces;
 		int selectedFace = Mathf.RoundToInt(scrollAmount / snapIncrement);
 		float snapTo = selectedFace * snapIncrement;
-		index = mod(selectedFace, numFaces);
+		snappedIndex = mod(selectedFace, numFaces);
 		
 		DOTween.To (x => scrollAmount = x, scrollAmount, snapTo, snapDuration);
 	}
@@ -222,7 +229,7 @@ public class Dial : MonoBehaviour {
 
     }
 
-    public string GetValue()
+    string GetValueAt(int index)
     {
         switch (dialType)
         {
@@ -233,6 +240,16 @@ public class Dial : MonoBehaviour {
             default:
                 return string.Empty;
         }
+    }
+
+    public string GetValue()
+    {
+        return GetValueAt(snappedIndex);
+    }
+
+    public string GetIncrementalValue()
+    {
+        return GetValueAt(GetCurrIncrementalIndex());
     }
 
     Vector3 GetGlobalRotationAxis()

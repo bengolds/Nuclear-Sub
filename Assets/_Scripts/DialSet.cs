@@ -87,4 +87,14 @@ public class DialSet : MonoBehaviour {
 		}
 		return value;
 	}
+
+    public string GetIncrementalValue()
+    {
+        string value = "";
+        for (int i = 0; i < dials.Length; i++)
+        {
+            value += dials[i].GetIncrementalValue();
+        }
+        return value;
+    }
 }

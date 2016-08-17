@@ -21,7 +21,7 @@ public class SetFromDial : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        int dialValue = int.Parse(dial.GetValue());
+        int dialValue = int.Parse(dial.GetIncrementalValue());
         int diffFromCenter = dialValue - center;
         float scaledValue = 0.5f + scaleFactor * diffFromCenter;
         switch (connectedCoordinate)
