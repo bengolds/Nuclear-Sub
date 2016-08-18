@@ -29,6 +29,11 @@ public class BlinkSoundAndLight : MonoBehaviour {
         tweenSequence.PrependInterval(blinkDelay);
     }
 
+    public void StopLooping()
+    {
+        on = false;
+    }
+
     void SoundEndedCallback (object in_info)
     {
         if (on)
