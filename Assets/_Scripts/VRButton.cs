@@ -1,42 +1,48 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
-using System.Collections;using VRTK;
+using System.Collections;
+using VRTK;
+using System;
 
-
-public class VRButton : VRTK_InteractableObject {
+public class VRButton : MonoBehaviour {
 	public Material touchedStateMaterial;
 	public Material usedStateMaterial;
 	public UnityEvent onPress;
 	protected Material normalStateMaterial;
 	private MeshRenderer meshRenderer;
-
-	public override void StopUsing(GameObject usingObject)
-	{
-		base.StopUsing (usingObject);
-		ButtonPressed ();
-	}
-
+    private VRTK_InteractableObject io;
+    
 	// Use this for initialization
-	protected override void Start () {
-		base.Start ();
+	void Start () {
+        InitInteractableObject();
 		meshRenderer = GetComponent<MeshRenderer> ();
 		normalStateMaterial = meshRenderer.material;
 	}
-//	
-//	// Update is called once per frame
-	protected override void Update () {
-		base.Update ();
-		if (IsUsing ()) {
+
+    //	
+    //	// Update is called once per frame
+    void Update () {
+		if (io.IsUsing ()) {
 			meshRenderer.material = usedStateMaterial;
-		} else if (IsTouched ()) {
+		} else if (io.IsTouched ()) {
 			meshRenderer.material = touchedStateMaterial;
 		} else {
 			meshRenderer.material = normalStateMaterial;
 		}
 	}
 
-	void ButtonPressed() {
-		Debug.Log ("Button pressed");
+    private void InitInteractableObject()
+    {
+        if ((io = GetComponent<VRTK_InteractableObject>()) == null)
+        {
+            io = gameObject.AddComponent<VRTK_InteractableObject>();
+            io.isUsable = true;
+            io.isGrabbable = false;
+            io.InteractableObjectUnused += ButtonPressed;
+        }
+    }
+
+    void ButtonPressed(object sender, InteractableObjectEventArgs e) {
 		onPress.Invoke ();
 	}
 }
