@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: 1892233974
-    m_lastTimePart2: -1999386879
+    m_lastTimePsrt1: 1048437877
+    m_lastTimePart2: -1999386708
     List:
     - Name: MuteFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
@@ -66,7 +66,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 607422545
       Guid: 70813aae4f572346a33699752007e694
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\StartFailsafe1Radio
       PathAndIcons:
@@ -78,7 +78,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1503708514
       Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
@@ -90,7 +90,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 120276447
       Guid: 36752ecb5a4908429a5035264bd2ad61
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartMissionRadio
       Path: Default Work Unit\MissionRadio\StartMissionRadio
       PathAndIcons:
@@ -102,7 +102,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1471546448
       Guid: 6a2261be5991b541941585171c34a4bc
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StopBuzzer
       Path: Default Work Unit\OpeningBuzzer\StopBuzzer
       PathAndIcons:

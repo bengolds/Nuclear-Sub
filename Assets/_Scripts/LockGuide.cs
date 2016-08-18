@@ -14,6 +14,7 @@ public class LockGuide : MonoBehaviour {
 	public GameObject snapPoint;
 	public GameObject lockBody;
 	public UnityEvent onTurn;
+    public UnityEvent onUnturn;
 
 	private ConfigurableJoint sliderJoint;
 	private ConfigurableJoint turnJoint;
@@ -30,8 +31,8 @@ public class LockGuide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (keyAngle < maxAngle - 25f) {
-			justTurned = false;
+		if (keyAngle < maxAngle - 25f && justTurned) {
+            KeyUnturned();
 		}
 	}
 
@@ -78,9 +79,16 @@ public class LockGuide : MonoBehaviour {
 	void KeyTurned() {
 		justTurned = true;
 		onTurn.Invoke ();
-	}
+    }
 
-	void SnapKeyToPosition(GameObject key) {
+    void KeyUnturned()
+    {
+        Debug.Log("keyangle: " + keyAngle);
+        justTurned = false;
+        onUnturn.Invoke();
+    }
+
+    void SnapKeyToPosition(GameObject key) {
 		key.transform.rotation = snapPoint.transform.rotation;
 		key.transform.position = snapPoint.transform.position;
 	}
