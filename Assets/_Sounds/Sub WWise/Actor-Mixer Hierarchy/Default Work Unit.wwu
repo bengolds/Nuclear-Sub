@@ -1091,81 +1091,6 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Sound Name="Buzzer" ID="{5323EFFF-A65F-4958-8200-E8E49FC0F41A}" ShortID="1007468350" Type="SoundFX">
-					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>50</Value>
-							</ValueList>
-						</Property>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{62DBF64F-5D1E-4290-913D-F79D000B9A70}" ShortID="369244121">
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{B9EFF2D3-6DCB-463D-AF7D-95D097895574}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-														</Point>
-														<Point>
-															<XPos>100</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Zero" ID="{4BF03B5B-297D-41EE-A1F1-67720C3B123A}" ShortID="961876673">
-							<Language>SFX</Language>
-							<AudioFile>Zero.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Zero" ID="{4BF03B5B-297D-41EE-A1F1-67720C3B123A}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Failsafe 1" ID="{155ACA08-13CF-4D47-BE21-B28361CF86B7}" ShortID="652340609">
 					<PropertyList>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -1521,6 +1446,25 @@
 								<ActiveSource Name="Foxtrot" ID="{15FAC1CB-07DC-45A0-BC70-0A4C6DE96109}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Buzzer" ID="{DD4D456D-35B1-4C7D-AF9E-7F138C49CF85}" ShortID="736977788" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Buzzer" ID="{306975C3-5459-4F52-BFCE-3BD59B0B8C0F}" ShortID="156548174">
+									<Language>SFX</Language>
+									<AudioFile>Buzzer.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Buzzer" ID="{306975C3-5459-4F52-BFCE-3BD59B0B8C0F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<Playlist>
 						<ItemRef Name="Failsafe Sequence Start" ID="{EE407D4C-55ED-4FBD-B0F9-DED3EA544970}"/>
@@ -1530,6 +1474,28 @@
 						<ItemRef Name="Foxtrot" ID="{FCFECD39-FAD6-4F1C-8B88-AC95EAEE87DA}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<Sound Name="Buzzer" ID="{14859EE8-FBFD-4CB2-9BCC-9DDFA5DD52DC}" ShortID="735854579" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Buzzer" ID="{9E0673D3-A9B0-4681-BE02-ED6A35CB6D1C}" ShortID="210359392">
+							<Language>SFX</Language>
+							<AudioFile>Buzzer.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="156548174"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Buzzer" ID="{9E0673D3-A9B0-4681-BE02-ED6A35CB6D1C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

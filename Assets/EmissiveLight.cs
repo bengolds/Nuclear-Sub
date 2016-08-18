@@ -3,22 +3,25 @@ using System.Collections.Generic;
 
 public class EmissiveLight : MonoBehaviour {
     [ColorUsage(false, true, 0, 100, 1/8, 3)]
-    public Color color;
-    public float frequency;
-    private Color onColor;
+    public Color maxEmissionColor;
+
+    [Range(0, 1)]
+    public float brightness;
     private Renderer emRenderer;
 
 	// Use this for initialization
 	void Start () {
         emRenderer = GetComponent<Renderer>();
-        onColor = emRenderer.material.GetColor("_EmissionColor");
+        var startColor = emRenderer.material.GetColor("_EmissionColor");
+        if (startColor == Color.black)
+        {
+            Debug.LogError("Your light needs to start with some emission.");
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //TODO MAKE THIS PROPER MATH EH
-        float t = Mathf.Sin(frequency * Time.time);
-        Color currColor = Color.Lerp(Color.black, color, t);
+        Color currColor = Color.Lerp(Color.black, maxEmissionColor, brightness);
         DynamicGI.SetEmissive(emRenderer, currColor);
         emRenderer.sharedMaterial.SetColor("_EmissionColor", currColor); 
 	}

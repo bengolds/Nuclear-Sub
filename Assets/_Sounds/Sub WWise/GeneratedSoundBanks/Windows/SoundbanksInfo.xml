@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -19,7 +19,7 @@
 				<Event Id="2188295279" Name="MuteFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio" MaxAttenuation="0.000000"/>
 				<Event Id="3602858226" Name="MuteFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio" MaxAttenuation="0.000000"/>
 				<Event Id="1172811353" Name="MuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\MuteMissionRadio" MaxAttenuation="0.000000"/>
-				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer" MaxAttenuation="100.000000"/>
+				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer"/>
 				<Event Id="1503708514" Name="StartFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\StartFailsafe1Radio" MaxAttenuation="100.000000"/>
 				<Event Id="120276447" Name="StartFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\StartFailsafe2Radio" MaxAttenuation="100.000000"/>
 				<Event Id="1471546448" Name="StartMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\StartMissionRadio" MaxAttenuation="100.000000"/>
@@ -52,6 +52,10 @@
 				<File Id="120302601" Language="SFX">
 					<ShortName>Lima.wav</ShortName>
 					<Path>SFX\Lima_9E69E797.wem</Path>
+				</File>
+				<File Id="156548174" Language="SFX">
+					<ShortName>Buzzer.wav</ShortName>
+					<Path>SFX\Buzzer_9E69E797.wem</Path>
 				</File>
 				<File Id="243685464" Language="SFX">
 					<ShortName>Opening Line.wav</ShortName>
@@ -96,10 +100,6 @@
 				<File Id="908133878" Language="SFX">
 					<ShortName>India.wav</ShortName>
 					<Path>SFX\India_9E69E797.wem</Path>
-				</File>
-				<File Id="961876673" Language="SFX">
-					<ShortName>Zero.wav</ShortName>
-					<Path>SFX\Zero_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="965391902" Language="SFX">
 					<ShortName>Echo.wav</ShortName>
