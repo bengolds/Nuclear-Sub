@@ -27,6 +27,7 @@ public class LockGuide : MonoBehaviour {
 	void Start () {
 		keyAngle = 0;
         initialUp = transform.up;
+        justTurned = false;
 	}
 	
 	// Update is called once per frame
@@ -53,7 +54,8 @@ public class LockGuide : MonoBehaviour {
 		if (key != null) {
 			if (state == LockState.Sliding) {
 				float keyTravel = Vector3.Distance (key.transform.position, snapPoint.transform.position);
-				if (Mathf.Approximately (keyTravel, lockDepth)) {
+                Debug.Log("distance: " + keyTravel);
+				if (keyTravel >= lockDepth) {
 					Destroy (sliderJoint);
 					turnJoint = SetupTurnJoint (otherCollider.attachedRigidbody);
 					lockBody.transform.SetParent (otherCollider.transform, true);
@@ -83,7 +85,6 @@ public class LockGuide : MonoBehaviour {
 
     void KeyUnturned()
     {
-        Debug.Log("keyangle: " + keyAngle);
         justTurned = false;
         onUnturn.Invoke();
     }
