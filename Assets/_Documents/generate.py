@@ -32,7 +32,7 @@ with open(data_filename, 'rb') as csvfile:
 				outfile.write(subbed)
 			outimagename = images_directory + "/" + row[0] + ".png"
 
-			cmd = "wkhtmltoimage --width 816 --height 1056 --disable-smart-width  " + outfilename + " " + outimagename
+			cmd = "./wkhtmltoimage --width 816 --height 1056 --disable-smart-width  " + outfilename + " " + outimagename
 			print(cmd)
 			os.system(cmd)
 			os.remove(outfilename)
