@@ -17,7 +17,7 @@ with open(data_filename, 'rb') as csvfile:
 		temp_directory = 'temp'
 		if not os.path.exists(temp_directory):
 			os.makedirs(temp_directory)
-		images_directory = 'images'	
+		images_directory = 'Resources'	
 		if not os.path.exists(images_directory):
 			os.makedirs(images_directory)
 
