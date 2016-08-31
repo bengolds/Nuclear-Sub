@@ -3,6 +3,7 @@
 public class GeneratePaper : MonoBehaviour {
     public GameObject paperPrefab;
     public Vector3 offset;
+    public string resourcePrefix;
     public string[] titles;
     private Vector3[] positions;
 
@@ -28,7 +29,7 @@ public class GeneratePaper : MonoBehaviour {
         {
             var newObj = Instantiate(paperPrefab, positions[i], transform.rotation) as GameObject;
             newObj.transform.SetParent(this.transform, true);
-            var tex = Resources.Load<Texture2D>(titles[i]);
+            var tex = Resources.Load<Texture2D>(resourcePrefix + "/" + titles[i]);
             newObj.GetComponent<Paper>().SetToImage(tex);
         }
     }

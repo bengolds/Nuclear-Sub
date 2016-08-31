@@ -16,6 +16,14 @@ ModelImporter:
     100016: Cube_008
     100018: Documents_Shelf
     100020: //RootNode
+    100022: Back
+    100024: Fifth_Shelf
+    100026: First_Shelf
+    100028: Left
+    100030: Right
+    100032: Second_Shelf
+    100034: Third_Shelf
+    100036: Top
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -27,6 +35,14 @@ ModelImporter:
     400016: Cube_008
     400018: Documents_Shelf
     400020: //RootNode
+    400022: Back
+    400024: Fifth_Shelf
+    400026: First_Shelf
+    400028: Left
+    400030: Right
+    400032: Second_Shelf
+    400034: Third_Shelf
+    400036: Top
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -37,6 +53,14 @@ ModelImporter:
     2300014: Cube_007
     2300016: Cube_008
     2300018: Documents_Shelf
+    2300020: Back
+    2300022: Fifth_Shelf
+    2300024: First_Shelf
+    2300026: Left
+    2300028: Right
+    2300030: Second_Shelf
+    2300032: Third_Shelf
+    2300034: Top
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -47,6 +71,14 @@ ModelImporter:
     3300014: Cube_007
     3300016: Cube_008
     3300018: Documents_Shelf
+    3300020: Back
+    3300022: Fifth_Shelf
+    3300024: First_Shelf
+    3300026: Left
+    3300028: Right
+    3300030: Second_Shelf
+    3300032: Third_Shelf
+    3300034: Top
     4300000: Cube_008
     4300002: Cube_007
     4300004: Cube_006
@@ -57,6 +89,14 @@ ModelImporter:
     4300014: Cube_001
     4300016: Cube
     4300018: Documents_Shelf
+    4300020: Back
+    4300022: Right
+    4300024: Left
+    4300026: Fifth_Shelf
+    4300028: Third_Shelf
+    4300030: Second_Shelf
+    4300032: First_Shelf
+    4300034: Top
     7400000: Default Take
     9500000: //RootNode
   materials:

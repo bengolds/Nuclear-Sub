@@ -1,0 +1,207 @@
+
+    @font-face {
+      font-family: "Report 1942";
+      src: url("1942.ttf");
+    }
+
+    @font-face {
+      font-family: "MS33558";
+      src: url("MS33558.ttf");
+    }
+
+    @font-face {
+      font-family: "Arvo";
+      src: url("Arvo-Regular.ttf");
+    }
+
+    .purple {
+      color: #A161B0;
+    }
+
+    .pink {
+      color: #D86A8C;
+    }
+
+    .red {
+      color: #BC1010;
+    }
+
+    .huge-text {
+      font-size: 36px;
+      line-height: 29px;
+    }
+
+    .grungy-text {
+      font-family: "Report 1942";
+    }
+
+    .military-spec-text {
+      font-family: "MS33558";
+    }
+
+    .official-text {
+      font-family: "Arvo";
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0px; right: 0px;
+      left: 0px; bottom: 0px;
+      width: 816px;
+      height: 1056px;
+      z-index: -1;
+    }
+
+    .map {
+      
+width: 50%;
+      
+margin-left: auto;
+      
+margin-right: auto;
+      
+position: absolute;
+      
+bottom: 222px;
+      
+left: 0;
+      
+right: 0;
+    }
+
+    .top-secret-header {
+      position: relative;
+      color: #BC1010;
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 30px;
+    }
+
+    .top-secret-header .right {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .mission-code-container {
+      text-align: center;
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+
+    .mission-code-container .title {
+      font-size: 36px;
+    }
+
+    .mission-code-container .mission-code {
+      font-size: 53px;
+      padding-left: 20px;
+    }
+
+    .directive {
+      padding: 0px 20px;
+      width: 80%;
+      margin: 0px auto;
+      text-align: center;
+      font-size: 36px;
+      box-sizing: border-box;
+    }
+
+    .directive .title {
+      font-size: 24px;
+      display: none;
+    }
+
+    .verification-code {
+      margin-top: 58px;
+      margin-bottom: 48px;
+    }
+
+    .mission-procedure-items {
+      text-align: left;
+    }
+
+    .mission-procedure-items ol {
+      margin: 5px;
+    }
+
+    .mission-procedure-items li {
+      margin-bottom: 7px;
+    }
+
+    .mission-procedure {
+      text-decoration: underline;
+    }
+
+    .target-info {
+      width: 80%;
+      margin: 0px auto;
+      margin-top: 86px;
+      font-size: 33px;
+      /* display: none; */
+    }
+
+    .row {
+      margin-bottom: 8px;
+    }
+
+    .row .title {
+      display: inline-block;
+      width: 264px;
+    }
+
+    .row .colon {
+      display: inline-block;
+      width: 32px;
+    }
+
+    .pink-footer {
+      position: absolute;
+      bottom: 100px;
+      right: 152px;
+      width: 100%;
+      font-size: 24px;
+      /* display: none; */
+    }
+
+    .pink-footer .chunk-1 {
+      padding-right: 5%;
+    }
+
+    .pink-footer .chunk-2 {
+      padding-right: 7%;
+    }
+
+    .pink-footer .chunk-3 {
+      padding-right: 4%;
+    }
+
+    .pink-footer .chunk-4 {
+      padding-right: 3%;
+    }
+
+    .pink-footer .chunk-5 {
+      
+    }
+
+    .pink-footer .chunk-6 {
+      position: absolute;
+      top: 23px;
+      left: 77%;
+    }
+
+    .top-secret-footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+
+img.map-image {
+    position: relative;
+    width: 100%;
+    opacity: .7;
+}

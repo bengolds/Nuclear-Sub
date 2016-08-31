@@ -8,6 +8,7 @@ import shutil
 
 data_filename = sys.argv[1];
 html_filename = sys.argv[2];
+images_directory = sys.argv[3] if len(sys.argv) >= 4 else 'Resources'
 with open(data_filename, 'rb') as csvfile:
 	with open (html_filename, 'r') as htmlfile:
 		html = htmlfile.read()
@@ -17,7 +18,6 @@ with open(data_filename, 'rb') as csvfile:
 		temp_directory = 'temp'
 		if not os.path.exists(temp_directory):
 			os.makedirs(temp_directory)
-		images_directory = 'Resources'	
 		if not os.path.exists(images_directory):
 			os.makedirs(images_directory)
 
