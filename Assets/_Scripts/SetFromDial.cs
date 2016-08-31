@@ -10,8 +10,9 @@ public class SetFromDial : MonoBehaviour {
     }
     public DialSet dial;
     public CoordinateToSet connectedCoordinate;
-    public float scaleFactor = 1/1000f;
-    public int center = 5000;
+    public float scaleFactor = 1/100f;
+    public float startingCoord = 50.000f;
+    public float range = 3.0f;
     private RectTransform rt;
 
 	// Use this for initialization
@@ -21,9 +22,8 @@ public class SetFromDial : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        int dialValue = int.Parse(dial.GetIncrementalValue());
-        int diffFromCenter = dialValue - center;
-        float scaledValue = 0.5f + scaleFactor * diffFromCenter;
+        float dialValue = int.Parse(dial.GetIncrementalValue())*scaleFactor;
+        float scaledValue = (dialValue - startingCoord) / range;
         switch (connectedCoordinate)
         {
             case CoordinateToSet.X:
