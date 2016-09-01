@@ -47,6 +47,10 @@ ModelImporter:
     100078: Hinge_Door_Lower
     100080: Hinge_Door_Upper
     100082: Handle_006
+    100084: Left_Shelf_Divider
+    100086: Middle_Shelf_Divider
+    100088: Right_Shelf_Divider
+    100090: Shelf
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -89,6 +93,10 @@ ModelImporter:
     400078: Hinge_Door_Lower
     400080: Hinge_Door_Upper
     400082: Handle_006
+    400084: Left_Shelf_Divider
+    400086: Middle_Shelf_Divider
+    400088: Right_Shelf_Divider
+    400090: Shelf
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -125,6 +133,10 @@ ModelImporter:
     2300066: Hinge_Door_Lower
     2300068: Hinge_Door_Upper
     2300070: Handle_006
+    2300072: Left_Shelf_Divider
+    2300074: Middle_Shelf_Divider
+    2300076: Right_Shelf_Divider
+    2300078: Shelf
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -161,6 +173,10 @@ ModelImporter:
     3300066: Hinge_Door_Lower
     3300068: Hinge_Door_Upper
     3300070: Handle_006
+    3300072: Left_Shelf_Divider
+    3300074: Middle_Shelf_Divider
+    3300076: Right_Shelf_Divider
+    3300078: Shelf
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -197,6 +213,10 @@ ModelImporter:
     4300066: Hinge_Door_Upper
     4300068: Hinge_Door_Lower
     4300070: Handle_006
+    4300072: Shelf
+    4300074: Right_Shelf_Divider
+    4300076: Left_Shelf_Divider
+    4300078: Middle_Shelf_Divider
     6400000: Body
     6400002: Body_Cutout
     6400004: Bolt
