@@ -60,7 +60,7 @@ public class Dial : MonoBehaviour {
         facesCanvas.name = "Faces Canvas";
 
         float canvasSize = 50;
-        var canvas = facesCanvas.AddComponent<Canvas>();
+        facesCanvas.AddComponent<Canvas>();
         var rt = facesCanvas.GetComponent<RectTransform>();
         rt.sizeDelta = new Vector2(canvasSize, canvasSize);
         float canvasScale = dialWidth / canvasSize;

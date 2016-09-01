@@ -8,13 +8,11 @@ public class BlinkSoundAndLight : MonoBehaviour {
     public EmissiveLight eLight;
     public float blinkDelay;
     public float blinkDuration;
-
-    private AkEvent akevent;
+    
     private AkScriptTrigger trigger;
 
 	// Use this for initialization
 	void Start () {
-        akevent = GetComponent<AkEvent>();
         trigger = GetComponent<AkScriptTrigger>();
         BuzzAndLight();
 	}

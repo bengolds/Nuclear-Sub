@@ -17,7 +17,6 @@ public class LockGuide : MonoBehaviour {
     public UnityEvent onUnturn;
 
 	private ConfigurableJoint sliderJoint;
-	private ConfigurableJoint turnJoint;
 	private LockState state;
 	private bool justTurned;
 	private float keyAngle;
@@ -57,7 +56,7 @@ public class LockGuide : MonoBehaviour {
                 Debug.Log("distance: " + keyTravel);
 				if (keyTravel >= lockDepth) {
 					Destroy (sliderJoint);
-					turnJoint = SetupTurnJoint (otherCollider.attachedRigidbody);
+					SetupTurnJoint (otherCollider.attachedRigidbody);
 					lockBody.transform.SetParent (otherCollider.transform, true);
 					state = LockState.Turning;
 				}
