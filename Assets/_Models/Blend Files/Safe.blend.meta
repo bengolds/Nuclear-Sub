@@ -51,6 +51,12 @@ ModelImporter:
     100086: Middle_Shelf_Divider
     100088: Right_Shelf_Divider
     100090: Shelf
+    100092: Back
+    100094: Bottom
+    100096: Colliders
+    100098: Left
+    100100: Right
+    100102: Top
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -97,6 +103,12 @@ ModelImporter:
     400086: Middle_Shelf_Divider
     400088: Right_Shelf_Divider
     400090: Shelf
+    400092: Back
+    400094: Bottom
+    400096: Colliders
+    400098: Left
+    400100: Right
+    400102: Top
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -137,6 +149,11 @@ ModelImporter:
     2300074: Middle_Shelf_Divider
     2300076: Right_Shelf_Divider
     2300078: Shelf
+    2300080: Back
+    2300082: Bottom
+    2300084: Left
+    2300086: Right
+    2300088: Top
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -177,6 +194,11 @@ ModelImporter:
     3300074: Middle_Shelf_Divider
     3300076: Right_Shelf_Divider
     3300078: Shelf
+    3300080: Back
+    3300082: Bottom
+    3300084: Left
+    3300086: Right
+    3300088: Top
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -217,6 +239,11 @@ ModelImporter:
     4300074: Right_Shelf_Divider
     4300076: Left_Shelf_Divider
     4300078: Middle_Shelf_Divider
+    4300080: Bottom
+    4300082: Back
+    4300084: Left
+    4300086: Right
+    4300088: Top
     6400000: Body
     6400002: Body_Cutout
     6400004: Bolt
