@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0213c98ef88a7cf4ca757bdf78ad628b, type: 3}
+  m_Name: AkWwiseProjectData 4
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
+    m_lastTimePsrt1: 1616061209
+    m_lastTimePart2: -1999384497
+    List:
+    - Name: MuteFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: MuteFailsafe1Radio
+        ObjectType: 3
+      ID: -2106672017
+      Guid: 23a9acd0ca5b8442b376abcd0ddaac5e
+      maxAttenuation: 0
+    - Name: MuteFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: MuteFailsafe2Radio
+        ObjectType: 3
+      ID: -692109070
+      Guid: dce64cccb739ed4f81e8807dddd0f4c2
+      maxAttenuation: 0
+    - Name: MuteMissionRadio
+      Path: Default Work Unit\MissionRadio\MuteMissionRadio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MissionRadio
+        ObjectType: 4
+      - ElementName: MuteMissionRadio
+        ObjectType: 3
+      ID: 1172811353
+      Guid: 4bc2930ad9f8aa42b127bef440921961
+      maxAttenuation: 0
+    - Name: PlayBuzzer
+      Path: Default Work Unit\OpeningBuzzer\PlayBuzzer
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OpeningBuzzer
+        ObjectType: 4
+      - ElementName: PlayBuzzer
+        ObjectType: 3
+      ID: 607422545
+      Guid: 70813aae4f572346a33699752007e694
+      maxAttenuation: 0
+    - Name: StartFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\StartFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: StartFailsafe1Radio
+        ObjectType: 3
+      ID: 1503708514
+      Guid: db315dd51aff39489012bf4ef6b6763f
+      maxAttenuation: 0
+    - Name: StartFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: StartFailsafe2Radio
+        ObjectType: 3
+      ID: 120276447
+      Guid: 36752ecb5a4908429a5035264bd2ad61
+      maxAttenuation: 0
+    - Name: StartMissionRadio
+      Path: Default Work Unit\MissionRadio\StartMissionRadio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MissionRadio
+        ObjectType: 4
+      - ElementName: StartMissionRadio
+        ObjectType: 3
+      ID: 1471546448
+      Guid: 6a2261be5991b541941585171c34a4bc
+      maxAttenuation: 0
+    - Name: StopBuzzer
+      Path: Default Work Unit\OpeningBuzzer\StopBuzzer
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OpeningBuzzer
+        ObjectType: 4
+      - ElementName: StopBuzzer
+        ObjectType: 3
+      ID: 1824701367
+      Guid: 7f61363f5df34940aed0f6f5f5319455
+      maxAttenuation: 0
+    - Name: UnmuteFailsafe1Radio
+      Path: Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe1Radio
+        ObjectType: 4
+      - ElementName: UnmuteFailsafe1Radio
+        ObjectType: 3
+      ID: 2003129982
+      Guid: a17ac14c26dbad41b31207f13951f33d
+      maxAttenuation: 0
+    - Name: UnmuteFailsafe2Radio
+      Path: Default Work Unit\Failsafe2Radio\UnmuteFailsafe2Radio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Failsafe2Radio
+        ObjectType: 4
+      - ElementName: UnmuteFailsafe2Radio
+        ObjectType: 3
+      ID: -1680795029
+      Guid: d35ea23d1902c74c916e5fe3e146a8c3
+      maxAttenuation: 0
+    - Name: UnmuteMissionRadio
+      Path: Default Work Unit\MissionRadio\UnmuteMissionRadio
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MissionRadio
+        ObjectType: 4
+      - ElementName: UnmuteMissionRadio
+        ObjectType: 3
+      ID: -251049500
+      Guid: f46a0cb3096bbb4cb878df7892641c19
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{82999559-0440-4E58-A98E-0845C81626B1}'
+    m_lastTimePsrt1: -719631657
+    m_lastTimePart2: -1999388704
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{21132F4F-71B6-4CE7-964D-B9C8F29E6F1C}'
+    m_lastTimePsrt1: -718967215
+    m_lastTimePart2: -1999388704
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{1231BC4B-EF69-4558-A921-7FFA70DA3C70}'
+    m_lastTimePsrt1: -719252424
+    m_lastTimePart2: -1999388704
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{B6F4D516-1565-42AC-86D6-1A599B4223F2}'
+    m_lastTimePsrt1: 198981743
+    m_lastTimePart2: -1999386924
+    List:
+    - Name: BaseSoundbank
+      Path: Default Work Unit\BaseSoundbank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BaseSoundbank
+        ObjectType: 7
+      ID: 795106865
+      Guid: 5d51e5585d2d6345af5b57554691bae2
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95

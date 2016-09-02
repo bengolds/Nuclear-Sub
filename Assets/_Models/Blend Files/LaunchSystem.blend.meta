@@ -6,10 +6,40 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Targeting_System_Bottom_Half
+    100004: Targeting_System_Bottom_Half_001
+    100006: Left_Bottom_Panel
+    100008: Left_Half
+    100010: Left_Top_Panel
+    100012: Right_Bottom_Panel
+    100014: Right_Half
+    100016: Right_Top_Panel
+    100018: Targeting_System
     400000: //RootNode
+    400002: Targeting_System_Bottom_Half
+    400004: Targeting_System_Bottom_Half_001
+    400006: Left_Bottom_Panel
+    400008: Left_Half
+    400010: Left_Top_Panel
+    400012: Right_Bottom_Panel
+    400014: Right_Half
+    400016: Right_Top_Panel
+    400018: Targeting_System
     2300000: //RootNode
+    2300002: Targeting_System_Bottom_Half
+    2300004: Targeting_System_Bottom_Half_001
+    2300006: Left_Half
+    2300008: Right_Half
     3300000: //RootNode
+    3300002: Targeting_System_Bottom_Half
+    3300004: Targeting_System_Bottom_Half_001
+    3300006: Left_Half
+    3300008: Right_Half
     4300000: Launch_System
+    4300002: Targeting_System_Bottom_Half_001
+    4300004: Targeting_System_Bottom_Half
+    4300006: Right_Half
+    4300008: Left_Half
     7400000: Default Take
     9500000: //RootNode
   materials:
