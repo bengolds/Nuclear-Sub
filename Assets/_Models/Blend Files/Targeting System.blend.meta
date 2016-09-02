@@ -8,9 +8,13 @@ ModelImporter:
     100000: //RootNode
     100002: Targeting_System_Bottom_Half
     100004: Targeting_System_Right_Half
+    100006: FailsafePanel
+    100008: MapPanel
     400000: //RootNode
     400002: Targeting_System_Bottom_Half
     400004: Targeting_System_Right_Half
+    400006: FailsafePanel
+    400008: MapPanel
     2300000: Targeting_System_Bottom_Half
     2300002: Targeting_System_Right_Half
     3300000: Targeting_System_Bottom_Half
