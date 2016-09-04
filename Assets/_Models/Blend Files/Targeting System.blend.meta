@@ -12,6 +12,13 @@ ModelImporter:
     100008: MapPanel
     100010: FailsafeShelf
     100012: MapShelf
+    100014: Cube
+    100016: Failsafe_Console_Mesh
+    100018: Map_Console_Mesh
+    100020: Targeting_System
+    100022: Power_Panel_Cutout
+    100024: Working
+    100026: Failsafe_Panel_Cutout
     400000: //RootNode
     400002: Targeting_System_Bottom_Half
     400004: Targeting_System_Right_Half
@@ -19,12 +26,34 @@ ModelImporter:
     400008: MapPanel
     400010: FailsafeShelf
     400012: MapShelf
+    400014: Cube
+    400016: Failsafe_Console_Mesh
+    400018: Map_Console_Mesh
+    400020: Targeting_System
+    400022: Power_Panel_Cutout
+    400024: Working
+    400026: Failsafe_Panel_Cutout
     2300000: Targeting_System_Bottom_Half
     2300002: Targeting_System_Right_Half
+    2300004: Cube
+    2300006: Failsafe_Console_Mesh
+    2300008: Map_Console_Mesh
+    2300010: Power_Panel_Cutout
+    2300012: Failsafe_Panel_Cutout
     3300000: Targeting_System_Bottom_Half
     3300002: Targeting_System_Right_Half
+    3300004: Cube
+    3300006: Failsafe_Console_Mesh
+    3300008: Map_Console_Mesh
+    3300010: Power_Panel_Cutout
+    3300012: Failsafe_Panel_Cutout
     4300000: Targeting_System_Bottom_Half
     4300002: Targeting_System_Right_Half
+    4300004: Cube
+    4300006: Map_Console_Mesh
+    4300008: Failsafe_Console_Mesh
+    4300010: Power_Panel_Cutout
+    4300012: Failsafe_Panel_Cutout
     7400000: Default Take
     9500000: //RootNode
   materials:
