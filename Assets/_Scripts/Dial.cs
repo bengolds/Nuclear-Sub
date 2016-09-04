@@ -258,7 +258,7 @@ public class Dial : MonoBehaviour {
     }
     Vector3 GetForwardAxis()
     {
-        return Vector3.Cross(GetGlobalRotationAxis(), Vector3.up).normalized;
+        return Vector3.Cross(GetGlobalRotationAxis(), transform.up).normalized;
     }
 
     void OnDrawGizmos()
