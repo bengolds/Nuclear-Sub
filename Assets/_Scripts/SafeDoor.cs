@@ -3,10 +3,14 @@ using System.Collections.Generic;
 
 public class SafeDoor : MonoBehaviour {
 
-    public Collider safeBody;
+    public GameObject safeBody;
 	// Use this for initialization
 	void Start () {
-        Physics.IgnoreCollision(GetComponent<Collider>(), safeBody);
+        var colliders = safeBody.GetComponentsInChildren<Collider>();
+        foreach (var coll in colliders)
+        {
+            Physics.IgnoreCollision(GetComponent<Collider>(), coll);
+        }
 	}
 	
 	// Update is called once per frame
