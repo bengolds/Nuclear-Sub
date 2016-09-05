@@ -16,6 +16,12 @@ ModelImporter:
     100016: Front
     100018: Hook
     100020: Clipboard
+    100022: Cube
+    100024: Cube_001
+    100026: Cube_002
+    100028: Cube_003
+    100030: Cube_004
+    100032: Handle_Collider
     400000: Board
     400002: Bolt
     400004: Bolt_001
@@ -27,6 +33,12 @@ ModelImporter:
     400016: Front
     400018: Hook
     400020: Clipboard
+    400022: Cube
+    400024: Cube_001
+    400026: Cube_002
+    400028: Cube_003
+    400030: Cube_004
+    400032: Handle_Collider
     2300000: Board
     2300002: Bolt
     2300004: Bolt_001
@@ -35,6 +47,11 @@ ModelImporter:
     2300010: Back
     2300012: Bottom
     2300014: Front
+    2300016: Cube
+    2300018: Cube_001
+    2300020: Cube_002
+    2300022: Cube_003
+    2300024: Cube_004
     3300000: Board
     3300002: Bolt
     3300004: Bolt_001
@@ -43,6 +60,11 @@ ModelImporter:
     3300010: Back
     3300012: Bottom
     3300014: Front
+    3300016: Cube
+    3300018: Cube_001
+    3300020: Cube_002
+    3300022: Cube_003
+    3300024: Cube_004
     4300000: Bolt
     4300002: Bolt_001
     4300004: Paper
@@ -51,6 +73,11 @@ ModelImporter:
     4300010: Bottom
     4300012: Front
     4300014: Back
+    4300016: Cube_004
+    4300018: Cube_003
+    4300020: Cube_002
+    4300022: Cube_001
+    4300024: Cube
     7400000: Default Take
     9500000: //RootNode
   materials:
