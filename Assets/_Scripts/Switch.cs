@@ -1,8 +1,9 @@
 ﻿namespace VRTK
 {
+    using System;
     using UnityEngine;
 
-    public class Switch : VRTK_Control
+    public class Switch : VRTK_Control, IWatchableBool
     {
         public enum LeverDirection
         {
@@ -10,13 +11,25 @@
         }
 
         public LeverDirection direction = LeverDirection.y;
-        public float min = 0f;
-        public float max = 100f;
-        public float stepSize = 1f;
+
+        public event WatchableBoolEventHandler OnBoolValueChanged;
+
+        private float min = 0f;
+        private float max = 100f;
+        private float stepSize = 100f;
+        private bool oldBoolValue = true;
 
         private Rigidbody rb;
         private VRTK_InteractableObject io;
         private HingeJoint hj;
+        
+        public bool boolValue
+        {
+            get
+            {
+                return value == min;
+            }
+        }
 
         protected override void InitRequiredComponents()
         {
@@ -33,6 +46,10 @@
         protected override void HandleUpdate()
         {
             value = CalculateValue();
+            if (boolValue != oldBoolValue && OnBoolValueChanged != null)
+            {
+                OnBoolValueChanged(this, boolValue);
+            }
             if (!io.IsGrabbed())
             {
                 SnapToValue(value);
@@ -40,6 +57,7 @@
             {
                 DisableSnapping();
             }
+            oldBoolValue = boolValue;
         }
 
         private void InitRigidBody()

@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using System.Collections.Generic;
 
-public class LockGuide : MonoBehaviour {
+public class LockGuide : HasWatchableBool {
 	private enum LockState {
 		Empty,
 		Sliding,
@@ -15,8 +15,13 @@ public class LockGuide : MonoBehaviour {
 	public GameObject lockBody;
 	public UnityEvent onTurn;
     public UnityEvent onUnturn;
+    public bool isTurned
+    {
+        get { return boolValue; }
+        set { boolValue = value; }
+    }
 
-	private ConfigurableJoint sliderJoint;
+    private ConfigurableJoint sliderJoint;
 	private LockState state;
 	private bool justTurned;
 	private float keyAngle;
@@ -81,12 +86,14 @@ public class LockGuide : MonoBehaviour {
 
 	void KeyTurned() {
 		justTurned = true;
+        isTurned = true;
 		onTurn.Invoke ();
     }
 
     void KeyUnturned()
     {
         justTurned = false;
+        isTurned = false;
         onUnturn.Invoke();
     }
 

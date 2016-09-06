@@ -6,36 +6,41 @@ using System;
 [RequireComponent(typeof(EmissiveLight))]
 public class BoolWatchLight : MonoBehaviour
 {
-    public HasWatchableBool watchedBool;
-    public float onDuration;
-    public float offDuration;
-    public Ease ease;
+    public GameObject watchedBoolObject;
+    public float onDuration = 1f;
+    public float offDuration = 0.2f;
+    public Ease ease = Ease.OutExpo;
 
     private Tween onTween;
     private Tween offTween;
     private EmissiveLight connectedLight;
+    private IWatchableBool watchedBool;
+    private bool on = false;
 
     void Start()
     {
-        watchedBool.OnValueChanged += BoolValChanged;
-        connectedLight = GetComponent<EmissiveLight>();
-        if (watchedBool.boolValue)
+        watchedBool = watchedBoolObject.GetComponent<IWatchableBool>();
+        if (watchedBool == null)
         {
-            TurnOn();
+            Debug.LogError("No watchable bool on " + watchedBoolObject.name);
         }
+        connectedLight = GetComponent<EmissiveLight>();
     }
 
-    void BoolValChanged(object sender, bool value)
+    void Update()
     {
-        if (value)
+        if (watchedBool.boolValue != on)
         {
-            TurnOn();
-        }
-        else
-        {
-            TurnOff();
+            if (watchedBool.boolValue)
+            {
+                TurnOn();
+            } else
+            {
+                TurnOff();
+            }
         }
     }
+    
     
     public void TurnOn()
     {
@@ -44,6 +49,7 @@ public class BoolWatchLight : MonoBehaviour
         {
             offTween.Kill();
         }
+        on = true;
     }
 
     public void TurnOff()
@@ -54,6 +60,7 @@ public class BoolWatchLight : MonoBehaviour
         {
             onTween.Kill();
         }
+        on = false;
     }
 
 }
