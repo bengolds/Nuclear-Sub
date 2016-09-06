@@ -1,54 +1,49 @@
 fileFormatVersion: 2
-guid: 365dadf8a77fbb24da229138dd7ab4ec
-timeCreated: 1471043806
+guid: 08a9c5e10446a314db6ef2929b775ae4
+timeCreated: 1473123881
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Targeting_System_Bottom_Half
-    100004: Targeting_System_Bottom_Half_001
-    100006: Left_Bottom_Panel
-    100008: Left_Half
-    100010: Left_Top_Panel
-    100012: Right_Bottom_Panel
-    100014: Right_Half
-    100016: Right_Top_Panel
-    100018: Targeting_System
-    100020: Power_Panel_Cutout
-    100022: Working
-    100024: Empty
-    400000: //RootNode
-    400002: Targeting_System_Bottom_Half
-    400004: Targeting_System_Bottom_Half_001
-    400006: Left_Bottom_Panel
-    400008: Left_Half
-    400010: Left_Top_Panel
-    400012: Right_Bottom_Panel
-    400014: Right_Half
-    400016: Right_Top_Panel
-    400018: Targeting_System
-    400020: Power_Panel_Cutout
-    400022: Working
-    400024: Empty
-    2300000: //RootNode
-    2300002: Targeting_System_Bottom_Half
-    2300004: Targeting_System_Bottom_Half_001
-    2300006: Left_Half
-    2300008: Right_Half
-    2300010: Power_Panel_Cutout
-    3300000: //RootNode
-    3300002: Targeting_System_Bottom_Half
-    3300004: Targeting_System_Bottom_Half_001
-    3300006: Left_Half
-    3300008: Right_Half
-    3300010: Power_Panel_Cutout
-    4300000: Launch_System
-    4300002: Targeting_System_Bottom_Half_001
-    4300004: Targeting_System_Bottom_Half
-    4300006: Right_Half
-    4300008: Left_Half
-    4300010: Power_Panel_Cutout
+    100000: Annulus_Bridge
+    100002: Inner_Cylinder
+    100004: Inner_Lock
+    100006: KeyMetal_001
+    100008: //RootNode
+    100010: Lock_Cutout
+    100012: Middle_Annulus
+    100014: Outer_Annulus
+    100016: Working
+    400000: Annulus_Bridge
+    400002: Inner_Cylinder
+    400004: Inner_Lock
+    400006: KeyMetal_001
+    400008: //RootNode
+    400010: Lock_Cutout
+    400012: Middle_Annulus
+    400014: Outer_Annulus
+    400016: Working
+    2300000: Annulus_Bridge
+    2300002: Inner_Cylinder
+    2300004: Inner_Lock
+    2300006: KeyMetal_001
+    2300008: Lock_Cutout
+    2300010: Middle_Annulus
+    2300012: Outer_Annulus
+    3300000: Annulus_Bridge
+    3300002: Inner_Cylinder
+    3300004: Inner_Lock
+    3300006: KeyMetal_001
+    3300008: Lock_Cutout
+    3300010: Middle_Annulus
+    3300012: Outer_Annulus
+    4300000: Inner_Lock
+    4300002: Outer_Annulus
+    4300004: KeyMetal_001
+    4300006: Annulus_Bridge
+    4300008: Inner_Cylinder
+    4300010: Lock_Cutout
+    4300012: Middle_Annulus
     7400000: Default Take
     9500000: //RootNode
   materials:
