@@ -25,7 +25,7 @@ public class LockGuide : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		keyAngle = 0;
-        initialUp = transform.up;
+        initialUp = lockBody.transform.up;
         justTurned = false;
 	}
 	
@@ -53,8 +53,9 @@ public class LockGuide : MonoBehaviour {
 		if (key != null) {
 			if (state == LockState.Sliding) {
 				float keyTravel = Vector3.Distance (key.transform.position, snapPoint.transform.position);
-                Debug.Log("distance: " + keyTravel);
-				if (keyTravel >= lockDepth) {
+               // Debug.Log("distance: " + keyTravel);
+                float epsilon = 0.0001f;
+				if (keyTravel >= lockDepth - epsilon) {
 					Destroy (sliderJoint);
 					SetupTurnJoint (otherCollider.attachedRigidbody);
 					lockBody.transform.SetParent (otherCollider.transform, true);
@@ -62,7 +63,7 @@ public class LockGuide : MonoBehaviour {
 				}
 			} else if (state == LockState.Turning) {
                 key.GetComponent<VRTK.VRTK_InteractableObject>().precisionSnap = true;
-				keyAngle = Vector3.Angle (initialUp, transform.up);
+				keyAngle = Vector3.Angle (initialUp, lockBody.transform.up);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
 				}
