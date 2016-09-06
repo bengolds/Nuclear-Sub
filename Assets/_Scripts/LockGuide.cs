@@ -61,6 +61,7 @@ public class LockGuide : MonoBehaviour {
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
+                key.GetComponent<VRTK.VRTK_InteractableObject>().precisionSnap = true;
 				keyAngle = Vector3.Angle (initialUp, transform.up);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
@@ -95,6 +96,9 @@ public class LockGuide : MonoBehaviour {
 
 	ConfigurableJoint SetupSliderJoint(Rigidbody key) {
 		var joint = lockBody.AddComponent<ConfigurableJoint> ();
+
+        joint.axis = lockBody.transform.InverseTransformDirection(transform.right);
+        joint.secondaryAxis = lockBody.transform.InverseTransformDirection(transform.forward);
 
 		joint.angularXMotion = ConfigurableJointMotion.Locked;
 		joint.angularYMotion = ConfigurableJointMotion.Locked;
