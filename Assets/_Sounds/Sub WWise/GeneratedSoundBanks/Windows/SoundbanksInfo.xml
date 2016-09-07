@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -72,6 +72,10 @@
 				<File Id="341628915" Language="SFX">
 					<ShortName>Target.wav</ShortName>
 					<Path>SFX\Target_9E69E797.wem</Path>
+				</File>
+				<File Id="452445096" Language="SFX">
+					<ShortName>204424__jaraxe__alarm-3.wav</ShortName>
+					<Path>SFX\204424__jaraxe__alarm-3_9E69E797.wem</Path>
 				</File>
 				<File Id="663585161" Language="SFX">
 					<ShortName>Zero.wav</ShortName>

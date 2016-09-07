@@ -1474,7 +1474,7 @@
 						<ItemRef Name="Foxtrot" ID="{FCFECD39-FAD6-4F1C-8B88-AC95EAEE87DA}"/>
 					</Playlist>
 				</RandomSequenceContainer>
-				<Sound Name="Buzzer" ID="{14859EE8-FBFD-4CB2-9BCC-9DDFA5DD52DC}" ShortID="735854579" Type="SoundFX">
+				<Sound Name="Buzzer" ID="{D9AF2170-D91C-4B8D-93D3-331981FBC38D}" ShortID="71357216" Type="SoundFX">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -1484,16 +1484,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Buzzer" ID="{9E0673D3-A9B0-4681-BE02-ED6A35CB6D1C}" ShortID="210359392">
+						<AudioFileSource Name="204424__jaraxe__alarm-3" ID="{9B19582E-DE06-412C-94BC-A8886C6A8169}" ShortID="452445096">
 							<Language>SFX</Language>
-							<AudioFile>Buzzer.wav</AudioFile>
-							<ConvertedFileIDList>
-								<File ID="156548174"/>
-							</ConvertedFileIDList>
+							<AudioFile>204424__jaraxe__alarm-3.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Buzzer" ID="{9E0673D3-A9B0-4681-BE02-ED6A35CB6D1C}" Platform="Linked"/>
+						<ActiveSource Name="204424__jaraxe__alarm-3" ID="{9B19582E-DE06-412C-94BC-A8886C6A8169}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

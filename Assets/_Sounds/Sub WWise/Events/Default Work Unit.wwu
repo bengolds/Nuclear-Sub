@@ -54,7 +54,7 @@
 								<Action Name="Play" ID="{B71D2F53-FF0A-447E-B5FF-96A2428EBB62}" ShortID="1071725737" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{F1A1FFEF-5AD8-477B-94E1-6361CE6D386C}" Global="false">
-											<ObjectRef Name="Buzzer" ID="{14859EE8-FBFD-4CB2-9BCC-9DDFA5DD52DC}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+											<ObjectRef Name="Buzzer" ID="{D9AF2170-D91C-4B8D-93D3-331981FBC38D}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -65,7 +65,7 @@
 								<Action Name="Pause" ID="{0DEFBFF1-B4DE-4460-BE7A-34CA9B4A084D}" ShortID="1032108342" Type="Pause" Scope="One" Global="true">
 									<ElementList>
 										<Element ID="{65642F22-4E6D-48C9-9E66-0BD598A6A0A3}" Global="true">
-											<ObjectRef Name="Buzzer" ID="{14859EE8-FBFD-4CB2-9BCC-9DDFA5DD52DC}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+											<ObjectRef Name="Buzzer" ID="{D9AF2170-D91C-4B8D-93D3-331981FBC38D}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
 										</Element>
 									</ElementList>
 								</Action>
