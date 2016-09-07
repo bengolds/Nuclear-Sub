@@ -24,7 +24,7 @@ public class HasWatchableBool : MonoBehaviour, IWatchableBool
         m_value = value;
     }
 
-    private bool m_value;
+    private bool m_value = false;
 }
 
 public interface IWatchableBool

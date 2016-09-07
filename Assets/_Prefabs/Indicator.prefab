@@ -12,7 +12,7 @@ GameObject:
   - 135: {fileID: 13554506}
   - 23: {fileID: 2389234}
   - 114: {fileID: 11483442}
-  - 114: {fileID: 11408306}
+  - 114: {fileID: 11441766}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -59,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132016}
   m_LocalRotation: {x: -0.70710695, y: -0.00000006869818, z: -0.7071067, w: 0.00000022632975}
-  m_LocalPosition: {x: -0.0019999782, y: -0.108999915, z: 0.019999946}
+  m_LocalPosition: {x: -0.002, y: 0.012, z: 0.0022}
   m_LocalScale: {x: 0.029939149, y: 0.029939124, z: 0.029939143}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -180}
   m_Children: []
@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199564}
   m_LocalRotation: {x: -1, y: 0.00000018967339, z: -0.0000023245661, w: 0.000058168745}
-  m_LocalPosition: {x: -0.0019999999, y: -0.1630001, z: 0.0010000191}
+  m_LocalPosition: {x: -0.002, y: -0.042, z: 0.001}
   m_LocalScale: {x: 0.00066993135, y: 0.0006799154, z: 0.0006699308}
   m_LocalEulerAnglesHint: {x: -0.0067, y: 179.9997, z: -180}
   m_Children: []
@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2102, y: 0.0087, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -173,7 +173,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &11408306
+--- !u!114 &11441766
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -181,12 +181,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 132016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d35302ddb357b74b9592154c3ce6881, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cbe3b701d0e834429d7125577330875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectedLight: {fileID: 11483442}
-  onDuration: 0.2
-  offDuration: 1
+  watchedBoolObject: {fileID: 0}
+  onDuration: 1
+  offDuration: 0.2
   ease: 18
 --- !u!114 &11483442
 MonoBehaviour:
