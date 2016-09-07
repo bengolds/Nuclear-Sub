@@ -5,12 +5,12 @@ using VRTK;
 using System.Linq;
 using System;
 
-public class DialSet : MonoBehaviour {
+public class DialSet : HasWatchableBool {
 	public Dial[] dials;
 	public string combination;
     public string startingValue;
 	public UnityEvent onUnlock;
-	private bool unlocked = false;
+	private bool everUnlocked = false;
     private VRTK_InteractableObject[] dialIOs;
 
 
@@ -42,9 +42,11 @@ public class DialSet : MonoBehaviour {
             EnableAllIOs();
         }
 
-        if (!unlocked && GetValue () == combination) {
+        if (!everUnlocked && GetValue () == combination) {
 			Unlock ();
 		}
+
+        boolValue = GetValue() == combination;
 	}
 
     private void EnableAllIOs()
@@ -76,7 +78,7 @@ public class DialSet : MonoBehaviour {
     }
 
 	void Unlock() {
-		unlocked = true;
+		everUnlocked = true;
 		onUnlock.Invoke ();
 	}
 
