@@ -1446,25 +1446,6 @@
 								<ActiveSource Name="Foxtrot" ID="{15FAC1CB-07DC-45A0-BC70-0A4C6DE96109}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Buzzer" ID="{DD4D456D-35B1-4C7D-AF9E-7F138C49CF85}" ShortID="736977788" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Buzzer" ID="{306975C3-5459-4F52-BFCE-3BD59B0B8C0F}" ShortID="156548174">
-									<Language>SFX</Language>
-									<AudioFile>Buzzer.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Buzzer" ID="{306975C3-5459-4F52-BFCE-3BD59B0B8C0F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 					<Playlist>
 						<ItemRef Name="Failsafe Sequence Start" ID="{EE407D4C-55ED-4FBD-B0F9-DED3EA544970}"/>

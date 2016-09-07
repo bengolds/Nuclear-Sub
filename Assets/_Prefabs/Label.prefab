@@ -23,10 +23,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108510}
-  m_LocalRotation: {x: -1, y: 0.00000018125863, z: -0.0000036954914, w: 0.000058238093}
-  m_LocalPosition: {x: -0.050999973, y: 0.015000046, z: 0.0049999314}
+  m_LocalRotation: {x: -0.5000314, y: -0.5000272, z: 0.4999691, w: -0.49997243}
+  m_LocalPosition: {x: -0.051, y: -0.0015, z: -0.0032}
   m_LocalScale: {x: 0.0006699299, y: 0.0006799149, z: 0.0006699294}
-  m_LocalEulerAnglesHint: {x: -360.00668, y: 179.99959, z: -180}
+  m_LocalEulerAnglesHint: {x: -270, y: 90.006294, z: -360}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108510}
-  m_Text: Label
+  m_Text: Safety
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
