@@ -137,15 +137,18 @@ public class Dial : MonoBehaviour {
 	{
 		e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadAxisChanged += TouchpadAxisChanged;
         e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadTouchEnd += TouchpadTouchEnd;
-        e.interactingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (0.1f);
-	}
+        e.interactingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (0);
+        e.interactingObject.GetComponent<VRTK_ControllerActions>().ToggleHighlightTouchpad(true);
+
+    }
 
 	void StopUsing(object sender, InteractableObjectEventArgs e)
 	{
         e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadAxisChanged -= TouchpadAxisChanged;
         e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadTouchEnd -= TouchpadTouchEnd;
         e.interactingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (1.0f);
-		SnapDial ();
+        e.interactingObject.GetComponent<VRTK_ControllerActions>().ToggleHighlightTouchpad(false);
+        SnapDial ();
 	}
 
 	void TouchpadAxisChanged(object sender, ControllerInteractionEventArgs e) {
