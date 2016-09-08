@@ -78,7 +78,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1503708514
       Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
