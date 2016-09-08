@@ -4,23 +4,23 @@ using System.Collections;
 
 public class EventBoolean : MonoBehaviour {
 
-    public bool on = false;
+    public GameObject objectWithBoolean;
     public UnityEvent onOn;
     public UnityEvent onOff;
-
-	public void TurnOn()
+    private IWatchableBool watchedBool;
+    
+    void Start()
     {
-        on = true;
-    }
-
-    public void TurnOff()
-    {
-        on = true;
+        watchedBool = objectWithBoolean.GetComponent<IWatchableBool>();
+        if (watchedBool == null)
+        {
+            Debug.LogError("No IWatchableBool on " + objectWithBoolean.name);
+        }
     }
 
     public void Execute()
     {
-        if (on)
+        if (watchedBool.boolValue)
         {
             onOn.Invoke();
         } else
