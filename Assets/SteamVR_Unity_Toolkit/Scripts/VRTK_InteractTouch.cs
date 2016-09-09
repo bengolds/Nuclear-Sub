@@ -172,6 +172,10 @@ namespace VRTK
                     }
 
                 }
+                else
+                {
+                    touchedObject = null;
+                }
             }
         }
 
@@ -221,7 +225,7 @@ namespace VRTK
             {
                 if (IsObjectInteractable(collider.gameObject))
                 {
-                    touchedObjects.Add(collider.gameObject);
+                    touchedObjects.Add(collider.GetComponentInParent<VRTK_InteractableObject>().gameObject);
                 } else
                 {
                     touchedObjects.Remove(collider.gameObject);
@@ -254,11 +258,15 @@ namespace VRTK
             }
             else if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin)
             {
-                if (touchedObject == collider.gameObject)
+                if (touchedObject != null && (touchedObject == collider.gameObject || IsColliderChildOfTouchedObject(collider.gameObject)))
                 {
                     StopTouching(collider.gameObject);
                 }
-                touchedObjects.Remove(collider.gameObject);
+                var touchedIO = collider.gameObject.GetComponentInParent<VRTK_InteractableObject>();
+                if (touchedIO != null)
+                {
+                    touchedObjects.Remove(touchedIO.gameObject);
+                }
             }
         }
 
@@ -318,6 +326,10 @@ namespace VRTK
                 OnControllerUntouchInteractableObject(SetControllerInteractEvent(untouched.gameObject));
                 untouched.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
                 untouched.GetComponent<VRTK_InteractableObject>().StopTouching(gameObject);
+                if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin)
+                {
+                    touchedObjects.Remove(untouched);
+                }
             }
 
             if (updatedHideControllerOnTouch)

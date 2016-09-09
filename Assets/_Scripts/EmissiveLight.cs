@@ -13,7 +13,6 @@ public class EmissiveLight : MonoBehaviour {
 	void Start () {
         emRenderer = GetComponent<Renderer>();
         var startColor = emRenderer.material.GetColor("_EmissionColor");
-        //emRenderer.material = Instantiate(emRenderer.sharedMaterial);
         if (startColor == Color.black)
         {
             Debug.LogError("Your light needs to start with some emission.");

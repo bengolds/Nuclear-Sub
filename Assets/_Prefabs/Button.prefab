@@ -30,6 +30,8 @@ GameObject:
   - 95: {fileID: 9567510}
   - 114: {fileID: 11412934}
   - 65: {fileID: 6561348}
+  - 114: {fileID: 11499734}
+  - 114: {fileID: 11474862}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -231,6 +233,34 @@ MonoBehaviour:
   buttonColor: {r: 1, g: 0, b: 0, a: 1}
   markingColor: {r: 1, g: 1, b: 1, a: 1}
   buttonBase: {fileID: 2370604}
+--- !u!114 &11474862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbe3b701d0e834429d7125577330875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watchedBoolObject: {fileID: 0}
+  onDuration: 1
+  offDuration: 0.2
+  ease: 18
+--- !u!114 &11499734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc635e54163fcd4aacf13682982d246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEmissionColor: {r: 10, g: 0.07352948, b: 0.07352948, a: 1}
+  brightness: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

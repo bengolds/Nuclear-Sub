@@ -5,7 +5,7 @@
 		_MainTex ("Base Texture", 2D) = "white" {}
 		_Glossiness ("Smoothness", Range(0,1)) = 0.5
 		_Metallic ("Metallic", Range(0,1)) = 0.0
-		_Emission("Emission", Color) = (0,0,0,1)
+		_EmissionColor("Emission", Color) = (0,0,0,1)
 	}
 	SubShader {
 		Tags { "RenderType"="Opaque" }
@@ -28,7 +28,7 @@
 		half _Metallic;
 		fixed4 _BaseColor;
 		fixed4 _MarkingColor;
-		fixed3 _Emission;
+		fixed3 _EmissionColor;
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
@@ -38,7 +38,7 @@
 			// Metallic and smoothness come from slider variables
 			o.Metallic = _Metallic;
 			o.Smoothness = _Glossiness;
-			o.Emission = _Emission;
+			o.Emission = _EmissionColor;
 			o.Alpha = c.a;
 		}
 		ENDCG

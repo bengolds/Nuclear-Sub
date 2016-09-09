@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 [RequireComponent(typeof(AkEvent))]
-public class BlinkSoundAndLight : MonoBehaviour {
+public class BlinkSoundAndLight : HasWatchableBool {
     public bool on = true;
     public EmissiveLight eLight;
     public float blinkDelay;
@@ -16,6 +16,11 @@ public class BlinkSoundAndLight : MonoBehaviour {
         trigger = GetComponent<AkScriptTrigger>();
         BuzzAndLight();
 	}
+
+    void Update ()
+    {
+        boolValue = on;
+    }
 	
 	void BuzzAndLight()
     {
