@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 3D Font Material
+  m_Name: Dark Text
   m_Shader: {fileID: 4800000, guid: cc42eee6a7e537f4facbb2300494e7f3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}

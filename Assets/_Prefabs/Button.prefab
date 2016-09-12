@@ -28,7 +28,6 @@ GameObject:
   - 33: {fileID: 3319202}
   - 23: {fileID: 2370604}
   - 95: {fileID: 9567510}
-  - 114: {fileID: 11412934}
   - 65: {fileID: 6561348}
   - 114: {fileID: 11499734}
   - 114: {fileID: 11474862}
@@ -132,7 +131,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: d9245984567b436498b64ef2bf81c427, type: 2}
+  - {fileID: 2100000, guid: 3f5bdcff591f4d9438120149bba04efb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -204,21 +203,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 376ad3c37e2de374cb7cf156a8556022, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
---- !u!114 &11412934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb6f8b7e538b4b4caff8bfd7a32e275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonColor: {r: 1, g: 0, b: 0, a: 1}
-  markingColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonBase: {fileID: 0}
+    rgba: 4278190080
 --- !u!114 &11443276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonColor: {r: 1, g: 0, b: 0, a: 1}
-  markingColor: {r: 1, g: 1, b: 1, a: 1}
+  markingColor: {r: 0, g: 0, b: 0, a: 1}
   buttonBase: {fileID: 2370604}
 --- !u!114 &11474862
 MonoBehaviour:
