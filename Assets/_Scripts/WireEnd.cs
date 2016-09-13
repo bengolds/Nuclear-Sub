@@ -3,16 +3,26 @@ using System.Collections.Generic;
 
 public class WireEnd : MonoBehaviour {
     public WireEnd otherEnd;
+    public GameObject sparkObject;
     private PowerTerminal connectedTo;
+    private ParticleSystem[] particleSystems;
 
     // Use this for initialization
     void Start() {
-
+        particleSystems = sparkObject.GetComponentsInChildren<ParticleSystem>();
+        TurnOffSparks();
     }
 
-    // Update is called once per frame
-    void Update() {
-
+    void Update()
+    {
+        if (connectedTo != null && connectedTo.isPoweredOn)
+        {
+            TurnOnSparks();
+        }
+        else
+        {
+            TurnOffSparks();
+        }
     }
 
     public bool isPowered() {
@@ -22,7 +32,6 @@ public class WireEnd : MonoBehaviour {
     void OnCollisionStay(Collision collision)
     {
         TouchingObject(collision.gameObject);
-
     }
 
     void OnTriggerStay(Collider other)
@@ -59,6 +68,24 @@ public class WireEnd : MonoBehaviour {
         if (powerTerminal == connectedTo)
         {
             connectedTo = null;
+        }
+    }
+
+    void TurnOnSparks()
+    {
+        foreach (var ps in particleSystems)
+        {
+            var em = ps.emission;
+            em.enabled = true;
+        }
+    }
+
+    void TurnOffSparks()
+    {
+        foreach (var ps in particleSystems)
+        {
+            var em = ps.emission;
+            em.enabled = false;
         }
     }
 }
