@@ -30,7 +30,7 @@ GameObject:
   - 95: {fileID: 9567510}
   - 65: {fileID: 6561348}
   - 114: {fileID: 11499734}
-  - 114: {fileID: 11474862}
+  - 114: {fileID: 11400624}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -46,7 +46,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489546}
-  - 114: {fileID: 11443276}
+  - 114: {fileID: 11419856}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -73,9 +73,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143834}
-  m_LocalRotation: {x: 0.7071069, y: 0.7071067, z: 0.00000011175868, w: -0.00000016391274}
-  m_LocalPosition: {x: 0.0001, y: 0.0012, z: 0.0112}
-  m_LocalScale: {x: 0.00080159877, y: 0.00081354636, z: 0.0008015977}
+  m_LocalRotation: {x: 0.7071069, y: 0.7071067, z: 0.000000111758666, w: -0.00000016391273}
+  m_LocalPosition: {x: 0.0001, y: 0.0012, z: 0.011199999}
+  m_LocalScale: {x: 0.0008015987, y: 0.0008135464, z: 0.0008015977}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
   m_Children: []
   m_Father: {fileID: 489546}
@@ -204,21 +204,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
---- !u!114 &11443276
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb6f8b7e538b4b4caff8bfd7a32e275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonColor: {r: 1, g: 0, b: 0, a: 1}
-  markingColor: {r: 0, g: 0, b: 0, a: 1}
-  buttonBase: {fileID: 2370604}
---- !u!114 &11474862
+--- !u!114 &11400624
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -226,13 +212,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 169832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbe3b701d0e834429d7125577330875, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e329e501cd329649a231a36705762c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  watchedBoolObject: {fileID: 0}
-  onDuration: 1
-  offDuration: 0.2
+  offBrightness: 0
+  normalOnBrightness: 0.8
+  touchedBrightness: 1
+  pressedBrightness: 1
+  transitionDuration: 0.2
   ease: 18
+--- !u!114 &11419856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0499154df0e034f800839487200b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabledBoolObject: {fileID: 0}
+  onPress:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  depressDistance: 0.005
+  localDepressAxis: {x: 0, y: 0, z: -1}
+  depressDuration: 0.2
+  depressEase: 1
 --- !u!114 &11499734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -244,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc635e54163fcd4aacf13682982d246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEmissionColor: {r: 10, g: 0.07352948, b: 0.07352948, a: 1}
+  maxEmissionColor: {r: 1, g: 0.007352948, b: 0.007352948, a: 1}
   brightness: 0
 --- !u!1001 &100100000
 Prefab:

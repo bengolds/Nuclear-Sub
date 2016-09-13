@@ -13,11 +13,11 @@ public class BoolWatchLight : MonoBehaviour
 
     private Tween onTween;
     private Tween offTween;
-    private EmissiveLight connectedLight;
-    private IWatchableBool watchedBool;
-    private bool on = false;
+    protected EmissiveLight connectedLight;
+    protected IWatchableBool watchedBool;
+    protected bool currentlyOn = false;
 
-    void Start()
+    protected virtual void Start()
     {
         watchedBool = watchedBoolObject.GetComponent<IWatchableBool>();
         if (watchedBool == null)
@@ -27,9 +27,9 @@ public class BoolWatchLight : MonoBehaviour
         connectedLight = GetComponent<EmissiveLight>();
     }
 
-    void Update()
+    protected virtual void Update()
     {
-        if (watchedBool.boolValue != on)
+        if (watchedBool.boolValue != currentlyOn)
         {
             if (watchedBool.boolValue)
             {
@@ -49,7 +49,7 @@ public class BoolWatchLight : MonoBehaviour
         {
             offTween.Kill();
         }
-        on = true;
+        currentlyOn = true;
     }
 
     public void TurnOff()
@@ -60,7 +60,7 @@ public class BoolWatchLight : MonoBehaviour
         {
             onTween.Kill();
         }
-        on = false;
+        currentlyOn = false;
     }
 
 }
