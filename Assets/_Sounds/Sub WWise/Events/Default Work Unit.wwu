@@ -177,6 +177,9 @@
 						<Event Name="StopSparks" ID="{F782C4BC-71D0-4CF1-8A8E-49074C270064}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{2BA0E37A-A0D7-4014-96AE-A0CE341FE1AC}" ShortID="328194390" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{FBE08AE7-A554-4DC8-A65E-86161EEF2719}" Global="false">
 											<ObjectRef Name="Sparks" ID="{53B81B24-B3BE-4D4E-9DE2-CED447350D93}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
