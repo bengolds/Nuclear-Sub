@@ -161,6 +161,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Sparks" ID="{CDAD6359-6EF9-4136-AEE8-27FE040621E0}" ShortID="231622100">
+					<ChildrenList>
+						<Event Name="PlaySparks" ID="{0F346356-507D-4A40-AB7F-85712FA42A1E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D5D5771C-F9A0-4FD9-898A-928553022D99}" ShortID="925507029" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6B6BB2BF-C9C5-4639-97EB-CF0059DF3858}" Global="false">
+											<ObjectRef Name="Sparks" ID="{53B81B24-B3BE-4D4E-9DE2-CED447350D93}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopSparks" ID="{F782C4BC-71D0-4CF1-8A8E-49074C270064}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{2BA0E37A-A0D7-4014-96AE-A0CE341FE1AC}" ShortID="328194390" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FBE08AE7-A554-4DC8-A65E-86161EEF2719}" Global="false">
+											<ObjectRef Name="Sparks" ID="{53B81B24-B3BE-4D4E-9DE2-CED447350D93}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

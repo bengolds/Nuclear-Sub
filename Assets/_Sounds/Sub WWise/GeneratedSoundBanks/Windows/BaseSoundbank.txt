@@ -7,7 +7,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1824701367	StopBuzzer			\Default Work Unit\OpeningBuzzer\StopBuzzer	
 	2003129982	UnmuteFailsafe1Radio			\Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio	
 	2188295279	MuteFailsafe1Radio			\Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio	
+	2356623873	PlaySparks			\Default Work Unit\Sparks\PlaySparks	
 	2614172267	UnmuteFailsafe2Radio			\Default Work Unit\Failsafe2Radio\UnmuteFailsafe2Radio	
+	2751768967	StopSparks			\Default Work Unit\Sparks\StopSparks	
 	3602858226	MuteFailsafe2Radio			\Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio	
 	4043917796	UnmuteMissionRadio			\Default Work Unit\MissionRadio\UnmuteMissionRadio	
 
@@ -18,11 +20,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	97347378	Zulu	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Zulu_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Zulu		352320
 	106203532	Oscar	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Oscar_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Oscar		282688
 	120302601	Lima	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Lima_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\Lima		307264
-	156548174	Buzzer	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Buzzer_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Buzzer		352352
 	243685464	Opening Line	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Opening Line_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Opening Line		1073216
 	261566975	Failsafe Sequence Start	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Failsafe Sequence Start_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Failsafe Sequence Start		516160
 	336429519	Verification Code	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Verification Code_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Verification Code		467008
 	341628915	Target Khiozrekalon	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Target_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Target Khiozrekalon		933952
+	378781603	Sparks	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\sparks_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sparks		3459140
 	452445096	Buzzer	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\204424__jaraxe__alarm-3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buzzer		695960
 	663585161	0	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Zero_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\0		352320
 	666437856	Failsafe Code Start	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Failsafe Code Start_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\Failsafe Code Start		454720

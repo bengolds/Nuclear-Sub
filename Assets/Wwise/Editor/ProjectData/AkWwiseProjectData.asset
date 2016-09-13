@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: 1140699049
-    m_lastTimePart2: -1999382287
+    m_lastTimePsrt1: -1784308620
+    m_lastTimePart2: -1999381458
     List:
     - Name: MuteFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
@@ -67,6 +67,18 @@ MonoBehaviour:
       ID: 607422545
       Guid: 70813aae4f572346a33699752007e694
       maxAttenuation: 0
+    - Name: PlaySparks
+      Path: Default Work Unit\Sparks\PlaySparks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sparks
+        ObjectType: 4
+      - ElementName: PlaySparks
+        ObjectType: 3
+      ID: -1938343423
+      Guid: 5663340f7d50404aab7f85712fa42a1e
+      maxAttenuation: 0
     - Name: StartFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\StartFailsafe1Radio
       PathAndIcons:
@@ -78,7 +90,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1503708514
       Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
@@ -90,7 +102,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 120276447
       Guid: 36752ecb5a4908429a5035264bd2ad61
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartMissionRadio
       Path: Default Work Unit\MissionRadio\StartMissionRadio
       PathAndIcons:
@@ -102,7 +114,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1471546448
       Guid: 6a2261be5991b541941585171c34a4bc
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StopBuzzer
       Path: Default Work Unit\OpeningBuzzer\StopBuzzer
       PathAndIcons:
@@ -114,6 +126,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1824701367
       Guid: 7f61363f5df34940aed0f6f5f5319455
+      maxAttenuation: 0
+    - Name: StopSparks
+      Path: Default Work Unit\Sparks\StopSparks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sparks
+        ObjectType: 4
+      - ElementName: StopSparks
+        ObjectType: 3
+      ID: -1543198329
+      Guid: bcc482f7d071f14c8a8e49074c270064
       maxAttenuation: 0
     - Name: UnmuteFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio
@@ -192,7 +216,7 @@ MonoBehaviour:
   - /Sub WWise
   - /Sub WWise/Events
   - /Sub WWise/Events/Default Work Unit
-  - /Sub WWise/Events/Default Work Unit/Failsafe2Radio
+  - /Sub WWise/Events/Default Work Unit/Sparks
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

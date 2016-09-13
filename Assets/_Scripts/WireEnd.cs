@@ -4,6 +4,10 @@ using System.Collections.Generic;
 public class WireEnd : MonoBehaviour {
     public WireEnd otherEnd;
     public GameObject sparkObject;
+    public AkEvent sparkOnEvent;
+    public AkEvent sparkOffEvent;
+
+    private bool soundPlaying = false;
     private PowerTerminal connectedTo;
     private ParticleSystem[] particleSystems;
 
@@ -78,6 +82,11 @@ public class WireEnd : MonoBehaviour {
             var em = ps.emission;
             em.enabled = true;
         }
+        if (!soundPlaying)
+        {
+            AkSoundEngine.PostEvent((uint)sparkOnEvent.eventID, gameObject);
+            soundPlaying = true;
+        }
     }
 
     void TurnOffSparks()
@@ -86,6 +95,11 @@ public class WireEnd : MonoBehaviour {
         {
             var em = ps.emission;
             em.enabled = false;
+        }
+        if (soundPlaying)
+        {
+            AkSoundEngine.PostEvent((uint)sparkOffEvent.eventID, gameObject);
+            soundPlaying = false;
         }
     }
 }
