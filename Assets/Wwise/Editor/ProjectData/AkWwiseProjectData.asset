@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: -1784308620
-    m_lastTimePart2: -1999381458
+    m_lastTimePsrt1: -831124632
+    m_lastTimePart2: -1999381456
     List:
     - Name: MuteFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
@@ -90,7 +90,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1503708514
       Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
@@ -102,7 +102,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 120276447
       Guid: 36752ecb5a4908429a5035264bd2ad61
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: StartMissionRadio
       Path: Default Work Unit\MissionRadio\StartMissionRadio
       PathAndIcons:

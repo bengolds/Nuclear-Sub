@@ -19,6 +19,12 @@ ModelImporter:
     100022: Power_Panel_Cutout
     100024: Working
     100026: Failsafe_Panel_Cutout
+    100028: LongConsoleMesh
+    100030: LongConsoleMeshWorking
+    100032: LongPanel
+    100034: PowerPanel
+    100036: ShortConsoleMesh
+    100038: ShortPanel
     400000: //RootNode
     400002: Targeting_System_Bottom_Half
     400004: Targeting_System_Right_Half
@@ -33,6 +39,12 @@ ModelImporter:
     400022: Power_Panel_Cutout
     400024: Working
     400026: Failsafe_Panel_Cutout
+    400028: LongConsoleMesh
+    400030: LongConsoleMeshWorking
+    400032: LongPanel
+    400034: PowerPanel
+    400036: ShortConsoleMesh
+    400038: ShortPanel
     2300000: Targeting_System_Bottom_Half
     2300002: Targeting_System_Right_Half
     2300004: Cube
@@ -40,6 +52,10 @@ ModelImporter:
     2300008: Map_Console_Mesh
     2300010: Power_Panel_Cutout
     2300012: Failsafe_Panel_Cutout
+    2300014: LongConsoleMesh
+    2300016: LongConsoleMeshWorking
+    2300018: PowerPanel
+    2300020: ShortConsoleMesh
     3300000: Targeting_System_Bottom_Half
     3300002: Targeting_System_Right_Half
     3300004: Cube
@@ -47,6 +63,10 @@ ModelImporter:
     3300008: Map_Console_Mesh
     3300010: Power_Panel_Cutout
     3300012: Failsafe_Panel_Cutout
+    3300014: LongConsoleMesh
+    3300016: LongConsoleMeshWorking
+    3300018: PowerPanel
+    3300020: ShortConsoleMesh
     4300000: Targeting_System_Bottom_Half
     4300002: Targeting_System_Right_Half
     4300004: Cube
@@ -54,6 +74,10 @@ ModelImporter:
     4300008: Failsafe_Console_Mesh
     4300010: Power_Panel_Cutout
     4300012: Failsafe_Panel_Cutout
+    4300014: PowerPanel
+    4300016: LongConsoleMesh
+    4300018: ShortConsoleMesh
+    4300020: LongConsoleMeshWorking
     7400000: Default Take
     9500000: //RootNode
   materials:
