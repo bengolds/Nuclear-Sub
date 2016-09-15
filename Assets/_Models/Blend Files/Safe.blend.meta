@@ -57,6 +57,7 @@ ModelImporter:
     100098: Left
     100100: Right
     100102: Top
+    100104: Body_Working
     400000: Body
     400002: Cutout
     400004: Cylinder
@@ -109,6 +110,7 @@ ModelImporter:
     400098: Left
     400100: Right
     400102: Top
+    400104: Body_Working
     2300000: Body
     2300002: Cutout
     2300004: Cylinder
@@ -154,6 +156,7 @@ ModelImporter:
     2300084: Left
     2300086: Right
     2300088: Top
+    2300090: Body_Working
     3300000: Body
     3300002: Cutout
     3300004: Cylinder
@@ -199,6 +202,7 @@ ModelImporter:
     3300084: Left
     3300086: Right
     3300088: Top
+    3300090: Body_Working
     4300000: Cutout
     4300002: Body
     4300004: Door
@@ -244,6 +248,7 @@ ModelImporter:
     4300084: Left
     4300086: Right
     4300088: Top
+    4300090: Body_Working
     6400000: Body
     6400002: Body_Cutout
     6400004: Bolt
