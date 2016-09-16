@@ -18,6 +18,7 @@ public class LitButton : MonoBehaviour
 
     private float currTargetBrightness = float.NaN;
     private Tween currTween;
+    private bool overridden = false;
 
     void Start()
     {
@@ -28,23 +29,27 @@ public class LitButton : MonoBehaviour
     void Update()
     {
         var io = GetComponentInParent<VRTK_InteractableObject>();
-        if (button.IsEnabled())
+        if (!overridden)
         {
-            if (io.IsUsing())
+            if (button.IsEnabled())
             {
-                ChangeBrightness(pressedBrightness);
-            }
-            else if (io.IsTouched())
-            {
-                ChangeBrightness(touchedBrightness);
+                if (io.IsUsing())
+                {
+                    ChangeBrightness(pressedBrightness);
+                }
+                else if (io.IsTouched())
+                {
+                    ChangeBrightness(touchedBrightness);
+                }
+                else
+                {
+                    ChangeBrightness(normalOnBrightness);
+                }
             }
             else
             {
-                ChangeBrightness(normalOnBrightness);
+                ChangeBrightness(offBrightness);
             }
-        } else
-        {
-            ChangeBrightness(offBrightness);
         }
     }
 
@@ -64,4 +69,12 @@ public class LitButton : MonoBehaviour
         currTargetBrightness = targetBrightness;
     }
 
+
+    public void OverrideBrightness(float targetBrightness, float transitionDuration, Ease ease)
+    {
+        currTween = DOTween.To(x => eLight.brightness = x, eLight.brightness, targetBrightness, transitionDuration)
+            .SetEase(ease);
+        currTargetBrightness = targetBrightness;
+        overridden = true;
+    }
 }

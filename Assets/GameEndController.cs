@@ -22,5 +22,10 @@ public class GameEndController : MonoBehaviour {
     {
         mainLight.DOIntensity(dimIntensity, dimDuration).SetEase(dimEase);
         DOTween.To(x => RenderSettings.ambientIntensity = x, RenderSettings.ambientIntensity, 0, dimDuration).SetEase(dimEase);
+        var buttons = FindObjectsOfType<LitButton>();
+        foreach (var button in buttons)
+        {
+            button.OverrideBrightness(0, dimDuration, dimEase);
+        }
     }
 }
