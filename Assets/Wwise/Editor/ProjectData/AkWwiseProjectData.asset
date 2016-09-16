@@ -102,7 +102,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 120276447
       Guid: 36752ecb5a4908429a5035264bd2ad61
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: StartMissionRadio
       Path: Default Work Unit\MissionRadio\StartMissionRadio
       PathAndIcons:
@@ -114,7 +114,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1471546448
       Guid: 6a2261be5991b541941585171c34a4bc
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: StopBuzzer
       Path: Default Work Unit\OpeningBuzzer\StopBuzzer
       PathAndIcons:
