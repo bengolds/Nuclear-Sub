@@ -33,12 +33,14 @@
 		void surf (Input IN, inout SurfaceOutputStandard o) {
 			// Albedo comes from a texture tinted by color
 			fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+			o.Emission = c * _EmissionColor;
 			c = lerp(_MarkingColor, _BaseColor, c.r);
 			o.Albedo = c.rgb;
 			// Metallic and smoothness come from slider variables
 			o.Metallic = _Metallic;
 			o.Smoothness = _Glossiness;
-			o.Emission = step(0.5, c.r) * _EmissionColor;
+			//o.Emission = step(0.5, c.r) * _EmissionColor;
+			//o.Emission = _EmissionColor;
 			o.Alpha = c.a;
 		}
 		ENDCG

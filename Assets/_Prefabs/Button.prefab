@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offBrightness: 0
-  normalOnBrightness: 0.8
+  normalOnBrightness: 0.6
   touchedBrightness: 1
   pressedBrightness: 1
   transitionDuration: 0.6

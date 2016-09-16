@@ -38,6 +38,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Emission
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 0}
@@ -78,13 +85,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Emission
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -100,16 +100,16 @@ Material:
         second: 0.5
       data:
         first:
-          name: _ZWrite
-        second: 1
-      data:
-        first:
           name: _Glossiness
         second: 0.5
       data:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _ZWrite
+        second: 1
       data:
         first:
           name: _BumpScale
@@ -138,20 +138,20 @@ Material:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0.4808018, g: 0.50735295, b: 0.02611375, a: 1}
+        second: {r: 0.94482744, g: 1, b: 0, a: 1}
       data:
         first:
           name: _Color
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _Emission
-        second: {r: 0, g: 0, b: 0, a: 1}
-      data:
-        first:
           name: _BaseColor
-        second: {r: 0.9862069, g: 1, b: 0, a: 1}
+        second: {r: 0.5759447, g: 0.584, b: 0, a: 1}
       data:
         first:
           name: _MarkingColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Emission
         second: {r: 0, g: 0, b: 0, a: 1}
