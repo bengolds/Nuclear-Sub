@@ -1380,7 +1380,7 @@
 								<ActiveSource Name="Victor" ID="{A4C2BD46-616C-4D50-B196-877D4DF1CBFF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="India" ID="{1A0DE540-7ABF-4985-9C53-CE72F5A2461F}" ShortID="745887387" Type="SoundFX">
+						<Sound Name="Juliett" ID="{47489B44-282C-438F-A286-625F612CADD0}" ShortID="63204286" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -1390,19 +1390,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="India" ID="{AD591BA6-A6CD-45C8-B308-C90E9424487F}" ShortID="1050365163">
+								<AudioFileSource Name="Juliett" ID="{DBD79684-39A4-49F9-B85E-AD0DD46894EB}" ShortID="953113550">
 									<Language>SFX</Language>
-									<AudioFile>India.wav</AudioFile>
+									<AudioFile>Juliett.wav</AudioFile>
 									<ConvertedFileIDList>
-										<File ID="908133878"/>
+										<File ID="1010436986"/>
 									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="India" ID="{AD591BA6-A6CD-45C8-B308-C90E9424487F}" Platform="Linked"/>
+								<ActiveSource Name="Juliett" ID="{DBD79684-39A4-49F9-B85E-AD0DD46894EB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Oscar" ID="{9FD55D7A-51BA-4657-BD23-BD976602A327}" ShortID="438739022" Type="SoundFX">
+						<Sound Name="Mike" ID="{74991C16-C6B0-437F-98F5-8E6DF26294C5}" ShortID="460834414" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -1412,19 +1412,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Oscar" ID="{5A162724-8653-4A38-BF94-F31F93B53197}" ShortID="222085290">
+								<AudioFileSource Name="Mike" ID="{98F48610-3F4D-4CC1-837B-F42E9F3CEEBD}" ShortID="707011345">
 									<Language>SFX</Language>
-									<AudioFile>Oscar.wav</AudioFile>
+									<AudioFile>Mike.wav</AudioFile>
 									<ConvertedFileIDList>
-										<File ID="106203532"/>
+										<File ID="559556045"/>
 									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Oscar" ID="{5A162724-8653-4A38-BF94-F31F93B53197}" Platform="Linked"/>
+								<ActiveSource Name="Mike" ID="{98F48610-3F4D-4CC1-837B-F42E9F3CEEBD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Foxtrot" ID="{FCFECD39-FAD6-4F1C-8B88-AC95EAEE87DA}" ShortID="1033818820" Type="SoundFX">
+						<Sound Name="Bravo" ID="{AF5ACE0E-2BF8-4BE1-8564-613D017314BE}" ShortID="587135553" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -1434,25 +1434,25 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Foxtrot" ID="{15FAC1CB-07DC-45A0-BC70-0A4C6DE96109}" ShortID="565143088">
+								<AudioFileSource Name="Bravo" ID="{A8A5C52B-3435-4E79-A2E7-FB309FC83511}" ShortID="532178514">
 									<Language>SFX</Language>
-									<AudioFile>Foxtrot.wav</AudioFile>
+									<AudioFile>Bravo.wav</AudioFile>
 									<ConvertedFileIDList>
-										<File ID="82502421"/>
+										<File ID="202015221"/>
 									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Foxtrot" ID="{15FAC1CB-07DC-45A0-BC70-0A4C6DE96109}" Platform="Linked"/>
+								<ActiveSource Name="Bravo" ID="{A8A5C52B-3435-4E79-A2E7-FB309FC83511}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<Playlist>
 						<ItemRef Name="Failsafe Sequence Start" ID="{EE407D4C-55ED-4FBD-B0F9-DED3EA544970}"/>
+						<ItemRef Name="Juliett" ID="{47489B44-282C-438F-A286-625F612CADD0}"/>
+						<ItemRef Name="Mike" ID="{74991C16-C6B0-437F-98F5-8E6DF26294C5}"/>
 						<ItemRef Name="Victor" ID="{5C02B4AA-FB72-4787-855C-AA8D4C68EAB2}"/>
-						<ItemRef Name="India" ID="{1A0DE540-7ABF-4985-9C53-CE72F5A2461F}"/>
-						<ItemRef Name="Oscar" ID="{9FD55D7A-51BA-4657-BD23-BD976602A327}"/>
-						<ItemRef Name="Foxtrot" ID="{FCFECD39-FAD6-4F1C-8B88-AC95EAEE87DA}"/>
+						<ItemRef Name="Bravo" ID="{AF5ACE0E-2BF8-4BE1-8564-613D017314BE}"/>
 					</Playlist>
 				</RandomSequenceContainer>
 				<Sound Name="Buzzer" ID="{D9AF2170-D91C-4B8D-93D3-331981FBC38D}" ShortID="71357216" Type="SoundFX">

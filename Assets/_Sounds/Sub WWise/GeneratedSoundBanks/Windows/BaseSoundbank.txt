@@ -15,17 +15,17 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	47218279	9	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Niner_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\9		335936
-	82502421	Foxtrot	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Foxtrot_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Foxtrot		393280
 	95719391	Yankee	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Yankee_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Yankee		315456
 	97347378	Zulu	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Zulu_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Zulu		352320
-	106203532	Oscar	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Oscar_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Oscar		282688
 	120302601	Lima	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Lima_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\Lima		307264
+	202015221	Bravo	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Bravo_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Bravo		393280
 	243685464	Opening Line	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Opening Line_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Opening Line		1073216
 	261566975	Failsafe Sequence Start	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Failsafe Sequence Start_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Failsafe Sequence Start		516160
 	336429519	Verification Code	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Verification Code_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Verification Code		467008
 	341628915	Target Khiozrekalon	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Target_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Target Khiozrekalon		933952
 	378781603	Sparks	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\sparks_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sparks		3459140
 	452445096	Buzzer	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\204424__jaraxe__alarm-3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Buzzer		695960
+	559556045	Mike	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Mike_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Mike		344128
 	663585161	0	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Zero_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\0		352320
 	666437856	Failsafe Code Start	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Failsafe Code Start_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\Failsafe Code Start		454720
 	668472289	Charlie	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Charlie_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Charlie		344128
@@ -34,5 +34,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	894610532	Victor	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Victor_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Victor		360512
 	908133878	India	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\India_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\India		282688
 	965391902	Echo	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Echo_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 1\Echo		315456
+	1010436986	Juliett	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Juliett_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Failsafe 2\Juliett		319552
 	1058083344	Tango	C:\Users\Ben\Projects\Nuclear-Sub\Assets\_Sounds\Sub WWise\.cache\Windows\SFX\Tango_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mission Orders\Tango		299072
 

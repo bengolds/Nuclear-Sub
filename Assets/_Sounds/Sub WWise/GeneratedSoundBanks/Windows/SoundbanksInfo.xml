@@ -35,10 +35,6 @@
 					<ShortName>Niner.wav</ShortName>
 					<Path>SFX\Niner_9E69E797.wem</Path>
 				</File>
-				<File Id="82502421" Language="SFX">
-					<ShortName>Foxtrot.wav</ShortName>
-					<Path>SFX\Foxtrot_9E69E797.wem</Path>
-				</File>
 				<File Id="95719391" Language="SFX">
 					<ShortName>Yankee.wav</ShortName>
 					<Path>SFX\Yankee_9E69E797.wem</Path>
@@ -47,13 +43,13 @@
 					<ShortName>Zulu.wav</ShortName>
 					<Path>SFX\Zulu_9E69E797.wem</Path>
 				</File>
-				<File Id="106203532" Language="SFX">
-					<ShortName>Oscar.wav</ShortName>
-					<Path>SFX\Oscar_9E69E797.wem</Path>
-				</File>
 				<File Id="120302601" Language="SFX">
 					<ShortName>Lima.wav</ShortName>
 					<Path>SFX\Lima_9E69E797.wem</Path>
+				</File>
+				<File Id="202015221" Language="SFX">
+					<ShortName>Bravo.wav</ShortName>
+					<Path>SFX\Bravo_9E69E797.wem</Path>
 				</File>
 				<File Id="243685464" Language="SFX">
 					<ShortName>Opening Line.wav</ShortName>
@@ -78,6 +74,10 @@
 				<File Id="452445096" Language="SFX">
 					<ShortName>204424__jaraxe__alarm-3.wav</ShortName>
 					<Path>SFX\204424__jaraxe__alarm-3_9E69E797.wem</Path>
+				</File>
+				<File Id="559556045" Language="SFX">
+					<ShortName>Mike.wav</ShortName>
+					<Path>SFX\Mike_9E69E797.wem</Path>
 				</File>
 				<File Id="663585161" Language="SFX">
 					<ShortName>Zero.wav</ShortName>
@@ -110,6 +110,10 @@
 				<File Id="965391902" Language="SFX">
 					<ShortName>Echo.wav</ShortName>
 					<Path>SFX\Echo_9E69E797.wem</Path>
+				</File>
+				<File Id="1010436986" Language="SFX">
+					<ShortName>Juliett.wav</ShortName>
+					<Path>SFX\Juliett_9E69E797.wem</Path>
 				</File>
 				<File Id="1058083344" Language="SFX">
 					<ShortName>Tango.wav</ShortName>
