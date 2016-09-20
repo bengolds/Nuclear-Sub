@@ -50,7 +50,7 @@ public class DialSet : HasWatchableBool {
 	}
 
     private void EnableAllIOs()
-    {
+    {    
         foreach (var dialIO in dialIOs)
         {
             dialIO.enabled = true;

@@ -223,12 +223,16 @@ namespace VRTK
             }
             else if (multiTouchSelectionStyle == MultiTouchSelectionStyle.ClosestOrigin)
             {
+                var interactableObject = collider.GetComponentInParent<VRTK_InteractableObject>();
                 if (IsObjectInteractable(collider.gameObject))
                 {
-                    touchedObjects.Add(collider.GetComponentInParent<VRTK_InteractableObject>().gameObject);
+                    touchedObjects.Add(interactableObject.gameObject);
                 } else
                 {
-                    touchedObjects.Remove(collider.gameObject);
+                    if (interactableObject != null)
+                    {
+                        touchedObjects.Remove(interactableObject.gameObject);
+                    }
                 }
             }
         }
