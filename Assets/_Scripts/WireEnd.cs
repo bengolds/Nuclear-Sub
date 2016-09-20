@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections.Generic;
 
 public class WireEnd : MonoBehaviour {
@@ -6,6 +7,7 @@ public class WireEnd : MonoBehaviour {
     public GameObject sparkObject;
     public AkEvent sparkOnEvent;
     public AkEvent sparkOffEvent;
+    public GameObject wireEndPrefab;
 
     private bool soundPlaying = false;
     private PowerTerminal connectedTo;
@@ -15,6 +17,7 @@ public class WireEnd : MonoBehaviour {
     void Start() {
         particleSystems = sparkObject.GetComponentsInChildren<ParticleSystem>();
         TurnOffSparks();
+        AttachToRopeEnd();
     }
 
     void Update()
@@ -27,6 +30,14 @@ public class WireEnd : MonoBehaviour {
         {
             TurnOffSparks();
         }
+    }
+
+    void AttachToRopeEnd()
+    {
+        var nodes = FindObjectsOfType<UltimateRopeLink>();
+        var closestNode = nodes.OrderBy(node => Vector3.Distance(transform.position, node.transform.position)).First();
+        var wireEnd = Instantiate(wireEndPrefab, transform.position, transform.rotation) as GameObject;
+        wireEnd.transform.SetParent(closestNode.transform, true);
     }
 
     public bool isPowered() {
