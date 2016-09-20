@@ -33,11 +33,13 @@ public class Dial : MonoBehaviour {
 	public float snapDuration = 0.5f;
 
     private VRTK_InteractableObject io;
+    private GameObject usingObject;
 	private MeshRenderer meshRenderer;
 	private Vector2? lastTrackpadPos;
 	private float scrollAmount = 0;
 	private int snappedIndex = 0;
     private Quaternion baseLocalRotation;
+    private Tween highlightTween;
 
 	// Use this for initialization
 	void Start ()
@@ -129,17 +131,37 @@ public class Dial : MonoBehaviour {
 			meshRenderer.material = normalStateMaterial;
 		}
 
+        if (io.IsUsing())
+        {
+            var controllerActions = usingObject.GetComponent<VRTK_ControllerActions>();
+            var controllerEvents = usingObject.GetComponent<VRTK_ControllerEvents>();
+            if (controllerEvents.touchpadTouched) { 
+                if (highlightTween != null)
+                {
+                    highlightTween.Kill();
+                }
+                controllerActions.ToggleHighlightTouchpad(false);
+            }
+            else {
+                if (highlightTween == null || !highlightTween.IsActive())
+                {
+                    highlightTween = DOTween.To(x => controllerActions.ToggleHighlightTouchpad(true, Color.Lerp(Color.gray, Color.yellow, x)), 0, 1f, 1f)
+                        .SetEase(Ease.Linear)
+                        .SetLoops(-1, LoopType.Yoyo);
+                }
+            }
+        }
+
         //TODO: Switch to rotationAxis;
-		transform.rotation = transform.parent.rotation * baseLocalRotation * Quaternion.AngleAxis (-scrollAmount, Vector3.right);
+        transform.rotation = transform.parent.rotation * baseLocalRotation * Quaternion.AngleAxis (-scrollAmount, Vector3.right);
 	}
 
 	void StartUsing(object sender, InteractableObjectEventArgs e)
-	{
-		e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadAxisChanged += TouchpadAxisChanged;
-        e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadTouchEnd += TouchpadTouchEnd;
-        e.interactingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (0);
-        e.interactingObject.GetComponent<VRTK_ControllerActions>().ToggleHighlightTouchpad(true);
-
+    {
+        usingObject = e.interactingObject;
+        usingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadAxisChanged += TouchpadAxisChanged;
+        usingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadTouchEnd += TouchpadTouchEnd;
+        usingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (0);
     }
 
 	void StopUsing(object sender, InteractableObjectEventArgs e)
@@ -148,7 +170,9 @@ public class Dial : MonoBehaviour {
         e.interactingObject.GetComponent<VRTK_ControllerEvents> ().TouchpadTouchEnd -= TouchpadTouchEnd;
         e.interactingObject.GetComponent<VRTK_ControllerActions> ().SetControllerOpacity (1.0f);
         e.interactingObject.GetComponent<VRTK_ControllerActions>().ToggleHighlightTouchpad(false);
+        highlightTween.Kill();
         SnapDial ();
+        usingObject = null;
 	}
 
 	void TouchpadAxisChanged(object sender, ControllerInteractionEventArgs e) {
