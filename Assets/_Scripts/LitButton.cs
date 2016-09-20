@@ -12,6 +12,7 @@ public class LitButton : MonoBehaviour
     public float pressedBrightness = 1f;
     public float transitionDuration = 0.2f;
     public Ease ease = Ease.OutExpo;
+    public bool blinkAtFirst = false;
 
     private VRButton button;
     private EmissiveLight eLight;
@@ -19,6 +20,7 @@ public class LitButton : MonoBehaviour
     private float currTargetBrightness = float.NaN;
     private Tween currTween;
     private bool overridden = false;
+    private bool used = false;
 
     void Start()
     {
@@ -36,6 +38,7 @@ public class LitButton : MonoBehaviour
                 if (io.IsUsing())
                 {
                     ChangeBrightness(pressedBrightness);
+                    used = true;
                 }
                 else if (io.IsTouched())
                 {
@@ -43,7 +46,14 @@ public class LitButton : MonoBehaviour
                 }
                 else
                 {
-                    ChangeBrightness(normalOnBrightness);
+                    if (blinkAtFirst && !used)
+                    {
+                        BlinkBrightness(normalOnBrightness);
+                    }
+                    else
+                    {
+                        ChangeBrightness(normalOnBrightness);
+                    }
                 }
             }
             else
@@ -65,6 +75,24 @@ public class LitButton : MonoBehaviour
         }
         currTween = DOTween.To(x => eLight.brightness = x, eLight.brightness, targetBrightness, transitionDuration)
             .SetEase(ease);
+
+        currTargetBrightness = targetBrightness;
+    }
+
+    void BlinkBrightness(float targetBrightness)
+    {
+        if (targetBrightness == currTargetBrightness)
+        {
+            return;
+        }
+        if (currTween != null)
+        {
+            currTween.Kill();
+        }
+
+        currTween = DOTween.To(x => eLight.brightness = x, 0, targetBrightness, 1f)
+            .SetEase(ease)
+            .SetLoops(-1, LoopType.Yoyo);
 
         currTargetBrightness = targetBrightness;
     }
