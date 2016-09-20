@@ -139,7 +139,7 @@ MonoBehaviour:
   - L
   scrollingHapticsStrength: 200
   clickingHapticsStrength: 3999
-  scrollSpeed: 60
+  scrollSpeed: 100
   snapDuration: 0.5
 --- !u!1001 &100100000
 Prefab:
