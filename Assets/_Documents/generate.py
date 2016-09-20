@@ -35,5 +35,5 @@ with open(data_filename, 'rb') as csvfile:
 			cmd = "./wkhtmltoimage --width 816 --height 1056 --disable-smart-width  " + outfilename + " " + outimagename
 			print(cmd)
 			os.system(cmd)
-			os.remove(outfilename)
+			# os.remove(outfilename)
 
