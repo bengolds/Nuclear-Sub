@@ -24,7 +24,7 @@ public class PowerTerminal : HasWatchableBool {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isPoweredOn && meshRenderer != null) {
+		if (isPoweredOn && meshRenderer != null && poweredMaterial != null) {
 			meshRenderer.material = poweredMaterial;
 		}
 	}
