@@ -66,7 +66,7 @@ public class WireEnd : MonoBehaviour {
 
     void TouchingObject(GameObject touching)
     {
-        var powerTerminal = touching.GetComponent<PowerTerminal>();
+        var powerTerminal = touching.GetComponentInParent<PowerTerminal>();
         if (powerTerminal != null)
         {
             connectedTo = powerTerminal;
@@ -79,7 +79,7 @@ public class WireEnd : MonoBehaviour {
 
     void LeavingObject(GameObject leaving)
     {
-        var powerTerminal = leaving.GetComponent<PowerTerminal>();
+        var powerTerminal = leaving.GetComponentInParent<PowerTerminal>();
         if (powerTerminal == connectedTo)
         {
             connectedTo = null;

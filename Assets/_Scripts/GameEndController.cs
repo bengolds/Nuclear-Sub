@@ -4,6 +4,8 @@ using DG.Tweening;
 
 public class GameEndController : MonoBehaviour {
     public Light mainLight;
+    public GameOverPanel panel;
+    public Countdown countdown;
     public float dimIntensity;
     public float dimDuration;
     public Ease dimEase;
@@ -18,7 +20,7 @@ public class GameEndController : MonoBehaviour {
 	
 	}
 
-    public void EndGame()
+    public void EndGame(bool launched)
     {
         mainLight.DOIntensity(dimIntensity, dimDuration).SetEase(dimEase);
         DOTween.To(x => RenderSettings.ambientIntensity = x, RenderSettings.ambientIntensity, 0, dimDuration).SetEase(dimEase);
@@ -27,5 +29,7 @@ public class GameEndController : MonoBehaviour {
         {
             button.OverrideBrightness(0, dimDuration, dimEase);
         }
+        panel.GameOver(dimDuration, launched);
+        countdown.Stop();
     }
 }

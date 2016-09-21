@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 
 public class GameOverPanel : MonoBehaviour {
-    public CanvasRenderer mainPanel;
+    public GameObject mainPanel;
     public Countdown countdown;
     public GameObject targetingCorrectBool;
     public Text scenarioText;
@@ -25,8 +26,18 @@ public class GameOverPanel : MonoBehaviour {
 
     public void GameOver(float fadeDuration, bool launched)
     {
-        mainPanel.gameObject.SetActive(true);
-        DOTween.To(x => mainPanel.SetAlpha(x), 0, 1f, fadeDuration);
+        mainPanel.SetActive(true);
+
+        var graphics = GetComponentsInChildren<Graphic>();
+
+        foreach (var gr in graphics)
+        {
+            var cr = gr.GetComponent<CanvasRenderer>();
+            float targetAlpha = cr.GetAlpha();
+            cr.SetAlpha(0);
+            gr.CrossFadeAlpha(targetAlpha, 3f, false);
+        }
+
         timeLeftText.text = countdown.GetTimeLeft();
         if (launched)
         {

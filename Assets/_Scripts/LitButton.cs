@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using DG.Tweening;
 using VRTK;
 using System.Collections;
@@ -100,6 +101,10 @@ public class LitButton : MonoBehaviour
 
     public void OverrideBrightness(float targetBrightness, float transitionDuration, Ease ease)
     {
+        if (currTween != null)
+        {
+            currTween.Kill();
+        }
         currTween = DOTween.To(x => eLight.brightness = x, eLight.brightness, targetBrightness, transitionDuration)
             .SetEase(ease);
         currTargetBrightness = targetBrightness;
