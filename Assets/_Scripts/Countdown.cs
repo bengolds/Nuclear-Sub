@@ -18,13 +18,22 @@ public class Countdown : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float timeLeft = startingMinutes * 60 - (Time.time - startTime);
-        TimeSpan timeSpan = TimeSpan.FromSeconds(timeLeft);
-        textMesh.text = string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
-        if (countdownEnded && timeLeft < 0)
+        textMesh.text = GetTimeLeft();
+        if (countdownEnded && GetSecondsLeft() < 0)
         {
             countdownEnded = true;
             onCountdownEnd.Invoke();
         }
+    }
+
+    float GetSecondsLeft()
+    {
+        return startingMinutes * 60 - (Time.time - startTime);
+    }
+
+    public string GetTimeLeft()
+    {
+        TimeSpan timeSpan = TimeSpan.FromSeconds(GetSecondsLeft());
+        return string.Format("{0:D2}:{1:D2}:{2:D2}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
     }
 }
