@@ -19,8 +19,8 @@
 				<Event Id="2188295279" Name="MuteFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio" MaxAttenuation="0.000000"/>
 				<Event Id="3602858226" Name="MuteFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio" MaxAttenuation="0.000000"/>
 				<Event Id="1172811353" Name="MuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\MuteMissionRadio" MaxAttenuation="0.000000"/>
-				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer"/>
-				<Event Id="2356623873" Name="PlaySparks" ObjectPath="\Events\Default Work Unit\Sparks\PlaySparks"/>
+				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer" MaxAttenuation="100.000000"/>
+				<Event Id="2356623873" Name="PlaySparks" ObjectPath="\Events\Default Work Unit\Sparks\PlaySparks" MaxAttenuation="100.000000"/>
 				<Event Id="1503708514" Name="StartFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\StartFailsafe1Radio" MaxAttenuation="100.000000"/>
 				<Event Id="120276447" Name="StartFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\StartFailsafe2Radio" MaxAttenuation="100.000000"/>
 				<Event Id="1471546448" Name="StartMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\StartMissionRadio" MaxAttenuation="100.000000"/>
