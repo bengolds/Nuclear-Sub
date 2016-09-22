@@ -66,7 +66,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 607422545
       Guid: 70813aae4f572346a33699752007e694
-      maxAttenuation: 0
+      maxAttenuation: 100
     - Name: PlaySparks
       Path: Default Work Unit\Sparks\PlaySparks
       PathAndIcons:

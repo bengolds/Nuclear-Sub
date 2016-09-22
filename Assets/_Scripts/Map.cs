@@ -5,6 +5,7 @@ public class Map : MonoBehaviour {
 
     public GameObject powerBoolObject;
     public GameObject mapUI;
+    public GameObject screenOff;
     private IWatchableBool powerBool;
 
 	// Use this for initialization
@@ -17,9 +18,12 @@ public class Map : MonoBehaviour {
 	    if (powerBool.boolValue)
         {
             mapUI.SetActive(true);
-        } else
+            screenOff.SetActive(false);
+        }
+        else
         {
             mapUI.SetActive(false);
+            screenOff.SetActive(true);
         }
 	}
 }
