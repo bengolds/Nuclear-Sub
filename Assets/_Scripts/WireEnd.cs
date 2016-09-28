@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Linq;
 using System.Collections.Generic;
+using VRTK;
 
 public class WireEnd : MonoBehaviour {
     public WireEnd otherEnd;
@@ -8,7 +9,10 @@ public class WireEnd : MonoBehaviour {
     public AkEvent sparkOnEvent;
     public AkEvent sparkOffEvent;
     public GameObject wireEndPrefab;
+    public Transform wireEndAttachPoint;
 
+    private VRTK_InteractableObject io;
+    private Rigidbody rb;
     private bool soundPlaying = false;
     private PowerTerminal connectedTo;
     private ParticleSystem[] particleSystems;
@@ -16,8 +20,9 @@ public class WireEnd : MonoBehaviour {
     // Use this for initialization
     void Start() {
         particleSystems = sparkObject.GetComponentsInChildren<ParticleSystem>();
+        io = GetComponent<VRTK_InteractableObject>();
+        rb = GetComponent<Rigidbody>();
         TurnOffSparks();
-        AttachToRopeEnd();
     }
 
     void Update()
@@ -30,14 +35,15 @@ public class WireEnd : MonoBehaviour {
         {
             TurnOffSparks();
         }
-    }
 
-    void AttachToRopeEnd()
-    {
-        var nodes = FindObjectsOfType<UltimateRopeLink>();
-        var closestNode = nodes.OrderBy(node => Vector3.Distance(transform.position, node.transform.position)).First();
-        var wireEnd = Instantiate(wireEndPrefab, transform.position, transform.rotation) as GameObject;
-        wireEnd.transform.SetParent(closestNode.transform, true);
+        if (io.IsGrabbed())
+        {
+            rb.mass = 1000;
+        }
+        else
+        {
+            rb.mass = 1;
+        }
     }
 
     public bool isPowered() {
