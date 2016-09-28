@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 
 public class GameEndController : MonoBehaviour {
     public Light mainLight;
     public GameOverPanel panel;
+    public List<GameObject> enableOnOver;
     public Countdown countdown;
     public float dimIntensity;
     public float dimDuration;
@@ -27,9 +29,17 @@ public class GameEndController : MonoBehaviour {
         var buttons = FindObjectsOfType<LitButton>();
         foreach (var button in buttons)
         {
-            button.OverrideBrightness(0, dimDuration, dimEase);
+            //Janky way to dim every button but the game quit button.
+            if (button.gameObject.GetComponent<GameQuitter>() == null)
+            {
+                button.OverrideBrightness(0, dimDuration, dimEase);
+            }
         }
         panel.GameOver(dimDuration, launched);
         countdown.Stop();
+        foreach (var item in enableOnOver)
+        {
+            item.SetActive(true);
+        }
     }
 }
