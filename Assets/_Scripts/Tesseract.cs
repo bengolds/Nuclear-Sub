@@ -16,11 +16,19 @@ public class Tesseract : MonoBehaviour {
     void OnCollisionEnter(Collision coll)
     {
         var powerTerm = coll.gameObject.GetComponentInParent<PowerTerminal>();
-        Debug.Log(coll.gameObject.name);
         if (powerTerm != null)
         {
             powerTerm.PowerOn();
-            Debug.Log("power term: " + powerTerm.name);
+        }
+    }
+
+    void OnTriggerEnter(Collider coll)
+    {
+        var dialSet = coll.gameObject.GetComponentInParent<DialSet>();
+        if (dialSet != null)
+        {
+            Debug.Log("DialSet");
+            dialSet.MagicUnlock();
         }
     }
 }

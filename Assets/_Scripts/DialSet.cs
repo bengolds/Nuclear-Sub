@@ -99,4 +99,12 @@ public class DialSet : HasWatchableBool {
         }
         return value;
     }
+
+    public void MagicUnlock()
+    {
+        for (int i = 0; i < dials.Length; i++)
+        {
+            dials[i].SetValue(combination[i]);
+        }
+    }
 }
