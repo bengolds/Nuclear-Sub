@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: -1604736185
-    m_lastTimePart2: -1999380071
+    m_lastTimePsrt1: -706909444
+    m_lastTimePart2: -1999378256
     List:
     - Name: MuteFailsafe1Radio
       Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
@@ -66,7 +66,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 607422545
       Guid: 70813aae4f572346a33699752007e694
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: PlaySparks
       Path: Default Work Unit\Sparks\PlaySparks
       PathAndIcons:
@@ -90,7 +90,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1503708514
       Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 100
+      maxAttenuation: 0
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
-  basePath: Audio\GeneratedSoundBanks
+  basePath: 0
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

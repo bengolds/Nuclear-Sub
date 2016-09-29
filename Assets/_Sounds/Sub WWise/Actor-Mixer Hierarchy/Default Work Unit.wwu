@@ -66,28 +66,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Opening Line" ID="{44DADC06-8997-461E-802D-3E540DEDDFEB}" ShortID="24146470" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Opening Line" ID="{F926DB91-00D4-44C9-A1FB-16BFE23D732B}" ShortID="482209001">
-									<Language>SFX</Language>
-									<AudioFile>Opening Line.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="243685464"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Opening Line" ID="{F926DB91-00D4-44C9-A1FB-16BFE23D732B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Charlie" ID="{01720122-5235-4084-AE5F-2115CACEF95E}" ShortID="843206058" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -176,29 +154,14 @@
 								<ActiveSource Name="Zulu" ID="{9F6E00F8-68F1-43BB-8DFC-31937B26DDE5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Target Khiozrekalon" ID="{363D04CC-7DBF-4E1D-87C3-D5998D22B2FD}" ShortID="802269955" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Target" ID="{11A9628F-516C-4D79-B2F5-C22CBB235FD6}" ShortID="139193227">
-									<Language>SFX</Language>
-									<AudioFile>Target.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="341628915"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Target" ID="{11A9628F-516C-4D79-B2F5-C22CBB235FD6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Verification Code" ID="{C48A10BF-2082-4CAE-B208-885E52E8F2EE}" ShortID="313833103" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -243,6 +206,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="0" ID="{187AD53C-1567-4197-972A-840A46BDA8E1}" ShortID="643972602" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-40</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -265,6 +235,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="9" ID="{0879E499-BFAA-42BA-AEAC-DE56D5469DFC}" ShortID="142311061" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
@@ -286,9 +263,83 @@
 								<ActiveSource Name="Niner" ID="{ABB7E19C-4BFE-4003-800D-9493B1EEC45E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Dia_ACOM_Hail_alt" ID="{8D670F48-D554-4DF2-8AAD-EC3129B725A4}" ShortID="785131728" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_Hail_alt" ID="{17D631AC-6D58-4E94-937A-8965FA6AE081}" ShortID="811258700">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_Hail_alt.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="518795460"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_Hail_alt" ID="{17D631AC-6D58-4E94-937A-8965FA6AE081}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_ExecuteCode" ID="{EC9E0AB4-E5B2-4C48-8C20-57DCD278A62B}" ShortID="1002389236" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_ExecuteCode" ID="{B96A1F7A-5C3F-42CA-9CFD-A6F38FDA4065}" ShortID="323933126">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_ExecuteCode.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="408593314"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_ExecuteCode" ID="{B96A1F7A-5C3F-42CA-9CFD-A6F38FDA4065}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_Target" ID="{7F02AB2C-83E2-4E73-90BB-DC6217983BBF}" ShortID="36606116" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_Target" ID="{45136BF1-CE4F-4A35-BAFF-F7B135278D1B}" ShortID="689917516">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_Target.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="570699409"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_Target" ID="{45136BF1-CE4F-4A35-BAFF-F7B135278D1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<Playlist>
-						<ItemRef Name="Opening Line" ID="{44DADC06-8997-461E-802D-3E540DEDDFEB}"/>
+						<ItemRef Name="Dia_ACOM_Hail_alt" ID="{8D670F48-D554-4DF2-8AAD-EC3129B725A4}"/>
+						<ItemRef Name="Dia_ACOM_ExecuteCode" ID="{EC9E0AB4-E5B2-4C48-8C20-57DCD278A62B}"/>
 						<ItemRef Name="Charlie" ID="{01720122-5235-4084-AE5F-2115CACEF95E}"/>
 						<ItemRef Name="Tango" ID="{05F56C66-B732-441A-95E9-930009C0A1AF}"/>
 						<ItemRef Name="Yankee" ID="{A33BBBA3-8F0F-4AFA-90FD-6A2C22CFF7AB}"/>
@@ -297,7 +348,7 @@
 						<ItemRef Name="1" ID="{648F3FC8-4B9F-406B-A3F5-C17DD67C2B8B}"/>
 						<ItemRef Name="0" ID="{187AD53C-1567-4197-972A-840A46BDA8E1}"/>
 						<ItemRef Name="9" ID="{0879E499-BFAA-42BA-AEAC-DE56D5469DFC}"/>
-						<ItemRef Name="Target Khiozrekalon" ID="{363D04CC-7DBF-4E1D-87C3-D5998D22B2FD}"/>
+						<ItemRef Name="Dia_ACOM_Target" ID="{7F02AB2C-83E2-4E73-90BB-DC6217983BBF}"/>
 					</Playlist>
 				</RandomSequenceContainer>
 				<Folder Name="Letters" ID="{DB551BDD-6109-425A-BE75-0396C39AF8D4}" ShortID="701176653">
@@ -1336,28 +1387,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Failsafe Sequence Start" ID="{EE407D4C-55ED-4FBD-B0F9-DED3EA544970}" ShortID="344328236" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Failsafe Sequence Start" ID="{4A694D6E-4B93-4AC7-B298-74B2D8FB77B4}" ShortID="62005139">
-									<Language>SFX</Language>
-									<AudioFile>Failsafe Sequence Start.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="261566975"/>
-									</ConvertedFileIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Failsafe Sequence Start" ID="{4A694D6E-4B93-4AC7-B298-74B2D8FB77B4}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Victor" ID="{5C02B4AA-FB72-4787-855C-AA8D4C68EAB2}" ShortID="421399430" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1446,9 +1475,31 @@
 								<ActiveSource Name="Bravo" ID="{A8A5C52B-3435-4E79-A2E7-FB309FC83511}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Dia_ACOM_FailSafe_Start" ID="{41E7B58F-95BA-41C8-BDFB-DFED9CB4F1EC}" ShortID="176764266" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_FailSafe_Start" ID="{C2977600-3A5C-488B-AB54-6D20509B2048}" ShortID="986728131">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_FailSafe_Start.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="995904652"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_FailSafe_Start" ID="{C2977600-3A5C-488B-AB54-6D20509B2048}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<Playlist>
-						<ItemRef Name="Failsafe Sequence Start" ID="{EE407D4C-55ED-4FBD-B0F9-DED3EA544970}"/>
+						<ItemRef Name="Dia_ACOM_FailSafe_Start" ID="{41E7B58F-95BA-41C8-BDFB-DFED9CB4F1EC}"/>
 						<ItemRef Name="Juliett" ID="{47489B44-282C-438F-A286-625F612CADD0}"/>
 						<ItemRef Name="Mike" ID="{74991C16-C6B0-437F-98F5-8E6DF26294C5}"/>
 						<ItemRef Name="Victor" ID="{5C02B4AA-FB72-4787-855C-AA8D4C68EAB2}"/>
@@ -1605,6 +1656,256 @@
 						<ActiveSource Name="sparks" ID="{D502008D-B8AD-4F36-A977-C6FD8B5E935D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Finals" ID="{6A10391B-439E-47D3-BDB1-7C7ED4FC44A4}" ShortID="773017652">
+					<ChildrenList>
+						<Sound Name="SFX_Alarm_02_Lp" ID="{5F6C411D-ABF2-4B8F-BEE2-7A154C2619BE}" ShortID="296705644" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Alarm_02_Lp" ID="{A0B00D54-551E-438F-9624-D89B72601682}" ShortID="793538724">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Alarm_02_Lp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Alarm_02_Lp" ID="{A0B00D54-551E-438F-9624-D89B72601682}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Alarm_03_Lp" ID="{58B7D84E-7CC2-4F3C-89AE-1B267DC88EA6}" ShortID="1053374888" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Alarm_03_Lp" ID="{73E346C8-1554-4563-BB07-F377DD2793F6}" ShortID="288940667">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Alarm_03_Lp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Alarm_03_Lp" ID="{73E346C8-1554-4563-BB07-F377DD2793F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_Hail_alt" ID="{703A1BFE-97C3-4C4B-94E5-01E960A4FEEF}" ShortID="110590570" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_Hail_alt" ID="{CA8619FD-9CAD-4485-A4A8-9C22A6BFE106}" ShortID="518795460">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_Hail_alt.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_Hail_alt" ID="{CA8619FD-9CAD-4485-A4A8-9C22A6BFE106}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_Target" ID="{1346103B-3D69-4054-8344-DFD0045B5A93}" ShortID="560968960" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_Target" ID="{4CC16D32-B83E-4155-A9BF-23CC28262871}" ShortID="570699409">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_Target.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_Target" ID="{4CC16D32-B83E-4155-A9BF-23CC28262871}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_FailSafe_Start" ID="{D08C6F35-11AC-4BC6-BDCA-3862281D14D5}" ShortID="8756645" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_FailSafe_Start" ID="{7F231C5E-E854-4829-B124-421A1017BC13}" ShortID="995904652">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_FailSafe_Start.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_FailSafe_Start" ID="{7F231C5E-E854-4829-B124-421A1017BC13}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Alarm_04_Lp" ID="{A8038054-3C6D-4D0C-BC7F-938C27A911D4}" ShortID="652482437" Type="SoundFX">
+							<PropertyList>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{A31DB1B1-E936-423A-AE8F-A57A47DB1327}" ShortID="76961911">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{9B5C9B06-EA14-420A-B0DC-8EEB28C14782}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Alarm_04_Lp" ID="{0C2DCA2C-192E-416B-AD5F-494C51DDBF65}" ShortID="1050821680">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Alarm_04_Lp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Alarm_04_Lp" ID="{0C2DCA2C-192E-416B-AD5F-494C51DDBF65}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_Hail" ID="{E9F9EA15-75C7-4484-B5CE-508C1BFCC1A6}" ShortID="120999682" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_Hail" ID="{2F37AAC6-45AC-4E74-8895-3DF2423FC741}" ShortID="915963155">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_Hail.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_Hail" ID="{2F37AAC6-45AC-4E74-8895-3DF2423FC741}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_ExecuteCode" ID="{5A0EA0E0-46F1-4FD5-95CD-DFC68F87AF99}" ShortID="1038520959" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_ExecuteCode" ID="{CDD2AC4F-255C-4DE4-8AC4-218E86020F07}" ShortID="408593314">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_ExecuteCode.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_ExecuteCode" ID="{CDD2AC4F-255C-4DE4-8AC4-218E86020F07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Alarm_01_Lp" ID="{ABABD974-6BBE-47C0-86F5-D15174D2F2FC}" ShortID="599699537" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Alarm_01_Lp" ID="{0E477314-359C-4368-A608-B2FF5770A0B4}" ShortID="12480093">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Alarm_01_Lp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Alarm_01_Lp" ID="{0E477314-359C-4368-A608-B2FF5770A0B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dia_ACOM_FailCode_Start" ID="{9CACA0D2-5813-4FF7-8081-528E9F17BD5B}" ShortID="803701436" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dia_ACOM_FailCode_Start" ID="{CDA22851-25D5-4DAC-8C98-CAD352D748CA}" ShortID="874085699">
+									<Language>SFX</Language>
+									<AudioFile>Dia_ACOM_FailCode_Start.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dia_ACOM_FailCode_Start" ID="{CDA22851-25D5-4DAC-8C98-CAD352D748CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
