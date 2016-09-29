@@ -67,7 +67,7 @@ public class LockGuide : HasWatchableBool {
 					state = LockState.Turning;
 				}
 			} else if (state == LockState.Turning) {
-                key.GetComponent<VRTK.VRTK_InteractableObject>().precisionSnap = true;
+                //key.GetComponent<VRTK.VRTK_InteractableObject>().precisionSnap = true;
 				keyAngle = Vector3.Angle (initialUp, lockBody.transform.up);
 				if (keyAngle >= maxAngle-2f && !justTurned) {
 					KeyTurned ();
@@ -108,7 +108,7 @@ public class LockGuide : HasWatchableBool {
         joint.axis = lockBody.transform.InverseTransformDirection(transform.right);
         joint.secondaryAxis = lockBody.transform.InverseTransformDirection(transform.forward);
 
-		joint.angularXMotion = ConfigurableJointMotion.Locked;
+        joint.angularXMotion = ConfigurableJointMotion.Locked;
 		joint.angularYMotion = ConfigurableJointMotion.Locked;
 		joint.angularZMotion = ConfigurableJointMotion.Locked;
 		joint.xMotion = ConfigurableJointMotion.Limited;
@@ -134,13 +134,13 @@ public class LockGuide : HasWatchableBool {
 
 		var joint = key.gameObject.AddComponent<ConfigurableJoint> ();
 
-		joint.angularXMotion = ConfigurableJointMotion.Limited;
-		joint.angularYMotion = ConfigurableJointMotion.Locked;
+        joint.angularXMotion = ConfigurableJointMotion.Limited;
+        joint.angularYMotion = ConfigurableJointMotion.Locked;
 		joint.angularZMotion = ConfigurableJointMotion.Locked;
 		joint.xMotion = ConfigurableJointMotion.Locked;
 		joint.yMotion = ConfigurableJointMotion.Locked;
 		joint.zMotion = ConfigurableJointMotion.Locked;
-
+        
 		var xLimit = new SoftJointLimit ();
 		xLimit.limit = -maxAngle; 
 		joint.lowAngularXLimit = xLimit;
@@ -149,7 +149,7 @@ public class LockGuide : HasWatchableBool {
 		xDrive.positionSpring = 1000f;
 		xDrive.maximumForce = 200f;
 		joint.angularXDrive = xDrive;
-
+        
 		joint.autoConfigureConnectedAnchor = false;
 		joint.connectedAnchor = key.transform.position;
 		joint.anchor = Vector3.zero;

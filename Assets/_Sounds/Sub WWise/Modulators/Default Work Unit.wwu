@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F9D3B867-EAE2-4450-9C4D-F03428EA7FC3}" SchemaVersion="72">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{F9D3B867-EAE2-4450-9C4D-F03428EA7FC3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F9D3B867-EAE2-4450-9C4D-F03428EA7FC3}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Buzzer" ID="{655B4D62-48D6-4F99-AF88-7390B8DE5922}" ShortID="424953522"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -1814,6 +1814,42 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{436B0842-C530-4AC5-A6F0-AC6B7E613FCE}"/>
 								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{2DB136A8-81D7-4C64-BA40-5CAE0B430F7C}" ShortID="374410365" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+											<PropertyList>
+												<Property Name="FullBandGain" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{15C6F84F-D969-4311-9BAC-CC9A5E632BFD}" ShortID="948755843">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Buzzer" ID="{655B4D62-48D6-4F99-AF88-7390B8DE5922}" WorkUnitID="{F9D3B867-EAE2-4450-9C4D-F03428EA7FC3}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{D36EE0C7-A8AA-4796-919B-EDD4046FCBD8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96.3</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-8.80914</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{82999559-0440-4E58-A98E-0845C81626B1}"/>
 								</Reference>
