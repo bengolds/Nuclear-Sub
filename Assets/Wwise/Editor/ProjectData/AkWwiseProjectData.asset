@@ -16,21 +16,9 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1482C8C4-6435-4D7B-8D0D-5A01751F6136}'
-    m_lastTimePsrt1: -706909444
-    m_lastTimePart2: -1999378256
+    m_lastTimePsrt1: 1341340463
+    m_lastTimePart2: -1999374458
     List:
-    - Name: MuteFailsafe1Radio
-      Path: Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Failsafe1Radio
-        ObjectType: 4
-      - ElementName: MuteFailsafe1Radio
-        ObjectType: 3
-      ID: -2106672017
-      Guid: 23a9acd0ca5b8442b376abcd0ddaac5e
-      maxAttenuation: 0
     - Name: MuteFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio
       PathAndIcons:
@@ -79,18 +67,6 @@ MonoBehaviour:
       ID: -1938343423
       Guid: 5663340f7d50404aab7f85712fa42a1e
       maxAttenuation: 0
-    - Name: StartFailsafe1Radio
-      Path: Default Work Unit\Failsafe1Radio\StartFailsafe1Radio
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Failsafe1Radio
-        ObjectType: 4
-      - ElementName: StartFailsafe1Radio
-        ObjectType: 3
-      ID: 1503708514
-      Guid: db315dd51aff39489012bf4ef6b6763f
-      maxAttenuation: 0
     - Name: StartFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\StartFailsafe2Radio
       PathAndIcons:
@@ -138,18 +114,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1543198329
       Guid: bcc482f7d071f14c8a8e49074c270064
-      maxAttenuation: 0
-    - Name: UnmuteFailsafe1Radio
-      Path: Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Failsafe1Radio
-        ObjectType: 4
-      - ElementName: UnmuteFailsafe1Radio
-        ObjectType: 3
-      ID: 2003129982
-      Guid: a17ac14c26dbad41b31207f13951f33d
       maxAttenuation: 0
     - Name: UnmuteFailsafe2Radio
       Path: Default Work Unit\Failsafe2Radio\UnmuteFailsafe2Radio
@@ -220,7 +184,7 @@ MonoBehaviour:
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
-  basePath: 0
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

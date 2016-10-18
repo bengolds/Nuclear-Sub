@@ -73,50 +73,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Failsafe1Radio" ID="{725CB4F9-C321-4590-8D82-9069E1229069}" ShortID="322564097">
-					<ChildrenList>
-						<Event Name="StartFailsafe1Radio" ID="{D55D31DB-FF1A-4839-9012-BF4EF6B6763F}">
-							<ChildrenList>
-								<Action Name="Play" ID="{6C78B67A-BB9E-4B80-8A48-AC76EB7A25E9}" ShortID="800326752" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{0C265EB4-DA61-4BFD-BF40-CF08EA15C084}" Global="false">
-											<ObjectRef Name="Failsafe 1" ID="{155ACA08-13CF-4D47-BE21-B28361CF86B7}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Post Event" ID="{AEE96649-1034-401B-95CC-AC0B0BB3B1A5}" ShortID="79643752" Type="PlayEvent" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3AD811F6-D478-499D-9322-F46B60D5173F}" Global="false">
-											<ObjectRef Name="MuteFailsafe1Radio" ID="{D0ACA923-5BCA-4284-B376-ABCD0DDAAC5E}" WorkUnitID="{1482C8C4-6435-4D7B-8D0D-5A01751F6136}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="UnmuteFailsafe1Radio" ID="{4CC17AA1-DB26-41AD-B312-07F13951F33D}">
-							<ChildrenList>
-								<Action Name="UnMute" ID="{CFBCC06E-BD19-4BBD-8115-6B5E00DFE83E}" ShortID="121337633" Type="UnMute" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3BC3E638-A90A-4881-8AD4-A889E476F5E2}" Global="false">
-											<ObjectRef Name="Failsafe 1" ID="{155ACA08-13CF-4D47-BE21-B28361CF86B7}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="MuteFailsafe1Radio" ID="{D0ACA923-5BCA-4284-B376-ABCD0DDAAC5E}">
-							<ChildrenList>
-								<Action Name="Mute" ID="{EDB0A597-3B86-4960-9628-114A8D317B4B}" ShortID="423462491" Type="Mute" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{4250A781-A67B-4200-939F-51BB5E07A5A3}" Global="false">
-											<ObjectRef Name="Failsafe 1" ID="{155ACA08-13CF-4D47-BE21-B28361CF86B7}" WorkUnitID="{AF47B5AB-C26D-48A1-9918-95CBD3B05BC7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Failsafe2Radio" ID="{98D4B8E3-2FD6-4371-9203-0EF8A5CDD876}" ShortID="465020577">
 					<ChildrenList>
 						<Event Name="StartFailsafe2Radio" ID="{CB2E7536-495A-4208-9A50-35264BD2AD61}">

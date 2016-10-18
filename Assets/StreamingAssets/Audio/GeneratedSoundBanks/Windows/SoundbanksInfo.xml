@@ -16,44 +16,37 @@
 			<ShortName>BaseSoundbank</ShortName>
 			<Path>BaseSoundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2188295279" Name="MuteFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\MuteFailsafe1Radio" MaxAttenuation="0.000000"/>
 				<Event Id="3602858226" Name="MuteFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\MuteFailsafe2Radio" MaxAttenuation="0.000000"/>
 				<Event Id="1172811353" Name="MuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\MuteMissionRadio" MaxAttenuation="0.000000"/>
 				<Event Id="607422545" Name="PlayBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\PlayBuzzer" MaxAttenuation="100.000000"/>
 				<Event Id="2356623873" Name="PlaySparks" ObjectPath="\Events\Default Work Unit\Sparks\PlaySparks" MaxAttenuation="100.000000"/>
-				<Event Id="1503708514" Name="StartFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\StartFailsafe1Radio" MaxAttenuation="100.000000"/>
 				<Event Id="120276447" Name="StartFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\StartFailsafe2Radio" MaxAttenuation="100.000000"/>
 				<Event Id="1471546448" Name="StartMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\StartMissionRadio" MaxAttenuation="100.000000"/>
 				<Event Id="1824701367" Name="StopBuzzer" ObjectPath="\Events\Default Work Unit\OpeningBuzzer\StopBuzzer" MaxAttenuation="0.000000"/>
 				<Event Id="2751768967" Name="StopSparks" ObjectPath="\Events\Default Work Unit\Sparks\StopSparks" MaxAttenuation="0.000000"/>
-				<Event Id="2003129982" Name="UnmuteFailsafe1Radio" ObjectPath="\Events\Default Work Unit\Failsafe1Radio\UnmuteFailsafe1Radio" MaxAttenuation="0.000000"/>
 				<Event Id="2614172267" Name="UnmuteFailsafe2Radio" ObjectPath="\Events\Default Work Unit\Failsafe2Radio\UnmuteFailsafe2Radio" MaxAttenuation="0.000000"/>
 				<Event Id="4043917796" Name="UnmuteMissionRadio" ObjectPath="\Events\Default Work Unit\MissionRadio\UnmuteMissionRadio" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="47218279" Language="SFX">
-					<ShortName>Niner.wav</ShortName>
-					<Path>SFX\Niner_9E69E797.wem</Path>
+				<File Id="24769739" Language="SFX">
+					<ShortName>ACOM_Count_01.wav</ShortName>
+					<Path>SFX\ACOM_Count_01_9E69E797.wem</Path>
 				</File>
-				<File Id="95719391" Language="SFX">
-					<ShortName>Yankee.wav</ShortName>
-					<Path>SFX\Yankee_9E69E797.wem</Path>
+				<File Id="123860010" Language="SFX">
+					<ShortName>ACOM_Alphabet_25.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_25_9E69E797.wem</Path>
 				</File>
-				<File Id="97347378" Language="SFX">
-					<ShortName>Zulu.wav</ShortName>
-					<Path>SFX\Zulu_9E69E797.wem</Path>
+				<File Id="218500871" Language="SFX">
+					<ShortName>ACOM_Count_02.wav</ShortName>
+					<Path>SFX\ACOM_Count_02_9E69E797.wem</Path>
 				</File>
-				<File Id="120302601" Language="SFX">
-					<ShortName>Lima.wav</ShortName>
-					<Path>SFX\Lima_9E69E797.wem</Path>
+				<File Id="243838099" Language="SFX">
+					<ShortName>ACOM_Alphabet_26.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_26_9E69E797.wem</Path>
 				</File>
-				<File Id="202015221" Language="SFX">
-					<ShortName>Bravo.wav</ShortName>
-					<Path>SFX\Bravo_9E69E797.wem</Path>
-				</File>
-				<File Id="336429519" Language="SFX">
-					<ShortName>Verification Code.wav</ShortName>
-					<Path>SFX\Verification Code_9E69E797.wem</Path>
+				<File Id="296355240" Language="SFX">
+					<ShortName>ACOM_Alphabet_08.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_08_9E69E797.wem</Path>
 				</File>
 				<File Id="378781603" Language="SFX">
 					<ShortName>sparks.wav</ShortName>
@@ -67,61 +60,45 @@
 					<ShortName>Dia_ACOM_Hail_alt.wav</ShortName>
 					<Path>SFX\Dia_ACOM_Hail_alt_9E69E797.wem</Path>
 				</File>
-				<File Id="559556045" Language="SFX">
-					<ShortName>Mike.wav</ShortName>
-					<Path>SFX\Mike_9E69E797.wem</Path>
+				<File Id="542774743" Language="SFX">
+					<ShortName>ACOM_Alphabet_13.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_13_9E69E797.wem</Path>
 				</File>
 				<File Id="570699409" Language="SFX">
 					<ShortName>Dia_ACOM_Target.wav</ShortName>
 					<Path>SFX\Dia_ACOM_Target_9E69E797.wem</Path>
 				</File>
-				<File Id="663585161" Language="SFX">
-					<ShortName>Zero.wav</ShortName>
-					<Path>SFX\Zero_9E69E797.wem</Path>
+				<File Id="573638134" Language="SFX">
+					<ShortName>ACOM_Alphabet_03.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_03_9E69E797.wem</Path>
 				</File>
-				<File Id="666437856" Language="SFX">
-					<ShortName>Failsafe Code Start.wav</ShortName>
-					<Path>SFX\Failsafe Code Start_9E69E797.wem</Path>
+				<File Id="693515982" Language="SFX">
+					<ShortName>ACOM_Count_10.wav</ShortName>
+					<Path>SFX\ACOM_Count_10_9E69E797.wem</Path>
 				</File>
-				<File Id="668472289" Language="SFX">
-					<ShortName>Charlie.wav</ShortName>
-					<Path>SFX\Charlie_9E69E797.wem</Path>
+				<File Id="810202686" Language="SFX">
+					<ShortName>ACOM_Alphabet_20.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_20_9E69E797.wem</Path>
 				</File>
-				<File Id="838812632" Language="SFX">
-					<ShortName>Sierra.wav</ShortName>
-					<Path>SFX\Sierra_9E69E797.wem</Path>
-				</File>
-				<File Id="857242971" Language="SFX">
-					<ShortName>One.wav</ShortName>
-					<Path>SFX\One_9E69E797.wem</Path>
-				</File>
-				<File Id="894610532" Language="SFX">
-					<ShortName>Victor.wav</ShortName>
-					<Path>SFX\Victor_9E69E797.wem</Path>
-				</File>
-				<File Id="908133878" Language="SFX">
-					<ShortName>India.wav</ShortName>
-					<Path>SFX\India_9E69E797.wem</Path>
-				</File>
-				<File Id="965391902" Language="SFX">
-					<ShortName>Echo.wav</ShortName>
-					<Path>SFX\Echo_9E69E797.wem</Path>
+				<File Id="895697331" Language="SFX">
+					<ShortName>ACOM_Alphabet_02.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_02_9E69E797.wem</Path>
 				</File>
 				<File Id="995904652" Language="SFX">
 					<ShortName>Dia_ACOM_FailSafe_Start.wav</ShortName>
 					<Path>SFX\Dia_ACOM_FailSafe_Start_9E69E797.wem</Path>
 				</File>
-				<File Id="1010436986" Language="SFX">
-					<ShortName>Juliett.wav</ShortName>
-					<Path>SFX\Juliett_9E69E797.wem</Path>
+				<File Id="1043809233" Language="SFX">
+					<ShortName>ACOM_VCode.wav</ShortName>
+					<Path>SFX\ACOM_VCode_9E69E797.wem</Path>
 				</File>
 				<File Id="1050821680" Language="SFX">
 					<ShortName>SFX_Alarm_04_Lp.wav</ShortName>
 					<Path>SFX\SFX_Alarm_04_Lp_9E69E797.wem</Path>
 				</File>
-				<File Id="1058083344" Language="SFX">
-					<ShortName>Tango.wav</ShortName>
-					<Path>SFX\Tango_9E69E797.wem</Path>
+				<File Id="1067076878" Language="SFX">
+					<ShortName>ACOM_Alphabet_10.wav</ShortName>
+					<Path>SFX\ACOM_Alphabet_10_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

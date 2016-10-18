@@ -13,17 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID MUTEFAILSAFE1RADIO = 2188295279U;
         static const AkUniqueID MUTEFAILSAFE2RADIO = 3602858226U;
         static const AkUniqueID MUTEMISSIONRADIO = 1172811353U;
         static const AkUniqueID PLAYBUZZER = 607422545U;
         static const AkUniqueID PLAYSPARKS = 2356623873U;
-        static const AkUniqueID STARTFAILSAFE1RADIO = 1503708514U;
         static const AkUniqueID STARTFAILSAFE2RADIO = 120276447U;
         static const AkUniqueID STARTMISSIONRADIO = 1471546448U;
         static const AkUniqueID STOPBUZZER = 1824701367U;
         static const AkUniqueID STOPSPARKS = 2751768967U;
-        static const AkUniqueID UNMUTEFAILSAFE1RADIO = 2003129982U;
         static const AkUniqueID UNMUTEFAILSAFE2RADIO = 2614172267U;
         static const AkUniqueID UNMUTEMISSIONRADIO = 4043917796U;
     } // namespace EVENTS
